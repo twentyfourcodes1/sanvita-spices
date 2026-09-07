@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flame, Leaf, Package, UtensilsCrossed } from "lucide-react";
 
+import aboutSpicesIndia from "@/assets/about-spices-india.png.asset.json";
 import brandStory from "@/assets/brand-story-spices.png.asset.json";
-import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
 import heroSpices from "@/assets/hero-spices.jpg";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/site/CTASection";
@@ -136,10 +136,10 @@ function AboutPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <img
-              src={kitchenLifestyle}
-              alt="Indian curry cooking in a pan beside a brass spice box"
-              width={1408}
-              height={1008}
+              src={aboutSpicesIndia.url}
+              alt="Indian spices arranged around a glowing golden world map with ingredient photography and product descriptions"
+              width={1920}
+              height={1080}
               loading="lazy"
               className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
             />
