@@ -182,27 +182,50 @@ export function TrustCard({
   title,
   description,
   className,
+  variant = "light",
 }: {
   icon: ReactNode;
   title: string;
   description: string;
   className?: string;
+  variant?: "light" | "dark";
 }) {
+  if (variant === "dark") {
+    return (
+      <div
+        className={cn(
+          "group relative h-full rounded-t-[100px] rounded-b-xl border border-gold/20 bg-brand-secondary p-8 pt-12 text-center transition-all duration-500 hover:-translate-y-2 hover:border-gold/60",
+          className,
+        )}
+      >
+        <div className="absolute -top-6 left-1/2 -translate-x-1/2 grid size-16 place-items-center rounded-full bg-gold text-charcoal shadow-gold transition-transform duration-500 group-hover:scale-110">
+          {icon}
+        </div>
+        <h3 className="mt-4 font-display text-xl font-bold text-gold">
+          {title}
+        </h3>
+        <p className="mt-4 text-sm leading-relaxed text-brand-foreground/70">
+          {description}
+        </p>
+        <div className="absolute bottom-4 left-1/2 h-1 w-12 -translate-x-1/2 rounded-full bg-spice/30" />
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(
-        "group relative h-full rounded-t-[100px] rounded-b-xl border border-gold/20 bg-brand-secondary p-8 pt-12 text-center transition-all duration-500 hover:-translate-y-2 hover:border-gold/60",
+        "hover-lift group h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft",
         className,
       )}
     >
-      <div className="absolute -top-6 left-1/2 -translate-x-1/2 grid size-16 place-items-center rounded-full bg-gold text-charcoal shadow-gold transition-transform duration-500 group-hover:scale-110">
+      <div className="grid size-12 place-items-center rounded-md bg-gold-gradient text-charcoal">
         {icon}
       </div>
-      <h3 className="mt-4 font-display text-xl font-bold text-gold">{title}</h3>
-      <p className="mt-4 text-sm leading-relaxed text-brand-foreground/70">
+      <h3 className="mt-5 text-2xl">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
         {description}
       </p>
-      <div className="absolute bottom-4 left-1/2 h-1 w-12 -translate-x-1/2 rounded-full bg-spice/30" />
     </div>
   );
 }
