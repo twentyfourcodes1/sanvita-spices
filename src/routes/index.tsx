@@ -409,9 +409,9 @@ function HomePage() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-24">
+      <section className="py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-brand px-8 py-16 shadow-2xl md:px-16 md:py-24">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-brand px-6 py-10 shadow-2xl md:px-12 md:py-14">
             {/* Decorative background pattern */}
             <div className="pointer-events-none absolute inset-0 opacity-[0.05]">
               <svg
@@ -437,29 +437,29 @@ function HomePage() {
             </div>
 
             <Reveal>
-              <div className="relative z-10 mb-16 text-center md:mb-20">
+              <div className="relative z-10 mb-10 text-center md:mb-12">
                 <span className="text-eyebrow mb-4 block text-gold">
                   Our Process
                 </span>
                 <h2 className="font-display text-4xl italic text-brand-foreground md:text-5xl">
                   Four careful steps to your kitchen
                 </h2>
-                <div className="mx-auto mt-6 h-1 w-24 rounded-full bg-spice" />
+                <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-spice" />
               </div>
             </Reveal>
 
-            <div className="relative z-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="relative z-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {process.map((item, index) => (
                 <Reveal key={item.step} delay={index * 80}>
-                  <div className="group relative flex h-full flex-col items-center border border-gold/20 bg-brand-secondary p-8 text-center transition-all duration-500 hover:border-gold">
+                  <div className="group relative flex h-full flex-col items-center border border-gold/20 bg-brand-secondary p-6 text-center transition-all duration-500 hover:border-gold">
                     <div className="absolute inset-0 bg-spice/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <div className="absolute -top-6 left-1/2 flex size-12 -translate-x-1/2 items-center justify-center rounded-full bg-gold text-base font-bold text-brand shadow-lg transition-transform duration-300 group-hover:scale-110">
+                    <div className="absolute -top-5 left-1/2 flex size-11 -translate-x-1/2 items-center justify-center rounded-full bg-gold text-base font-bold text-brand shadow-lg transition-transform duration-300 group-hover:scale-110">
                       {item.step}
                     </div>
-                    <h3 className="relative z-10 mt-6 font-display text-xl font-bold text-gold">
+                    <h3 className="relative z-10 mt-5 font-display text-xl font-bold text-gold">
                       {item.title}
                     </h3>
-                    <p className="relative z-10 mt-4 text-sm leading-relaxed text-brand-foreground/80">
+                    <p className="relative z-10 mt-3 text-sm leading-relaxed text-brand-foreground/80">
                       {item.text}
                     </p>
                   </div>
@@ -468,7 +468,7 @@ function HomePage() {
             </div>
 
             {/* Bottom accent */}
-            <div className="relative z-10 mt-16 flex justify-center opacity-20 md:mt-20">
+            <div className="relative z-10 mt-10 flex justify-center opacity-20 md:mt-12">
               <div className="flex space-x-4">
                 <div className="size-3 rounded-full bg-gold" />
                 <div className="size-3 rounded-full bg-spice" />
