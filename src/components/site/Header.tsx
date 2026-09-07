@@ -69,6 +69,16 @@ export function Header() {
           : "",
       )}
     >
+      <div className="bg-[#FAF9ED] py-2 px-4 text-center text-xs font-semibold text-brand tracking-wide">
+        <span className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+          <span>Vijayapura's Authentic Spices</span>
+          <span aria-hidden="true" className="text-gold">•</span>
+          <span>Convenient WhatsApp Ordering & Direct Support Across India</span>
+          <span aria-hidden="true" className="text-gold">•</span>
+          <span>+91 89518 53252</span>
+        </span>
+      </div>
+
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3" aria-label={business.brand}>
           <img
