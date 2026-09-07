@@ -67,10 +67,10 @@ export const products: Product[] = [
     short:
       "Carefully selected dried red chillies, finely ground for rich colour and a clean, balanced heat.",
     category: "Powdered Spices",
-    image: redChilly,
-    packImage: packRedChilly.url,
-    packImageAlt: "Sanvita Red Chilly Powder retail pouch",
-    imageAlt:
+    image: packRedChilly.url,
+    packImage: redChilly,
+    imageAlt: "Sanvita Red Chilly Powder retail pouch",
+    packImageAlt:
       "Fine deep red Sanvita chilly powder in a wooden bowl beside whole dried red chillies",
     accent: "red",
     bestseller: true,
@@ -105,10 +105,10 @@ export const products: Product[] = [
     short:
       "A traditional roasted peanut chutney powder — nutty, aromatic and ready to serve with idli, dosa or hot rice.",
     category: "Chutney Powders",
-    image: peanutChutney,
-    packImage: packPeanutChutney.url,
-    packImageAlt: "Sanvita Peanut Chutney retail pouch",
-    imageAlt:
+    image: packPeanutChutney.url,
+    packImage: peanutChutney,
+    imageAlt: "Sanvita Peanut Chutney retail pouch",
+    packImageAlt:
       "Sanvita peanut chutney powder in a wooden bowl with roasted peanuts and dried red chillies",
     accent: "terracotta",
     bestseller: true,
@@ -148,10 +148,10 @@ export const products: Product[] = [
     short:
       "A fragrant blend of warm whole spices, ground to lift everyday curries with depth and aroma.",
     category: "Blends",
-    image: garamMasala,
-    packImage: packGaramMasala.url,
-    packImageAlt: "Sanvita Garam Masala retail pouch",
-    imageAlt:
+    image: packGaramMasala.url,
+    packImage: garamMasala,
+    imageAlt: "Sanvita Garam Masala retail pouch",
+    packImageAlt:
       "Sanvita garam masala powder in a wooden bowl surrounded by cardamom, cloves, cinnamon and star anise",
     accent: "brown",
     bestseller: true,
@@ -194,10 +194,10 @@ export const products: Product[] = [
     short:
       "Bright golden turmeric with a gentle, earthy aroma — the everyday base of Indian cooking.",
     category: "Powdered Spices",
-    image: turmeric,
-    packImage: packTurmeric.url,
-    packImageAlt: "Sanvita Turmeric Powder retail pouch",
-    imageAlt:
+    image: packTurmeric.url,
+    packImage: turmeric,
+    imageAlt: "Sanvita Turmeric Powder retail pouch",
+    packImageAlt:
       "Golden Sanvita turmeric powder in a wooden bowl with fresh turmeric roots beside it",
     accent: "gold",
     bestseller: true,
@@ -232,10 +232,10 @@ export const products: Product[] = [
     short:
       "Freshly ground coriander seeds with a light citrusy aroma that gives gravies natural body.",
     category: "Powdered Spices",
-    image: coriander,
-    packImage: packCoriander.url,
-    packImageAlt: "Sanvita Coriander Powder retail pouch",
-    imageAlt:
+    image: packCoriander.url,
+    packImage: coriander,
+    imageAlt: "Sanvita Coriander Powder retail pouch",
+    packImageAlt:
       "Sanvita coriander powder in a wooden bowl with coriander seeds and fresh coriander leaves",
     accent: "green",
     bestseller: false,
