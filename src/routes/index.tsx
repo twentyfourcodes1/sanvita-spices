@@ -1,24 +1,575 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  Flame,
+  Leaf,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Package,
+  Phone,
+  Quote,
+  ShieldCheck,
+  Sparkles,
+  UtensilsCrossed,
+} from "lucide-react";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import heroSpices from "@/assets/hero-spices.jpg";
+import brandStory from "@/assets/brand-story.jpg";
+import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
+import spiceExperience from "@/assets/spice-experience.jpg";
+import { Button } from "@/components/ui/button";
+import { CTASection } from "@/components/site/CTASection";
+import { ProductCard } from "@/components/site/ProductCard";
+import {
+  Reveal,
+  SectionHeading,
+  TrustCard,
+} from "@/components/site/primitives";
+import { business, formatPrice, products } from "@/lib/products";
+import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
+import { useCart } from "@/lib/cart";
+import { toast } from "sonner";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      {
+        title: "Sanvita Premium Spices | Authentic Indian Spices, Vijayapura",
+      },
+      {
+        name: "description",
+        content:
+          "Buy premium Indian spices online from Sanvita Premium Spices, Vijayapura — red chilly powder, turmeric powder, coriander powder, garam masala and peanut chutney. Order easily on WhatsApp.",
+      },
+      {
+        property: "og:title",
+        content: "Sanvita Premium Spices | Authentic Indian Spices",
+      },
+      {
+        property: "og:description",
+        content:
+          "Authentic spices. Richer flavours. Carefully prepared premium Indian spices from Vijayapura, Karnataka — order on WhatsApp.",
+      },
+    ],
+  }),
+  component: HomePage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+const trust = [
+  {
+    icon: <Flame className="size-5" />,
+    title: "Authentic Flavour",
+    description:
+      "Spices prepared to taste the way home cooking should — warm, aromatic and honest.",
+  },
+  {
+    icon: <Leaf className="size-5" />,
+    title: "Carefully Selected Ingredients",
+    description:
+      "We choose our raw spices carefully so colour, aroma and taste stay consistent.",
+  },
+  {
+    icon: <Package className="size-5" />,
+    title: "Freshly Packed",
+    description:
+      "Prepared and packed in small batches so freshness reaches your kitchen.",
+  },
+  {
+    icon: <UtensilsCrossed className="size-5" />,
+    title: "Made for Everyday Cooking",
+    description:
+      "Balanced blends that work across dals, sabzis, gravies, biryanis and more.",
+  },
+];
+
+const process = [
+  {
+    step: "01",
+    title: "Ingredient Selection",
+    text: "Raw spices are chosen for colour, aroma and cleanliness before anything else happens.",
+  },
+  {
+    step: "02",
+    title: "Preparation",
+    text: "Cleaned, roasted where needed and ground to the texture each spice deserves.",
+  },
+  {
+    step: "03",
+    title: "Packing",
+    text: "Packed promptly in sealed packs to protect aroma, colour and freshness.",
+  },
+  {
+    step: "04",
+    title: "Ready for Your Kitchen",
+    text: "Delivered to your home so everyday cooking starts with something better.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Sample testimonial text — replace with a real customer note once you collect one.",
+    name: "Customer name",
+    place: "City",
+  },
+  {
+    quote:
+      "Sample testimonial text — placeholder content for your future reviews.",
+    name: "Customer name",
+    place: "City",
+  },
+  {
+    quote:
+      "Sample testimonial text — easily editable placeholder review copy.",
+    name: "Customer name",
+    place: "City",
+  },
+];
+
+function HomePage() {
+  const { addItem, openCart } = useCart();
+  const bestsellers = products.filter((product) => product.bestseller);
+
+  const quickAdd = (slug: string) => {
+    const product = products.find((entry) => entry.slug === slug);
+    if (!product) return;
+    const variant = product.variants[0]!;
+    addItem({
+      slug: product.slug,
+      name: product.name,
+      variant: variant.label,
+      price: variant.price,
+      image: product.image,
+      quantity: 1,
+    });
+    toast.success(`${product.name} (${variant.label}) added to cart`, {
+      action: { label: "View cart", onClick: openCart },
+    });
+  };
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      {/* HERO */}
+      <section className="relative overflow-hidden">
+        <img
+          src={heroSpices}
+          alt="Wooden bowls of red chilli powder, turmeric, coriander powder and garam masala on ivory linen"
+          width={1920}
+          height={1200}
+          className="absolute inset-0 size-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/25" />
+        <div className="absolute -left-10 top-24 size-56 rounded-full bg-gold/25 blur-3xl animate-float-slow" />
+        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+          <div className="max-w-xl">
+            <p className="text-eyebrow text-spice">{business.brand}</p>
+            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
+              Authentic Spices.
+              <span className="block text-primary">Richer Flavours.</span>
+            </h1>
+            <div className="gold-rule mt-6 w-40" />
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Bring authentic aroma, colour and flavour to everyday cooking with
+              carefully prepared spices from {business.brand}.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button asChild size="lg">
+                <Link to="/products">Shop Our Spices</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="#featured">Explore Products</a>
+              </Button>
+            </div>
+            <dl className="mt-12 grid max-w-md grid-cols-3 gap-6">
+              {[
+                ["05", "Signature spices"],
+                ["100%", "Freshly packed"],
+                ["Vijayapura", "Karnataka, India"],
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <dt className="font-display text-2xl text-primary">
+                    {value}
+                  </dt>
+                  <dd className="mt-1 text-xs text-muted-foreground">
+                    {label}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURED PRODUCTS */}
+      <section id="featured" className="bg-cream-gradient py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our Collection"
+              title="The Sanvita Spice Shelf"
+              description="Five everyday essentials, prepared with care and packed fresh — choose your pack size and add them straight to your basket."
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+            {products.map((product, index) => (
+              <Reveal key={product.slug} delay={index * 80}>
+                <ProductCard product={product} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BRAND STORY */}
+      <section className="py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <Reveal>
+            <div className="relative">
+              <div className="absolute -bottom-6 -left-6 hidden size-40 rounded-3xl bg-gold/30 blur-2xl lg:block" />
+              <img
+                src={brandStory}
+                alt="Hands grinding Indian spices with brass bowls on a wooden table"
+                width={1408}
+                height={1008}
+                loading="lazy"
+                className="relative w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <SectionHeading
+              align="left"
+              eyebrow="Our Story"
+              title="A small business with a serious respect for flavour"
+            />
+            <div className="mt-6 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                {business.company} is a small-scale premium food and spices
+                business based in Vijayapura, Karnataka. We began with a simple
+                belief: everyday meals deserve spices that actually smell and
+                taste like they should.
+              </p>
+              <p>
+                Under our brand {business.brand}, we prepare a focused range of
+                powders and blends. Ingredients are selected carefully, prepared
+                in small batches and packed quickly, so the aroma you open at
+                home is the aroma we packed.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild>
+                <Link to="/about">Read our story</Link>
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => openWhatsApp(generalEnquiryMessage)}
+              >
+                <MessageCircle /> Talk to us
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE */}
+      <section className="bg-secondary/60 py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Why Sanvita"
+              title="Quality you can taste in everyday cooking"
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {trust.map((item, index) => (
+              <Reveal key={item.title} delay={index * 80}>
+                <TrustCard {...item} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CINEMATIC SPICE EXPERIENCE */}
+      <section className="relative mt-24 overflow-hidden">
+        <img
+          src={spiceExperience}
+          alt="Close-up of red chilli, turmeric, coriander and masala powders side by side"
+          width={1920}
+          height={912}
+          loading="lazy"
+          className="h-[420px] w-full object-cover sm:h-[520px]"
+        />
+        <div className="absolute inset-0 bg-charcoal/55" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <p className="text-eyebrow text-gold">The Spice Experience</p>
+          <h2 className="mt-4 max-w-2xl text-4xl leading-tight text-background sm:text-5xl">
+            Colour, aroma and texture — up close
+          </h2>
+          <ul className="mt-9 flex flex-wrap justify-center gap-3">
+            {["Red Chilly", "Turmeric", "Coriander", "Garam Masala", "Peanut"].map(
+              (label) => (
+                <li
+                  key={label}
+                  className="surface-glass rounded-full px-4 py-2 text-xs font-semibold text-background"
+                >
+                  {label}
+                </li>
+              ),
+            )}
+          </ul>
+        </div>
+      </section>
+
+      {/* BESTSELLERS */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Most Loved"
+              title="Bestselling Spices"
+              description="Quick-add the essentials, or send a direct WhatsApp enquiry if you need a different pack size."
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {bestsellers.map((product, index) => (
+              <Reveal key={product.slug} delay={index * 70}>
+                <div className="hover-lift flex h-full flex-col overflow-hidden rounded-3xl border border-gold/40 bg-card shadow-soft">
+                  <img
+                    src={product.image}
+                    alt={product.imageAlt}
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    className="aspect-4/3 w-full object-cover"
+                  />
+                  <div className="flex flex-1 flex-col p-5">
+                    <h3 className="text-xl">{product.name}</h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      {product.tagline}
+                    </p>
+                    <p className="mt-3 font-display text-2xl">
+                      {formatPrice(product.variants[0]!.price)}
+                      <span className="ml-1 text-xs font-sans text-muted-foreground">
+                        / {product.variants[0]!.label}
+                      </span>
+                    </p>
+                    <div className="mt-4 flex flex-col gap-2">
+                      <Button size="sm" onClick={() => quickAdd(product.slug)}>
+                        Quick Add
+                      </Button>
+                      <Button asChild size="sm" variant="outline">
+                        <Link
+                          to="/products/$slug"
+                          params={{ slug: product.slug }}
+                        >
+                          View Details
+                        </Link>
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="text-primary"
+                        onClick={() =>
+                          openWhatsApp(
+                            `Hello ${business.brand}, I am interested in your ${product.name}. Please share availability and ordering details.`,
+                          )
+                        }
+                      >
+                        <MessageCircle /> WhatsApp Enquiry
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FROM OUR KITCHEN TO YOURS */}
+      <section className="bg-secondary/60 py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              align="left"
+              eyebrow="From Our Kitchen to Yours"
+              title="The everyday meals that deserve better spices"
+              description="A weekday dal, a Sunday biryani, a quick chutney with hot rice — the food that fills Indian homes is simple. Good spices are what make it memorable."
+            />
+            <ul className="mt-8 space-y-4">
+              {[
+                "Consistent colour and aroma, batch after batch",
+                "Blends balanced for family cooking, not restaurant heat",
+                "Pack sizes for both small kitchens and big households",
+              ].map((point) => (
+                <li key={point} className="flex gap-3 text-sm">
+                  <Sparkles className="mt-0.5 size-4 shrink-0 text-gold" />
+                  <span className="text-muted-foreground">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <Reveal delay={120}>
+            <img
+              src={kitchenLifestyle}
+              alt="Freshly cooked Indian curry in a pan beside a brass spice box"
+              width={1408}
+              height={1008}
+              loading="lazy"
+              className="w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our Process"
+              title="Four careful steps to your kitchen"
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {process.map((item, index) => (
+              <Reveal key={item.step} delay={index * 80}>
+                <div className="h-full rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+                  <span className="font-display text-4xl text-gold">
+                    {item.step}
+                  </span>
+                  <h3 className="mt-4 text-xl">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.text}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTASection />
+
+      {/* TESTIMONIALS */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Kind Words"
+              title="What customers will say"
+              description="Sample placeholder notes — share your real customer feedback with us and we will put it here."
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {testimonials.map((item, index) => (
+              <Reveal key={index} delay={index * 90}>
+                <blockquote className="h-full rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+                  <Quote className="size-6 text-gold" />
+                  <p className="mt-4 font-display text-xl leading-relaxed">
+                    {item.quote}
+                  </p>
+                  <footer className="mt-5 text-xs text-muted-foreground">
+                    {item.name} · {item.place}
+                  </footer>
+                </blockquote>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT / LOCATION */}
+      <section className="bg-secondary/60 py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              align="left"
+              eyebrow="Visit or Reach Us"
+              title="We are happy to help with your order"
+            />
+            <address className="mt-7 space-y-3 text-base not-italic leading-relaxed text-muted-foreground">
+              <p className="font-semibold text-foreground">
+                {business.company}
+              </p>
+              <p className="flex gap-3">
+                <MapPin className="mt-1 size-4 shrink-0 text-gold" />
+                <span>
+                  {business.address.line1},<br />
+                  {business.address.line2},<br />
+                  {business.address.city}
+                </span>
+              </p>
+              <p className="flex gap-3">
+                <Phone className="mt-0.5 size-4 shrink-0 text-gold" />
+                {business.phoneDisplay}
+              </p>
+              <p className="flex gap-3">
+                <Mail className="mt-0.5 size-4 shrink-0 text-gold" />
+                <span className="break-all">{business.email}</span>
+              </p>
+            </address>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild>
+                <a href={`tel:${business.phoneDial}`}>
+                  <Phone /> Call Us
+                </a>
+              </Button>
+              <Button
+                variant="whatsapp"
+                onClick={() => openWhatsApp(generalEnquiryMessage)}
+              >
+                <MessageCircle /> WhatsApp Us
+              </Button>
+              <Button asChild variant="outline">
+                <a href={`mailto:${business.email}`}>
+                  <Mail /> Email Us
+                </a>
+              </Button>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="grid h-full gap-4 sm:grid-cols-2">
+              {[
+                {
+                  icon: <ShieldCheck className="size-5" />,
+                  title: "Quality-Focused",
+                  text: "Careful selection and preparation at every step.",
+                },
+                {
+                  icon: <MessageCircle className="size-5" />,
+                  title: "Secure WhatsApp Ordering",
+                  text: "No online payment needed — confirm directly with us.",
+                },
+                {
+                  icon: <Package className="size-5" />,
+                  title: "Carefully Packed",
+                  text: "Sealed packs that protect aroma in transit.",
+                },
+                {
+                  icon: <Phone className="size-5" />,
+                  title: "Customer Support",
+                  text: "Call or message us for anything about your order.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-3xl border border-gold/40 bg-card p-6 shadow-soft"
+                >
+                  <span className="grid size-11 place-items-center rounded-2xl bg-gold-gradient text-charcoal">
+                    {item.icon}
+                  </span>
+                  <h3 className="mt-4 text-lg">{item.title}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+    </>
   );
 }
