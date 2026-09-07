@@ -300,6 +300,7 @@ function HomePage() {
               <Reveal key={item.title} delay={index * 80}>
                 <TrustCard
                   {...item}
+                  variant="dark"
                   className={index % 2 === 1 ? "lg:mt-6" : ""}
                 />
               </Reveal>
