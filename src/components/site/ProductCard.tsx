@@ -86,25 +86,6 @@ export function ProductCard({ product }: { product: Product }) {
           <Button onClick={handleAdd} className="w-full">
             <ShoppingBag /> Add to Cart
           </Button>
-          <div className="flex gap-2">
-            <Button asChild variant="outline" size="sm" className="flex-1">
-              <Link to="/products/$slug" params={{ slug: product.slug }}>
-                View Product
-              </Link>
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="flex-1 text-brand"
-              onClick={() =>
-                openWhatsApp(
-                  productEnquiryMessage(product.name, variant.label, quantity),
-                )
-              }
-            >
-              <MessageCircle /> Enquire
-            </Button>
-          </div>
         </div>
       </div>
     </article>
