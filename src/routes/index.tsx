@@ -363,26 +363,6 @@ function HomePage() {
                       <Button size="sm" onClick={() => quickAdd(product.slug)}>
                         Quick Add
                       </Button>
-                      <Button asChild size="sm" variant="outline">
-                        <Link
-                          to="/products/$slug"
-                          params={{ slug: product.slug }}
-                        >
-                          View Details
-                        </Link>
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="text-primary"
-                        onClick={() =>
-                          openWhatsApp(
-                            `Hello ${business.brand}, I am interested in your ${product.name}. Please share availability and ordering details.`,
-                          )
-                        }
-                      >
-                        <MessageCircle /> WhatsApp Enquiry
-                      </Button>
                     </div>
                   </div>
                 </div>
