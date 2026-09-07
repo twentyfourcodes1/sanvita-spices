@@ -59,25 +59,25 @@ export const Route = createFileRoute("/")({
 
 const trust = [
   {
-    icon: <Flame className="size-5" />,
+    icon: <Flame className="size-6" />,
     title: "Authentic Flavour",
     description:
       "Spices prepared to taste the way home cooking should — warm, aromatic and honest.",
   },
   {
-    icon: <Leaf className="size-5" />,
+    icon: <Leaf className="size-6" />,
     title: "Carefully Selected Ingredients",
     description:
       "We choose our raw spices carefully so colour, aroma and taste stay consistent.",
   },
   {
-    icon: <Package className="size-5" />,
+    icon: <Package className="size-6" />,
     title: "Freshly Packed",
     description:
       "Prepared and packed in small batches so freshness reaches your kitchen.",
   },
   {
-    icon: <UtensilsCrossed className="size-5" />,
+    icon: <UtensilsCrossed className="size-6" />,
     title: "Made for Everyday Cooking",
     description:
       "Balanced blends that work across dals, sabzis, gravies, biryanis and more.",
@@ -277,18 +277,32 @@ function HomePage() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section className="bg-brand py-24 text-brand-foreground">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-brand py-24 text-brand-foreground">
+        {/* Decorative border circles */}
+        <div className="absolute top-0 left-0 h-64 w-64 -translate-x-12 -translate-y-12 rounded-full border-l border-t border-gold/20" />
+        <div className="absolute bottom-0 right-0 h-96 w-96 translate-x-24 translate-y-24 rounded-full border-r border-b border-gold/10" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <SectionHeading
-              eyebrow="Why Sanvita"
-              title="Quality you can taste in everyday cooking"
-            />
+            <div className="mb-20 text-center">
+              <span className="text-eyebrow text-spice">The Sanvita Promise</span>
+              <h2 className="mt-4 font-display text-4xl leading-tight text-gold sm:text-5xl">
+                Why Sanvita
+              </h2>
+              <div className="gold-rule mx-auto mt-6 w-24" />
+              <p className="mx-auto mt-6 max-w-2xl text-xl font-light italic text-brand-foreground/80">
+                Quality you can taste in everyday cooking
+              </p>
+            </div>
           </Reveal>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {trust.map((item, index) => (
               <Reveal key={item.title} delay={index * 80}>
-                <TrustCard {...item} />
+                <TrustCard
+                  {...item}
+                  variant="dark"
+                  className={index % 2 === 1 ? "lg:mt-6" : ""}
+                />
               </Reveal>
             ))}
           </div>
