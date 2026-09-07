@@ -14,8 +14,8 @@ export function Footer() {
           <img
             src={logo.url}
             alt={`${business.brand} logo`}
-            width={220}
-            height={110}
+            width={236}
+            height={100}
             loading="lazy"
             className="h-14 w-auto"
           />
