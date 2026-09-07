@@ -512,7 +512,7 @@ function HomePage() {
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {testimonials.map((item, index) => (
               <Reveal key={index} delay={index * 90}>
-                <blockquote className="group relative flex h-full flex-col items-center rounded-lg border border-gold/20 bg-card p-8 pt-10 text-center shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold/50 hover:shadow-card">
+                <blockquote className="group relative flex h-full flex-col items-center rounded-lg border border-gold/20 bg-card p-8 pt-10 text-center shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold/50 hover:shadow-lift">
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FDFBF6] px-4 text-gold">
                     <Quote className="size-6 fill-current" />
                   </div>
