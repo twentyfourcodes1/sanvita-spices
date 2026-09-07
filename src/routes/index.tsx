@@ -59,25 +59,25 @@ export const Route = createFileRoute("/")({
 
 const trust = [
   {
-    icon: <Flame className="size-5" />,
+    icon: <Flame className="size-6" />,
     title: "Authentic Flavour",
     description:
       "Spices prepared to taste the way home cooking should — warm, aromatic and honest.",
   },
   {
-    icon: <Leaf className="size-5" />,
+    icon: <Leaf className="size-6" />,
     title: "Carefully Selected Ingredients",
     description:
       "We choose our raw spices carefully so colour, aroma and taste stay consistent.",
   },
   {
-    icon: <Package className="size-5" />,
+    icon: <Package className="size-6" />,
     title: "Freshly Packed",
     description:
       "Prepared and packed in small batches so freshness reaches your kitchen.",
   },
   {
-    icon: <UtensilsCrossed className="size-5" />,
+    icon: <UtensilsCrossed className="size-6" />,
     title: "Made for Everyday Cooking",
     description:
       "Balanced blends that work across dals, sabzis, gravies, biryanis and more.",
