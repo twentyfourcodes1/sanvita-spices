@@ -137,12 +137,36 @@ function ProductPage() {
           <div>
             <div className="group overflow-hidden rounded-lg border border-gold/50 shadow-lift">
               <img
-                src={product.image}
-                alt={product.imageAlt}
+                src={gallery[activeImage]!.src}
+                alt={gallery[activeImage]!.alt}
                 width={1024}
                 height={1024}
-                className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="aspect-square w-full bg-card object-cover transition-transform duration-700 group-hover:scale-105"
               />
+            </div>
+            <div className="mt-4 flex gap-3">
+              {gallery.map((shot, index) => (
+                <button
+                  key={shot.src}
+                  type="button"
+                  onClick={() => setActiveImage(index)}
+                  aria-label={`View ${shot.alt}`}
+                  aria-current={index === activeImage}
+                  className={`overflow-hidden rounded-md border transition ${
+                    index === activeImage
+                      ? "border-gold ring-2 ring-gold/40"
+                      : "border-gold/40 hover:border-gold"
+                  }`}
+                >
+                  <img
+                    src={shot.src}
+                    alt={shot.alt}
+                    width={160}
+                    height={160}
+                    className="size-20 bg-card object-cover"
+                  />
+                </button>
+              ))}
             </div>
             <div className="mt-4 grid grid-cols-3 gap-3">
               {[
