@@ -126,12 +126,6 @@ const testimonials = [
     name: "Anita Deshpande",
     place: "Hubballi, Karnataka",
   },
-  {
-    quote:
-      "I run a small catering business and switched to these spices after one trial. The flavour is consistent and my clients keep asking what I use.",
-    name: "Farhan Qureshi",
-    place: "Bijapur, Karnataka",
-  },
 ];
 
 function HomePage() {
