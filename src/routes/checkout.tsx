@@ -289,10 +289,10 @@ function Field({
   label: string;
   value: string;
   onChange: (value: string) => void;
-  error?: string;
+  error?: string | undefined;
   type?: string;
-  inputMode?: "tel" | "numeric" | "text";
-  className?: string;
+  inputMode?: "tel" | "numeric" | "text" | undefined;
+  className?: string | undefined;
 }) {
   const id = label.replace(/\W+/g, "-").toLowerCase();
   return (
