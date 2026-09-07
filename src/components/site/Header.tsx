@@ -162,7 +162,7 @@ export function Header() {
       ) : null}
 
       <Dialog open={searchOpen} onOpenChange={setSearchOpen}>
-        <DialogContent className="max-w-lg rounded-3xl">
+        <DialogContent className="max-w-lg rounded-lg">
           <DialogHeader>
             <DialogTitle className="font-display text-2xl">
               Search our spices
@@ -173,7 +173,7 @@ export function Header() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Try turmeric, chilli powder, garam masala…"
-            className="h-12 rounded-full"
+            className="h-12 rounded-md"
           />
           <ul className="max-h-72 space-y-1 overflow-y-auto">
             {results.length === 0 ? (
@@ -186,7 +186,7 @@ export function Header() {
                   <Link
                     to="/products/$slug"
                     params={{ slug: product.slug }}
-                    className="flex items-center gap-3 rounded-2xl p-2 transition-colors hover:bg-secondary"
+                    className="flex items-center gap-3 rounded-md p-2 transition-colors hover:bg-secondary"
                   >
                     <img
                       src={product.image}
@@ -194,7 +194,7 @@ export function Header() {
                       width={56}
                       height={56}
                       loading="lazy"
-                      className="size-12 rounded-xl object-cover"
+                      className="size-12 rounded-md object-cover"
                     />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate font-semibold">

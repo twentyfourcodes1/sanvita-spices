@@ -31,6 +31,8 @@ export const Route = createFileRoute("/about")({
         content:
           "Our story, philosophy and approach to preparing authentic Indian spices in Vijayapura, Karnataka.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AboutPage,

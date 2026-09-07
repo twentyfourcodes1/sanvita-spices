@@ -22,6 +22,8 @@ export const Route = createFileRoute("/cart")({
         content:
           "Review your spice order and place it on WhatsApp — no online payment needed.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -43,13 +45,13 @@ function CartPage() {
           {[0, 1].map((key) => (
             <div
               key={key}
-              className="h-28 animate-pulse rounded-3xl bg-secondary"
+              className="h-28 animate-pulse rounded-lg bg-secondary"
             />
           ))}
         </div>
       ) : items.length === 0 ? (
         <div className="mt-14 rounded-lg border border-gold/40 bg-card p-14 text-center shadow-soft">
-          <div className="mx-auto grid size-16 place-items-center rounded-full bg-gold-gradient text-charcoal">
+          <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
             <ShoppingBasket className="size-7" />
           </div>
           <h2 className="mt-6 text-3xl">Your spice basket is empty.</h2>

@@ -34,6 +34,8 @@ export const Route = createFileRoute("/products/")({
         content:
           "Browse our full range of premium Indian spices with editable pack sizes and easy WhatsApp ordering.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ProductsPage,

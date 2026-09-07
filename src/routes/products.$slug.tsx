@@ -52,6 +52,8 @@ export const Route = createFileRoute("/products/$slug")({
         { name: "description", content: product.short },
         { property: "og:title", content: title },
         { property: "og:description", content: product.short },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       scripts: [
         {

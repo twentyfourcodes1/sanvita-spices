@@ -29,6 +29,8 @@ export const Route = createFileRoute("/contact")({
         content:
           "Reach our team in Vijayapura for orders, pack sizes and bulk enquiries.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ContactPage,

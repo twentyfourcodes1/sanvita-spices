@@ -50,6 +50,8 @@ export const Route = createFileRoute("/")({
         content:
           "Authentic spices. Richer flavours. Carefully prepared premium Indian spices from Vijayapura, Karnataka — order on WhatsApp.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: HomePage,

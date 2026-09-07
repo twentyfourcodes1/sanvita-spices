@@ -30,6 +30,8 @@ export const Route = createFileRoute("/checkout")({
         content:
           "Share your delivery details and send your order to us directly on WhatsApp.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -97,7 +99,7 @@ function CheckoutPage() {
   if (items.length === 0) {
     return (
       <section className="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6">
-        <div className="mx-auto grid size-16 place-items-center rounded-full bg-gold-gradient text-charcoal">
+        <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
           <ShoppingBasket className="size-7" />
         </div>
         <h1 className="mt-6 text-4xl">Your spice basket is empty.</h1>

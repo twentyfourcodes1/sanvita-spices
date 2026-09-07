@@ -27,7 +27,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Quick Links</h3>
+          <h3 className="text-eyebrow text-primary">Quick Links</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {[
               { label: "Home", to: "/" as const },
@@ -48,7 +48,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Products</h3>
+          <h3 className="text-eyebrow text-primary">Products</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {products.map((product) => (
               <li key={product.slug}>
@@ -65,7 +65,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Contact</h3>
+          <h3 className="text-eyebrow text-primary">Contact</h3>
           <address className="mt-5 space-y-3 text-sm not-italic text-brand-foreground/70">
             <p className="font-semibold text-brand-foreground">{business.company}</p>
             <p className="flex gap-2">
