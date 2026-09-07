@@ -15,9 +15,9 @@ export function Footer() {
             src={logo.url}
             alt={`${business.brand} logo`}
             width={220}
-            height={140}
+            height={110}
             loading="lazy"
-            className="h-14 w-auto rounded-md"
+            className="h-14 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-brand-foreground/70">
             {business.brand} brings authentic aroma, colour and flavour to
