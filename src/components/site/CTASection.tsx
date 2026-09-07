@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-import spiceBanner from "@/assets/spice-experience.jpg";
+import ctaBackground from "@/assets/cta-spice-world.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { business } from "@/lib/products";
 import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
@@ -16,10 +16,10 @@ export function CTASection({
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="relative overflow-hidden rounded-lg border border-gold/50 shadow-lift">
         <img
-          src={spiceBanner}
-          alt="Mounds of red chilli, turmeric, coriander and masala powders"
+          src={ctaBackground.url}
+          alt="Spice bowls and a golden world map showing India connected by glowing trade routes"
           width={1920}
-          height={912}
+          height={1080}
           loading="lazy"
           className="absolute inset-0 size-full object-cover"
         />
