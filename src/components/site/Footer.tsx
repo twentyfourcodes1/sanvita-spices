@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
-import logo from "@/assets/sanvita-logo.jpeg.asset.json";
+import logo from "@/assets/sanvita-logo.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { business, products } from "@/lib/products";
 import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
@@ -15,9 +15,9 @@ export function Footer() {
             src={logo.url}
             alt={`${business.brand} logo`}
             width={220}
-            height={140}
+            height={110}
             loading="lazy"
-            className="h-14 w-auto rounded-md"
+            className="h-14 w-auto"
           />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-brand-foreground/70">
             {business.brand} brings authentic aroma, colour and flavour to

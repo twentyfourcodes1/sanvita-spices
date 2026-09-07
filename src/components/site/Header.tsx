@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
-import logo from "@/assets/sanvita-logo.jpeg.asset.json";
+import logo from "@/assets/sanvita-logo.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -74,9 +74,9 @@ export function Header() {
           <img
             src={logo.url}
             alt={`${business.brand} logo`}
-            width={176}
-            height={112}
-            className="h-11 w-auto rounded-md sm:h-12"
+            width={220}
+            height={110}
+            className="h-11 w-auto sm:h-12"
           />
         </Link>
 
