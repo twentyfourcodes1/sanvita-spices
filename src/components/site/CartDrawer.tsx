@@ -94,7 +94,7 @@ export function CartDrawer() {
               ))}
             </ul>
 
-            <div className="border-t border-gold/40 bg-secondary/60 px-6 py-5">
+          <div className="border-t border-gold/40 bg-secondary px-6 py-5">
               <div className="flex items-center justify-between">
                 <span className="text-eyebrow text-muted-foreground">
                   Subtotal

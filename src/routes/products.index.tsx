@@ -78,7 +78,7 @@ function ProductsPage() {
     <>
       <section className="bg-cream-gradient py-20">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-eyebrow text-spice">Our Products</p>
+          <p className="text-eyebrow text-brand">Our Products</p>
           <h1 className="mx-auto mt-4 max-w-3xl text-5xl leading-tight sm:text-6xl">
             Discover the Flavours of Sanvita
           </h1>
@@ -92,7 +92,7 @@ function ProductsPage() {
 
       <section className="py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="surface-glass flex flex-col gap-4 rounded-3xl p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div className="surface-glass flex flex-col gap-4 rounded-lg p-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative w-full lg:max-w-sm">
               <Search className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
               <Input
@@ -100,7 +100,7 @@ function ProductsPage() {
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Search spices…"
                 aria-label="Search products"
-                className="h-11 rounded-full pl-11"
+                className="h-11 rounded-md pl-11"
               />
             </div>
 
@@ -112,7 +112,7 @@ function ProductsPage() {
                   onClick={() => setCategory(item)}
                   aria-pressed={category === item}
                   className={cn(
-                    "rounded-full border px-4 py-2 text-xs font-semibold transition-all",
+                     "rounded-md border px-4 py-2 text-xs font-semibold transition-all",
                     category === item
                       ? "border-primary bg-primary text-primary-foreground"
                       : "border-border bg-card text-muted-foreground hover:border-gold hover:text-foreground",
@@ -124,7 +124,7 @@ function ProductsPage() {
             </div>
 
             <Select value={sort} onValueChange={(v) => setSort(v as Sort)}>
-              <SelectTrigger className="h-11 w-full rounded-full lg:w-52">
+             <SelectTrigger className="h-11 w-full rounded-md lg:w-52">
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>
               <SelectContent>
@@ -141,7 +141,7 @@ function ProductsPage() {
           </p>
 
           {visible.length === 0 ? (
-            <div className="mt-16 rounded-3xl border border-gold/40 bg-card p-14 text-center shadow-soft">
+            <div className="mt-16 rounded-lg border border-gold/40 bg-card p-14 text-center shadow-soft">
               <h2 className="text-2xl">No spices match that search</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Try a different word — for example turmeric, chilli or masala.
