@@ -411,29 +411,74 @@ function HomePage() {
       {/* PROCESS */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Our Process"
-              title="Four careful steps to your kitchen"
-            />
-          </Reveal>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {process.map((item, index) => (
-              <Reveal key={item.step} delay={index * 80}>
-                <div className="h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
-                  <span className="font-display text-4xl text-gold">
-                    {item.step}
-                  </span>
-                  <h3 className="mt-4 text-xl">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.text}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-brand px-8 py-16 shadow-2xl md:px-16 md:py-24">
+            {/* Decorative background pattern */}
+            <div className="pointer-events-none absolute inset-0 opacity-[0.05]">
+              <svg
+                className="size-full"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
+                <pattern
+                  id="processMandala"
+                  x="0"
+                  y="0"
+                  width="100"
+                  height="100"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z"
+                    fill="var(--gold)"
+                  />
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#processMandala)" />
+              </svg>
+            </div>
+
+            <Reveal>
+              <div className="relative z-10 mb-16 text-center md:mb-20">
+                <span className="text-eyebrow mb-4 block text-gold">
+                  Our Process
+                </span>
+                <h2 className="font-display text-4xl italic text-brand-foreground md:text-5xl">
+                  Four careful steps to your kitchen
+                </h2>
+                <div className="mx-auto mt-6 h-1 w-24 rounded-full bg-spice" />
+              </div>
+            </Reveal>
+
+            <div className="relative z-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {process.map((item, index) => (
+                <Reveal key={item.step} delay={index * 80}>
+                  <div className="group relative flex flex-col items-center overflow-hidden border border-gold/20 bg-brand-secondary p-8 text-center transition-all duration-500 hover:border-gold">
+                    <div className="absolute inset-0 bg-spice/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="absolute -top-6 left-1/2 flex size-12 -translate-x-1/2 items-center justify-center rounded-full bg-gold text-base font-bold text-brand shadow-lg transition-transform duration-300 group-hover:scale-110">
+                      {item.step}
+                    </div>
+                    <h3 className="relative z-10 mt-6 font-display text-xl font-bold text-gold">
+                      {item.title}
+                    </h3>
+                    <p className="relative z-10 mt-4 text-sm leading-relaxed text-brand-foreground/80">
+                      {item.text}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+            {/* Bottom accent */}
+            <div className="relative z-10 mt-16 flex justify-center opacity-20 md:mt-20">
+              <div className="flex space-x-4">
+                <div className="size-3 rounded-full bg-gold" />
+                <div className="size-3 rounded-full bg-spice" />
+                <div className="size-3 rounded-full bg-gold" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
       <CTASection />
 
