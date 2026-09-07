@@ -69,7 +69,7 @@ export function Header() {
           : "",
       )}
     >
-      <div className="bg-[#FAF9ED] py-2 px-4 text-center text-xs font-semibold text-brand tracking-wide">
+      <div className="hidden md:block bg-[#FAF9ED] py-2 px-4 text-center text-xs font-semibold text-brand tracking-wide">
         <span className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
           <span>Vijayapura's Authentic Spices</span>
           <span aria-hidden="true" className="text-gold">•</span>
