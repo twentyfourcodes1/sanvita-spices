@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { MessageCircle, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { QuantitySelector, VariantSelector } from "@/components/site/primitives";
 import { useCart } from "@/lib/cart";
 import { formatPrice, type Product } from "@/lib/products";
-import { openWhatsApp, productEnquiryMessage } from "@/lib/whatsapp";
 
 export function ProductCard({ product }: { product: Product }) {
   const { addItem, openCart } = useCart();
