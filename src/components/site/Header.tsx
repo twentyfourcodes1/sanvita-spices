@@ -63,10 +63,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all duration-500",
+        "sticky top-0 z-50 border-b border-gold/30 bg-brand text-brand-foreground transition-all duration-500",
         scrolled
-          ? "border-b border-gold/40 bg-background/88 shadow-soft backdrop-blur-xl"
-          : "bg-background",
+          ? "shadow-lift"
+          : "",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
@@ -86,8 +86,8 @@ export function Header() {
               key={item.to}
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
-              className="rounded-full px-4 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-              activeProps={{ className: "bg-primary/10 text-primary" }}
+              className="rounded-md px-4 py-2 text-sm font-semibold text-brand-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary"
+              activeProps={{ className: "bg-primary/12 text-primary" }}
             >
               {item.label}
             </Link>
@@ -99,7 +99,7 @@ export function Header() {
             type="button"
             aria-label="Search products"
             onClick={() => setSearchOpen(true)}
-            className="grid size-10 place-items-center rounded-full text-foreground transition-colors hover:bg-secondary"
+            className="grid size-10 place-items-center rounded-md text-brand-foreground transition-colors hover:bg-primary/15 hover:text-primary"
           >
             <Search className="size-5" />
           </button>
@@ -107,7 +107,7 @@ export function Header() {
             type="button"
             aria-label="Chat with us on WhatsApp"
             onClick={() => openWhatsApp(generalEnquiryMessage)}
-            className="hidden size-10 place-items-center rounded-full text-primary transition-colors hover:bg-secondary sm:grid"
+            className="hidden size-10 place-items-center rounded-md text-primary transition-colors hover:bg-primary/15 sm:grid"
           >
             <MessageCircle className="size-5" />
           </button>
@@ -115,7 +115,7 @@ export function Header() {
             type="button"
             aria-label={`Open cart, ${count} items`}
             onClick={openCart}
-            className="relative grid size-10 place-items-center rounded-full text-foreground transition-colors hover:bg-secondary"
+            className="relative grid size-10 place-items-center rounded-md text-brand-foreground transition-colors hover:bg-primary/15 hover:text-primary"
           >
             <ShoppingBag className="size-5" />
             {count > 0 ? (
@@ -129,7 +129,7 @@ export function Header() {
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
-            className="grid size-10 place-items-center rounded-full text-foreground transition-colors hover:bg-secondary md:hidden"
+            className="grid size-10 place-items-center rounded-md text-brand-foreground transition-colors hover:bg-primary/15 hover:text-primary md:hidden"
           >
             {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
@@ -137,14 +137,14 @@ export function Header() {
       </div>
 
       {menuOpen ? (
-        <div className="border-t border-gold/40 bg-background px-4 pb-5 pt-3 md:hidden">
+        <div className="border-t border-gold/30 bg-brand px-4 pb-5 pt-3 text-brand-foreground md:hidden">
           <nav className="flex flex-col" aria-label="Mobile">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 activeOptions={{ exact: item.to === "/" }}
-                className="border-b border-border/70 py-3 font-display text-2xl text-foreground"
+                className="border-b border-gold/20 py-3 font-display text-2xl text-brand-foreground"
                 activeProps={{ className: "text-primary" }}
               >
                 {item.label}

@@ -24,7 +24,7 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <p className="text-eyebrow text-spice">{eyebrow}</p>
+        <p className="text-eyebrow text-brand">{eyebrow}</p>
       ) : null}
       <h2 className="mt-3 text-4xl leading-tight sm:text-5xl">{title}</h2>
       <div
@@ -103,7 +103,7 @@ export function QuantitySelector({
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full border border-gold/60 bg-card",
+        "inline-flex items-center rounded-md border border-gold/60 bg-card",
         size === "sm" ? "gap-1 p-0.5" : "gap-2 p-1",
       )}
       role="group"
@@ -114,7 +114,7 @@ export function QuantitySelector({
         aria-label="Decrease quantity"
         onClick={() => onChange(Math.max(1, value - 1))}
         className={cn(
-          "grid place-items-center rounded-full text-foreground transition-colors hover:bg-secondary",
+           "grid place-items-center rounded-sm text-foreground transition-colors hover:bg-secondary",
           size === "sm" ? "size-7" : "size-9",
         )}
       >
@@ -133,7 +133,7 @@ export function QuantitySelector({
         aria-label="Increase quantity"
         onClick={() => onChange(value + 1)}
         className={cn(
-          "grid place-items-center rounded-full text-foreground transition-colors hover:bg-secondary",
+           "grid place-items-center rounded-sm text-foreground transition-colors hover:bg-secondary",
           size === "sm" ? "size-7" : "size-9",
         )}
       >
@@ -163,7 +163,7 @@ export function VariantSelector({
             aria-pressed={active}
             onClick={() => onChange(variant.label)}
             className={cn(
-              "rounded-full border px-4 py-1.5 text-sm font-semibold transition-all duration-300",
+              "rounded-md border px-4 py-1.5 text-sm font-semibold transition-all duration-300",
               active
                 ? "border-primary bg-primary text-primary-foreground shadow-soft"
                 : "border-border bg-card text-muted-foreground hover:border-gold hover:text-foreground",
@@ -187,8 +187,8 @@ export function TrustCard({
   description: string;
 }) {
   return (
-    <div className="hover-lift group h-full rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
-      <div className="grid size-12 place-items-center rounded-2xl bg-gold-gradient text-charcoal">
+    <div className="hover-lift group h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
+      <div className="grid size-12 place-items-center rounded-md bg-gold-gradient text-charcoal">
         {icon}
       </div>
       <h3 className="mt-5 text-2xl">{title}</h3>
