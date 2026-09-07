@@ -177,7 +177,12 @@ function HomePage() {
               <Button asChild size="lg">
                 <Link to="/products">Shop Our Spices</Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="text-brand-foreground hover:bg-gold hover:text-charcoal"
+              >
                 <a href="#featured">Explore Products</a>
               </Button>
             </div>
