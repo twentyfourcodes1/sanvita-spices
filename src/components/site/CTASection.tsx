@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-import spiceBanner from "@/assets/spice-experience.jpg";
+import ctaBackground from "@/assets/cta-spice-world.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { business } from "@/lib/products";
 import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
