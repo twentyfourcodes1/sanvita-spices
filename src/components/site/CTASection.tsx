@@ -23,7 +23,7 @@ export function CTASection({
           loading="lazy"
           className="absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand/82" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/90 via-black/75 to-black/55" />
         <div className="relative px-6 py-16 text-center sm:px-12 sm:py-24">
           <p className="text-eyebrow text-gold">WhatsApp Ordering</p>
            <h2 className="mx-auto mt-4 max-w-3xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
