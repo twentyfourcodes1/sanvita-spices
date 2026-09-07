@@ -46,7 +46,15 @@ export function ProductCard({ product }: { product: Product }) {
           width={1024}
           height={1024}
           loading="lazy"
-          className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-107"
+          className="aspect-square w-full object-cover"
+        />
+        <img
+          src={product.packImage}
+          alt={product.packImageAlt}
+          width={1024}
+          height={1024}
+          loading="lazy"
+          className="pointer-events-none absolute inset-0 aspect-square w-full object-cover transition-transform duration-700 ease-out translate-y-full group-hover:translate-y-0"
         />
         {product.bestseller ? (
           <span className="text-eyebrow absolute left-4 top-4 rounded-sm bg-primary px-3 py-1.5 text-primary-foreground">
