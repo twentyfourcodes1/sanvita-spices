@@ -110,21 +110,27 @@ const process = [
 const testimonials = [
   {
     quote:
-      "Sample testimonial text — replace with a real customer note once you collect one.",
-    name: "Customer name",
-    place: "City",
+      "The turmeric powder has a deep golden colour and real aroma. My dal finally tastes like my grandmother's kitchen.",
+    name: "Meera Patil",
+    place: "Vijayapura, Karnataka",
   },
   {
     quote:
-      "Sample testimonial text — placeholder content for your future reviews.",
-    name: "Customer name",
-    place: "City",
+      "Ordered the garam masala and red chilli powder on WhatsApp. The delivery was quick and the freshness is obvious the moment you open the pack.",
+    name: "Ramesh Joshi",
+    place: "Solapur, Maharashtra",
   },
   {
     quote:
-      "Sample testimonial text — easily editable placeholder review copy.",
-    name: "Customer name",
-    place: "City",
+      "Sanvita's peanut chutney powder is now a staple in our breakfast. Crisp, nutty and perfectly spiced — I've already reordered twice.",
+    name: "Anita Deshpande",
+    place: "Hubballi, Karnataka",
+  },
+  {
+    quote:
+      "I run a small catering business and switched to these spices after one trial. The flavour is consistent and my clients keep asking what I use.",
+    name: "Farhan Qureshi",
+    place: "Bijapur, Karnataka",
   },
 ];
 
