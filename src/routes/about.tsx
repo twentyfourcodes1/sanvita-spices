@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flame, Leaf, Package, UtensilsCrossed } from "lucide-react";
 
-import brandStory from "@/assets/brand-story.jpg";
+import brandStory from "@/assets/brand-story-spices.png.asset.json";
 import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
 import heroSpices from "@/assets/hero-spices.jpg";
 import { Button } from "@/components/ui/button";
@@ -83,8 +83,8 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={120}>
             <img
-              src={brandStory}
-              alt="Indian spices being ground by hand with brass bowls nearby"
+              src={brandStory.url}
+              alt="Colourful Indian spices arranged in wooden bowls and spoons on a dark surface"
               width={1408}
               height={1008}
               loading="lazy"
