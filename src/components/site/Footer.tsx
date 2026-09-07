@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
-import logo from "@/assets/sanvita-logo.png.asset.json";
+import logo from "@/assets/sanvita-logo-gold.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { business, products } from "@/lib/products";
 import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
