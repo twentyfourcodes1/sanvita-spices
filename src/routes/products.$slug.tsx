@@ -107,6 +107,12 @@ function ProductPage() {
 
   const related = relatedProducts(product.slug);
 
+  const gallery = [
+    { src: product.image, alt: product.imageAlt },
+    { src: product.packImage, alt: product.packImageAlt },
+  ];
+  const [activeImage, setActiveImage] = useState(0);
+
   return (
     <>
       <nav
