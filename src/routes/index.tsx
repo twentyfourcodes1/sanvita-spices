@@ -330,7 +330,7 @@ function HomePage() {
               (label) => (
                 <li
                   key={label}
-                  className="surface-glass rounded-md px-4 py-2 text-xs font-semibold text-brand-foreground"
+                  className="rounded-md bg-card px-4 py-2 text-xs font-semibold text-brand shadow-soft"
                 >
                   {label}
                 </li>
