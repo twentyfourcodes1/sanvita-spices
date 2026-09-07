@@ -451,7 +451,7 @@ function HomePage() {
             <div className="relative z-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {process.map((item, index) => (
                 <Reveal key={item.step} delay={index * 80}>
-                  <div className="group relative flex flex-col items-center overflow-hidden border border-gold/20 bg-brand-secondary p-8 text-center transition-all duration-500 hover:border-gold">
+                  <div className="group relative flex h-full flex-col items-center overflow-hidden border border-gold/20 bg-brand-secondary p-8 text-center transition-all duration-500 hover:border-gold">
                     <div className="absolute inset-0 bg-spice/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                     <div className="absolute -top-6 left-1/2 flex size-12 -translate-x-1/2 items-center justify-center rounded-full bg-gold text-base font-bold text-brand shadow-lg transition-transform duration-300 group-hover:scale-110">
                       {item.step}
