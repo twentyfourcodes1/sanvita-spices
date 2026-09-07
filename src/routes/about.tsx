@@ -31,6 +31,8 @@ export const Route = createFileRoute("/about")({
         content:
           "Our story, philosophy and approach to preparing authentic Indian spices in Vijayapura, Karnataka.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AboutPage,
@@ -47,10 +49,10 @@ function AboutPage() {
           height={1200}
           className="h-[380px] w-full object-cover sm:h-[460px]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand via-brand/75 to-brand/20" />
         <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-14 text-center">
-          <p className="text-eyebrow text-spice">Our Story</p>
-          <h1 className="mt-4 max-w-3xl text-5xl leading-tight sm:text-6xl">
+          <p className="text-eyebrow text-primary">Our Story</p>
+          <h1 className="mt-4 max-w-3xl text-5xl leading-tight text-brand-foreground sm:text-6xl">
             Built around flavour, made for everyday kitchens
           </h1>
         </div>
@@ -86,7 +88,7 @@ function AboutPage() {
               width={1408}
               height={1008}
               loading="lazy"
-              className="w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+              className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
             />
           </Reveal>
         </div>
@@ -117,7 +119,7 @@ function AboutPage() {
               },
             ].map((item, index) => (
               <Reveal key={item.title} delay={index * 90}>
-                <div className="h-full rounded-3xl border border-gold/40 bg-card p-8 shadow-soft">
+                <div className="h-full rounded-lg border border-gold/40 bg-card p-8 shadow-soft">
                   <h3 className="text-2xl">{item.title}</h3>
                   <div className="gold-rule mt-4 w-20" />
                   <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -139,7 +141,7 @@ function AboutPage() {
               width={1408}
               height={1008}
               loading="lazy"
-              className="w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+              className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
             />
           </Reveal>
           <Reveal delay={120}>
@@ -189,7 +191,7 @@ function AboutPage() {
                 <Link
                   to="/products/$slug"
                   params={{ slug: product.slug }}
-                  className="hover-lift block overflow-hidden rounded-3xl border border-gold/40 bg-card shadow-soft"
+                  className="hover-lift block overflow-hidden rounded-lg border border-gold/40 bg-card shadow-soft"
                 >
                   <img
                     src={product.image}

@@ -36,7 +36,7 @@ export function CartDrawer() {
 
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
-            <div className="grid size-16 place-items-center rounded-full bg-gold-gradient text-charcoal">
+            <div className="grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
               <ShoppingBasket className="size-7" />
             </div>
             <p className="font-display text-2xl">Your spice basket is empty.</p>
@@ -94,7 +94,7 @@ export function CartDrawer() {
               ))}
             </ul>
 
-            <div className="border-t border-gold/40 bg-secondary/60 px-6 py-5">
+          <div className="border-t border-gold/40 bg-secondary px-6 py-5">
               <div className="flex items-center justify-between">
                 <span className="text-eyebrow text-muted-foreground">
                   Subtotal

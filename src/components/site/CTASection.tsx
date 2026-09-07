@@ -14,7 +14,7 @@ export function CTASection({
 }) {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="relative overflow-hidden rounded-4xl border border-gold/50 shadow-lift">
+      <div className="relative overflow-hidden rounded-lg border border-gold/50 shadow-lift">
         <img
           src={spiceBanner}
           alt="Mounds of red chilli, turmeric, coriander and masala powders"
@@ -23,13 +23,13 @@ export function CTASection({
           loading="lazy"
           className="absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-charcoal/72" />
+        <div className="absolute inset-0 bg-brand/82" />
         <div className="relative px-6 py-16 text-center sm:px-12 sm:py-24">
           <p className="text-eyebrow text-gold">WhatsApp Ordering</p>
-          <h2 className="mx-auto mt-4 max-w-3xl text-4xl leading-tight text-background sm:text-5xl">
+           <h2 className="mx-auto mt-4 max-w-3xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
             {title}
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-background/80 sm:text-base">
+           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-brand-foreground/80 sm:text-base">
             {description}
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

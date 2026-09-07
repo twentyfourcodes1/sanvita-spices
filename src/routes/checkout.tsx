@@ -30,6 +30,8 @@ export const Route = createFileRoute("/checkout")({
         content:
           "Share your delivery details and send your order to us directly on WhatsApp.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -97,7 +99,7 @@ function CheckoutPage() {
   if (items.length === 0) {
     return (
       <section className="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6">
-        <div className="mx-auto grid size-16 place-items-center rounded-full bg-gold-gradient text-charcoal">
+        <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
           <ShoppingBasket className="size-7" />
         </div>
         <h1 className="mt-6 text-4xl">Your spice basket is empty.</h1>
@@ -113,7 +115,7 @@ function CheckoutPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <p className="text-eyebrow text-spice">Checkout</p>
+      <p className="text-eyebrow text-brand">Checkout</p>
       <h1 className="mt-3 text-4xl sm:text-5xl">Delivery Details</h1>
       <div className="gold-rule mt-5 w-28" />
       <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
@@ -124,7 +126,7 @@ function CheckoutPage() {
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[1.5fr_1fr]">
         <form
-          className="rounded-3xl border border-gold/40 bg-card p-7 shadow-soft"
+          className="rounded-lg border border-gold/40 bg-card p-7 shadow-soft"
           onSubmit={(event) => {
             event.preventDefault();
             placeOrder();
@@ -161,7 +163,7 @@ function CheckoutPage() {
                 rows={3}
                 value={form.address}
                 onChange={(event) => update("address", event.target.value)}
-                className="mt-2 rounded-2xl"
+                className="mt-2 rounded-md"
               />
               {errors.address ? (
                 <p className="mt-1 text-xs text-destructive">
@@ -203,7 +205,7 @@ function CheckoutPage() {
                 value={form.notes ?? ""}
                 onChange={(event) => update("notes", event.target.value)}
                 placeholder="Anything we should know about your order?"
-                className="mt-2 rounded-2xl"
+                className="mt-2 rounded-md"
               />
             </div>
           </div>
@@ -213,7 +215,7 @@ function CheckoutPage() {
           </Button>
 
           {sent ? (
-            <div className="mt-5 rounded-2xl border border-gold/50 bg-secondary/70 p-5 text-sm">
+            <div className="mt-5 rounded-md border border-gold/50 bg-secondary p-5 text-sm">
               <p className="font-semibold">Order sent to WhatsApp</p>
               <p className="mt-1 text-muted-foreground">
                 Your cart is still saved. Clear it once we have confirmed your
@@ -236,7 +238,7 @@ function CheckoutPage() {
           ) : null}
         </form>
 
-        <aside className="h-fit rounded-3xl border border-gold/40 bg-secondary/70 p-7 shadow-soft">
+        <aside className="h-fit rounded-lg border border-gold/40 bg-secondary p-7 shadow-soft">
           <h2 className="text-2xl">Order Summary</h2>
           <ul className="mt-5 space-y-4">
             {items.map((item) => (
@@ -306,7 +308,7 @@ function Field({
         inputMode={inputMode}
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="mt-2 h-11 rounded-full"
+         className="mt-2 h-11 rounded-md"
       />
       {error ? <p className="mt-1 text-xs text-destructive">{error}</p> : null}
     </div>

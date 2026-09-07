@@ -8,7 +8,7 @@ import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-gold/40 bg-secondary/70">
+    <footer className="mt-24 border-t border-gold/40 bg-brand text-brand-foreground">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <img
@@ -19,7 +19,7 @@ export function Footer() {
             loading="lazy"
             className="h-14 w-auto rounded-md"
           />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-brand-foreground/70">
             {business.brand} brings authentic aroma, colour and flavour to
             everyday Indian cooking — carefully prepared and freshly packed in
             Vijayapura, Karnataka.
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Quick Links</h3>
+          <h3 className="text-eyebrow text-primary">Quick Links</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {[
               { label: "Home", to: "/" as const },
@@ -38,7 +38,7 @@ export function Footer() {
               <li key={item.to}>
                 <Link
                   to={item.to}
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                   className="text-brand-foreground/70 transition-colors hover:text-primary"
                 >
                   {item.label}
                 </Link>
@@ -48,14 +48,14 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Products</h3>
+          <h3 className="text-eyebrow text-primary">Products</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {products.map((product) => (
               <li key={product.slug}>
                 <Link
                   to="/products/$slug"
                   params={{ slug: product.slug }}
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                   className="text-brand-foreground/70 transition-colors hover:text-primary"
                 >
                   {product.name}
                 </Link>
@@ -65,9 +65,9 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-eyebrow text-spice">Contact</h3>
-          <address className="mt-5 space-y-3 text-sm not-italic text-muted-foreground">
-            <p className="font-semibold text-foreground">{business.company}</p>
+          <h3 className="text-eyebrow text-primary">Contact</h3>
+          <address className="mt-5 space-y-3 text-sm not-italic text-brand-foreground/70">
+            <p className="font-semibold text-brand-foreground">{business.company}</p>
             <p className="flex gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0 text-gold" />
               <span>
@@ -104,7 +104,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gold/40 px-4 py-6 text-center text-xs text-muted-foreground sm:px-6">
+      <div className="border-t border-gold/30 px-4 py-6 text-center text-xs text-brand-foreground/60 sm:px-6">
         © {new Date().getFullYear()} {business.company}. All Rights Reserved.
       </div>
     </footer>

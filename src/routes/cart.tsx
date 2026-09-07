@@ -22,6 +22,8 @@ export const Route = createFileRoute("/cart")({
         content:
           "Review your spice order and place it on WhatsApp — no online payment needed.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -34,7 +36,7 @@ function CartPage() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <p className="text-eyebrow text-spice">Your Order</p>
+      <p className="text-eyebrow text-brand">Your Order</p>
       <h1 className="mt-3 text-4xl sm:text-5xl">Spice Basket</h1>
       <div className="gold-rule mt-5 w-28" />
 
@@ -43,13 +45,13 @@ function CartPage() {
           {[0, 1].map((key) => (
             <div
               key={key}
-              className="h-28 animate-pulse rounded-3xl bg-secondary"
+              className="h-28 animate-pulse rounded-lg bg-secondary"
             />
           ))}
         </div>
       ) : items.length === 0 ? (
-        <div className="mt-14 rounded-4xl border border-gold/40 bg-card p-14 text-center shadow-soft">
-          <div className="mx-auto grid size-16 place-items-center rounded-full bg-gold-gradient text-charcoal">
+        <div className="mt-14 rounded-lg border border-gold/40 bg-card p-14 text-center shadow-soft">
+          <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
             <ShoppingBasket className="size-7" />
           </div>
           <h2 className="mt-6 text-3xl">Your spice basket is empty.</h2>
@@ -62,7 +64,7 @@ function CartPage() {
         </div>
       ) : (
         <div className="mt-12 grid gap-10 lg:grid-cols-[1.6fr_1fr]">
-          <ul className="divide-y divide-border rounded-3xl border border-gold/40 bg-card px-6 shadow-soft">
+          <ul className="divide-y divide-border rounded-lg border border-gold/40 bg-card px-6 shadow-soft">
             {items.map((item) => (
               <li key={item.id} className="flex gap-5 py-6">
                 <img
@@ -111,7 +113,7 @@ function CartPage() {
             ))}
           </ul>
 
-          <aside className="h-fit rounded-3xl border border-gold/40 bg-secondary/70 p-7 shadow-soft">
+          <aside className="h-fit rounded-lg border border-gold/40 bg-secondary p-7 shadow-soft">
             <h2 className="text-2xl">Order Summary</h2>
             <dl className="mt-5 space-y-3 text-sm">
               {items.map((item) => (

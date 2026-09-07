@@ -34,7 +34,7 @@ export function ProductCard({ product }: { product: Product }) {
   };
 
   return (
-    <article className="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-gold/40 bg-card shadow-soft">
+    <article className="hover-lift group flex h-full flex-col overflow-hidden rounded-lg border border-gold/40 bg-card shadow-soft">
       <Link
         to="/products/$slug"
         params={{ slug: product.slug }}
@@ -50,14 +50,14 @@ export function ProductCard({ product }: { product: Product }) {
           className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-107"
         />
         {product.bestseller ? (
-          <span className="text-eyebrow absolute left-4 top-4 rounded-full bg-primary px-3 py-1.5 text-primary-foreground">
+          <span className="text-eyebrow absolute left-4 top-4 rounded-sm bg-primary px-3 py-1.5 text-primary-foreground">
             Bestseller
           </span>
         ) : null}
       </Link>
 
       <div className="flex flex-1 flex-col p-6">
-        <p className="text-eyebrow text-spice">{product.category}</p>
+        <p className="text-eyebrow text-brand">{product.category}</p>
         <h3 className="mt-2 text-2xl leading-snug">
           <Link to="/products/$slug" params={{ slug: product.slug }}>
             {product.name}
@@ -95,7 +95,7 @@ export function ProductCard({ product }: { product: Product }) {
             <Button
               variant="ghost"
               size="sm"
-              className="flex-1 text-primary"
+              className="flex-1 text-brand"
               onClick={() =>
                 openWhatsApp(
                   productEnquiryMessage(product.name, variant.label, quantity),

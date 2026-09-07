@@ -50,6 +50,8 @@ export const Route = createFileRoute("/")({
         content:
           "Authentic spices. Richer flavours. Carefully prepared premium Indian spices from Vijayapura, Karnataka — order on WhatsApp.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: HomePage,
@@ -158,17 +160,16 @@ function HomePage() {
           height={1200}
           className="absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/25" />
-        <div className="absolute -left-10 top-24 size-56 rounded-full bg-gold/25 blur-3xl animate-float-slow" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand via-brand/88 to-brand/25" />
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <div className="max-w-xl">
-            <p className="text-eyebrow text-spice">{business.brand}</p>
-            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
+            <p className="text-eyebrow text-primary">{business.brand}</p>
+            <h1 className="mt-5 text-5xl leading-[1.05] text-brand-foreground sm:text-6xl lg:text-7xl">
               Authentic Spices.
               <span className="block text-primary">Richer Flavours.</span>
             </h1>
             <div className="gold-rule mt-6 w-40" />
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-brand-foreground/78 sm:text-lg">
               Bring authentic aroma, colour and flavour to everyday cooking with
               carefully prepared spices from {business.brand}.
             </p>
@@ -190,7 +191,7 @@ function HomePage() {
                   <dt className="font-display text-2xl text-primary">
                     {value}
                   </dt>
-                  <dd className="mt-1 text-xs text-muted-foreground">
+                  <dd className="mt-1 text-xs text-brand-foreground/65">
                     {label}
                   </dd>
                 </div>
@@ -225,14 +226,13 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <div className="relative">
-              <div className="absolute -bottom-6 -left-6 hidden size-40 rounded-3xl bg-gold/30 blur-2xl lg:block" />
               <img
                 src={brandStory}
                 alt="Hands grinding Indian spices with brass bowls on a wooden table"
                 width={1408}
                 height={1008}
                 loading="lazy"
-                className="relative w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+                className="relative w-full rounded-lg border border-gold/50 object-cover shadow-lift"
               />
             </div>
           </Reveal>
@@ -272,7 +272,7 @@ function HomePage() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section className="bg-secondary/60 py-24">
+      <section className="bg-brand py-24 text-brand-foreground">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <SectionHeading
@@ -300,10 +300,10 @@ function HomePage() {
           loading="lazy"
           className="h-[420px] w-full object-cover sm:h-[520px]"
         />
-        <div className="absolute inset-0 bg-charcoal/55" />
+        <div className="absolute inset-0 bg-brand/65" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           <p className="text-eyebrow text-gold">The Spice Experience</p>
-          <h2 className="mt-4 max-w-2xl text-4xl leading-tight text-background sm:text-5xl">
+           <h2 className="mt-4 max-w-2xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
             Colour, aroma and texture — up close
           </h2>
           <ul className="mt-9 flex flex-wrap justify-center gap-3">
@@ -311,7 +311,7 @@ function HomePage() {
               (label) => (
                 <li
                   key={label}
-                  className="surface-glass rounded-full px-4 py-2 text-xs font-semibold text-background"
+                  className="surface-glass rounded-md px-4 py-2 text-xs font-semibold text-brand-foreground"
                 >
                   {label}
                 </li>
@@ -334,7 +334,7 @@ function HomePage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {bestsellers.map((product, index) => (
               <Reveal key={product.slug} delay={index * 70}>
-                <div className="hover-lift flex h-full flex-col overflow-hidden rounded-3xl border border-gold/40 bg-card shadow-soft">
+                <div className="hover-lift flex h-full flex-col overflow-hidden rounded-lg border border-gold/40 bg-card shadow-soft">
                   <img
                     src={product.image}
                     alt={product.imageAlt}
@@ -417,7 +417,7 @@ function HomePage() {
               width={1408}
               height={1008}
               loading="lazy"
-              className="w-full rounded-4xl border border-gold/50 object-cover shadow-lift"
+              className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
             />
           </Reveal>
         </div>
@@ -435,7 +435,7 @@ function HomePage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {process.map((item, index) => (
               <Reveal key={item.step} delay={index * 80}>
-                <div className="h-full rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+                <div className="h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
                   <span className="font-display text-4xl text-gold">
                     {item.step}
                   </span>
@@ -465,7 +465,7 @@ function HomePage() {
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {testimonials.map((item, index) => (
               <Reveal key={index} delay={index * 90}>
-                <blockquote className="h-full rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+                <blockquote className="h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
                   <Quote className="size-6 text-gold" />
                   <p className="mt-4 font-display text-xl leading-relaxed">
                     {item.quote}
@@ -481,7 +481,7 @@ function HomePage() {
       </section>
 
       {/* CONTACT / LOCATION */}
-      <section className="bg-secondary/60 py-24">
+      <section className="bg-secondary py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <SectionHeading
@@ -555,9 +555,9 @@ function HomePage() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-3xl border border-gold/40 bg-card p-6 shadow-soft"
+                  className="rounded-lg border border-gold/40 bg-card p-6 shadow-soft"
                 >
-                  <span className="grid size-11 place-items-center rounded-2xl bg-gold-gradient text-charcoal">
+                  <span className="grid size-11 place-items-center rounded-md bg-gold-gradient text-charcoal">
                     {item.icon}
                   </span>
                   <h3 className="mt-4 text-lg">{item.title}</h3>

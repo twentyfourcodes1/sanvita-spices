@@ -29,6 +29,8 @@ export const Route = createFileRoute("/contact")({
         content:
           "Reach our team in Vijayapura for orders, pack sizes and bulk enquiries.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ContactPage,
@@ -65,7 +67,7 @@ ${form.message}`,
     <>
       <section className="bg-cream-gradient py-20">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-eyebrow text-spice">Contact</p>
+          <p className="text-eyebrow text-brand">Contact</p>
           <h1 className="mx-auto mt-4 max-w-2xl text-5xl leading-tight sm:text-6xl">
             We would love to hear from you
           </h1>
@@ -80,7 +82,7 @@ ${form.message}`,
       <section className="py-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:px-8">
           <Reveal>
-            <div className="rounded-3xl border border-gold/40 bg-card p-8 shadow-soft">
+            <div className="rounded-lg border border-gold/40 bg-card p-8 shadow-soft">
               <h2 className="text-2xl">{business.company}</h2>
               <div className="gold-rule mt-4 w-20" />
               <address className="mt-6 space-y-4 text-sm not-italic leading-relaxed text-muted-foreground">
@@ -151,7 +153,7 @@ ${form.message}`,
 
           <Reveal delay={120}>
             <form
-              className="rounded-3xl border border-gold/40 bg-card p-8 shadow-soft"
+              className="rounded-lg border border-gold/40 bg-card p-8 shadow-soft"
               onSubmit={(event) => {
                 event.preventDefault();
                 submit();
@@ -172,7 +174,7 @@ ${form.message}`,
                     onChange={(event) =>
                       setForm({ ...form, name: event.target.value })
                     }
-                    className="mt-2 h-11 rounded-full"
+                    className="mt-2 h-11 rounded-md"
                   />
                 </div>
                 <div>
@@ -186,7 +188,7 @@ ${form.message}`,
                     onChange={(event) =>
                       setForm({ ...form, mobile: event.target.value })
                     }
-                    className="mt-2 h-11 rounded-full"
+                    className="mt-2 h-11 rounded-md"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -200,7 +202,7 @@ ${form.message}`,
                     onChange={(event) =>
                       setForm({ ...form, email: event.target.value })
                     }
-                    className="mt-2 h-11 rounded-full"
+                    className="mt-2 h-11 rounded-md"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -214,7 +216,7 @@ ${form.message}`,
                     onChange={(event) =>
                       setForm({ ...form, message: event.target.value })
                     }
-                    className="mt-2 rounded-2xl"
+                    className="mt-2 rounded-md"
                   />
                 </div>
               </div>
@@ -233,7 +235,7 @@ ${form.message}`,
             title="Vijayapura, Karnataka"
             description="Our base is in KC Nagar, near DCC Bank."
           />
-          <div className="mt-10 overflow-hidden rounded-4xl border border-gold/50 shadow-lift">
+          <div className="mt-10 overflow-hidden rounded-lg border border-gold/50 shadow-lift">
             <iframe
               title={`Map showing ${business.company}`}
               src={`https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed`}

@@ -52,6 +52,8 @@ export const Route = createFileRoute("/products/$slug")({
         { name: "description", content: product.short },
         { property: "og:title", content: title },
         { property: "og:description", content: product.short },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       scripts: [
         {
@@ -133,7 +135,7 @@ function ProductPage() {
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <div className="group overflow-hidden rounded-4xl border border-gold/50 shadow-lift">
+            <div className="group overflow-hidden rounded-lg border border-gold/50 shadow-lift">
               <img
                 src={product.image}
                 alt={product.imageAlt}
@@ -153,7 +155,7 @@ function ProductPage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="flex flex-col items-center gap-2 rounded-2xl border border-gold/40 bg-card p-3 text-center text-[11px] font-semibold text-muted-foreground"
+                   className="flex flex-col items-center gap-2 rounded-md border border-gold/40 bg-card p-3 text-center text-[11px] font-semibold text-muted-foreground"
                 >
                   <span className="text-gold">{item.icon}</span>
                   {item.label}
@@ -163,11 +165,11 @@ function ProductPage() {
           </div>
 
           <div>
-            <p className="text-eyebrow text-spice">{product.category}</p>
+            <p className="text-eyebrow text-brand">{product.category}</p>
             <h1 className="mt-3 text-4xl leading-tight sm:text-5xl">
               {product.name}
             </h1>
-            <p className="mt-2 font-display text-xl text-primary">
+            <p className="mt-2 font-display text-xl text-spice">
               {product.tagline}
             </p>
             <div className="gold-rule mt-5 w-32" />
@@ -226,7 +228,7 @@ function ProductPage() {
               {product.highlights.map((highlight) => (
                 <li
                   key={highlight}
-                  className="flex gap-2 rounded-2xl bg-secondary/70 px-4 py-3 text-sm"
+                   className="flex gap-2 rounded-md bg-secondary px-4 py-3 text-sm"
                 >
                   <Sparkles className="mt-0.5 size-4 shrink-0 text-gold" />
                   <span>{highlight}</span>
@@ -239,7 +241,7 @@ function ProductPage() {
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="rounded-3xl border border-gold/40 bg-card p-7 shadow-soft lg:col-span-2">
+          <div className="rounded-lg border border-gold/40 bg-card p-7 shadow-soft lg:col-span-2">
             <h2 className="text-2xl">About this spice</h2>
             <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
               {product.description.map((paragraph) => (
@@ -260,7 +262,7 @@ function ProductPage() {
 
           <div className="space-y-6">
             {product.ingredients ? (
-              <div className="rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+               <div className="rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
                 <h3 className="text-xl">Ingredients</h3>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {product.ingredients.map((item) => (
@@ -274,13 +276,13 @@ function ProductPage() {
                 </ul>
               </div>
             ) : null}
-            <div className="rounded-3xl border border-gold/40 bg-card p-7 shadow-soft">
+             <div className="rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
               <h3 className="text-xl">Storage</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {product.storage}
               </p>
             </div>
-            <div className="rounded-3xl bg-primary p-7 text-primary-foreground shadow-lift">
+             <div className="rounded-lg bg-brand p-7 text-brand-foreground shadow-lift">
               <h3 className="text-xl">Need help choosing?</h3>
               <p className="mt-2 text-sm opacity-90">
                 Message us on WhatsApp and we will help with pack sizes and bulk
