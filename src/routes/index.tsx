@@ -497,29 +497,45 @@ function HomePage() {
       <CTASection />
 
       {/* TESTIMONIALS */}
-      <section className="py-24">
+      <section className="bg-[#FDFBF6] py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <SectionHeading
-              eyebrow="Kind Words"
-              title="What customers will say"
-              description="Sample placeholder notes — share your real customer feedback with us and we will put it here."
-            />
+            <div className="mb-20 text-center">
+              <div className="inline-block border-b border-gold/40 pb-2">
+                <span className="text-eyebrow text-gold">Kind Words</span>
+              </div>
+              <h2 className="mt-4 font-display text-4xl font-medium italic text-foreground sm:text-5xl">
+                What customers will say
+              </h2>
+            </div>
           </Reveal>
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+          <div className="mt-14 grid gap-8 md:grid-cols-3">
             {testimonials.map((item, index) => (
               <Reveal key={index} delay={index * 90}>
-                <blockquote className="h-full rounded-lg border border-gold/40 bg-card p-7 shadow-soft">
-                  <Quote className="size-6 text-gold" />
-                  <p className="mt-4 font-display text-xl leading-relaxed">
+                <blockquote className="group relative flex h-full flex-col items-center rounded-lg border border-gold/20 bg-card p-8 pt-10 text-center shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold/50 hover:shadow-lift">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FDFBF6] px-4 text-gold">
+                    <Quote className="size-6 fill-current" />
+                  </div>
+                  <p className="mt-2 font-display text-xl italic leading-relaxed text-foreground">
                     {item.quote}
                   </p>
-                  <footer className="mt-5 text-xs text-muted-foreground">
-                    {item.name} · {item.place}
+                  <footer className="mt-auto pt-6">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-foreground">
+                      {item.name}
+                    </p>
+                    <p className="mt-1 text-xs italic text-muted-foreground">
+                      {item.place}
+                    </p>
                   </footer>
                 </blockquote>
               </Reveal>
             ))}
+          </div>
+          {/* Heritage divider */}
+          <div className="mt-16 flex items-center justify-center gap-4 md:mt-20">
+            <div className="h-px w-20 bg-gold/20" />
+            <div className="size-2 rounded-full border border-gold/60" />
+            <div className="h-px w-20 bg-gold/20" />
           </div>
         </div>
       </section>
