@@ -33,6 +33,7 @@ export function Footer() {
               { label: "Home", to: "/" as const },
               { label: "About", to: "/about" as const },
               { label: "Products", to: "/products" as const },
+              { label: "Blog", to: "/blog" as const },
               { label: "Contact", to: "/contact" as const },
             ].map((item) => (
               <li key={item.to}>
