@@ -80,7 +80,7 @@ function BlogIndexPage() {
                   alt={featured.imageAlt}
                   width={1024}
                   height={1024}
-                  className="h-64 w-full object-cover lg:h-full"
+                  className="h-64 w-full object-cover sm:h-80 lg:h-full lg:max-h-[420px]"
                 />
                 <div className="p-8 sm:p-10">
                   <p className="text-eyebrow text-spice">
