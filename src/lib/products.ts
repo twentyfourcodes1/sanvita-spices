@@ -287,10 +287,8 @@ export const products: Product[] = [
     accent: "gold",
     bestseller: true,
     variants: [
-      { label: "100g", price: 109, sku: "SPS-HNY-100" },
-      { label: "200g", price: 199, sku: "SPS-HNY-200" },
+      { label: "250g", price: 249, sku: "SPS-HNY-250" },
       { label: "500g", price: 459, sku: "SPS-HNY-500" },
-      { label: "1kg", price: 869, sku: "SPS-HNY-1000" },
     ],
     highlights: [
       "No added sugar",
