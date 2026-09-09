@@ -213,7 +213,7 @@ function HomePage() {
             <SectionHeading
               eyebrow="Our Collection"
               title="The Sanvita Spice Shelf"
-              description="Five everyday essentials, prepared with care and packed fresh — choose your pack size and add them straight to your basket."
+              description="Everyday essentials, prepared with care and packed fresh — choose your pack size and add them straight to your basket."
             />
           </Reveal>
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
