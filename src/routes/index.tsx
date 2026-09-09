@@ -516,7 +516,7 @@ function HomePage() {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FDFBF6] px-4 text-gold">
                     <Quote className="size-6 fill-current" />
                   </div>
-                  <p className="mt-2 font-display text-xl italic leading-relaxed text-foreground">
+                  <p className="mt-2 font-body text-base font-normal italic leading-relaxed text-foreground">
                     {item.quote}
                   </p>
                   <footer className="mt-auto pt-6">
