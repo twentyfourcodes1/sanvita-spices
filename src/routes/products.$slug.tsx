@@ -180,7 +180,10 @@ function ProductPage() {
                 { icon: <Package className="size-4" />, label: "Freshly packed" },
                 {
                   icon: <Sparkles className="size-4" />,
-                  label: "Aromatic grind",
+                  label:
+                    product.category === "Honey"
+                      ? "Raw & natural"
+                      : "Aromatic grind",
                 },
               ].map((item) => (
                 <div
@@ -272,7 +275,9 @@ function ProductPage() {
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="rounded-lg border border-gold/40 bg-card p-7 shadow-soft lg:col-span-2">
-            <h2 className="text-2xl">About this spice</h2>
+            <h2 className="text-2xl">
+              About this {product.category === "Honey" ? "product" : "spice"}
+            </h2>
             <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
               {product.description.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
