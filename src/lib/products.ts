@@ -8,6 +8,8 @@ import packPeanutChutney from "@/assets/pack-peanut-chutney.jpeg.asset.json";
 import packGaramMasala from "@/assets/pack-garam-masala.jpeg.asset.json";
 import packTurmeric from "@/assets/pack-turmeric.jpeg.asset.json";
 import packCoriander from "@/assets/pack-coriander.jpeg.asset.json";
+import honeyBowl from "@/assets/product-honey.jpg";
+import packHoney from "@/assets/pack-honey.jpeg.asset.json";
 
 /* -------------------------------------------------------------------------
  * BUSINESS INFORMATION — edit here, used across the whole website.
@@ -40,7 +42,7 @@ export type Product = {
   name: string;
   tagline: string;
   short: string;
-  category: "Powdered Spices" | "Blends" | "Chutney Powders";
+  category: "Powdered Spices" | "Blends" | "Chutney Powders" | "Honey";
   image: string;
   imageAlt: string;
   /** Retail pack photograph, shown alongside the existing image. */
@@ -262,6 +264,43 @@ export const products: Product[] = [
       "Add to dry roasts, sabzis and rasam",
     ],
   },
+  {
+    slug: "honey",
+    name: "Honey",
+    tagline: "Nature's sweetness in every drop",
+    short:
+      "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
+    category: "Honey",
+    image: packHoney.url,
+    packImage: honeyBowl,
+    imageAlt: "Sanvita Premium Honey 250g glass jar",
+    packImageAlt:
+      "Golden honey in a wooden bowl with a honey dipper, honeycomb pieces and blossoms",
+    accent: "gold",
+    bestseller: true,
+    variants: [
+      { label: "250g", price: 249, sku: "SPS-HNY-250" },
+      { label: "500g", price: 459, sku: "SPS-HNY-500" },
+    ],
+    highlights: [
+      "No added sugar",
+      "No preservatives",
+      "Rich in natural goodness",
+      "Sourced from trusted beekeepers",
+    ],
+    description: [
+      "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
+      "Use it as an everyday sweetener in place of sugar: a spoon in warm water, drizzled over breakfast, or stirred into tea, milk and desserts.",
+    ],
+    ingredients: ["100% pure honey"],
+    storage:
+      "Store in a cool, dry place with the lid closed. Natural crystallisation may occur — place the jar in warm water to return it to a smooth flow.",
+    usage: [
+      "Stir into warm water, milk or tea",
+      "Drizzle over toast, fruit and yogurt",
+      "Use as a natural sweetener in desserts and marinades",
+    ],
+  },
 ];
 
 export const getProduct = (slug: string) =>
@@ -278,4 +317,5 @@ export const categories = [
   "Powdered Spices",
   "Blends",
   "Chutney Powders",
+  "Honey",
 ] as const;
