@@ -77,7 +77,8 @@ export const products: Product[] = [
     accent: "red",
     bestseller: true,
     variants: [
-      { label: "250g", price: 149, sku: "SPS-RCP-250" },
+      { label: "100g", price: 69, sku: "SPS-RCP-100" },
+      { label: "200g", price: 119, sku: "SPS-RCP-200" },
       { label: "500g", price: 279, sku: "SPS-RCP-500" },
       { label: "1kg", price: 529, sku: "SPS-RCP-1000" },
     ],
@@ -115,8 +116,10 @@ export const products: Product[] = [
     accent: "terracotta",
     bestseller: true,
     variants: [
+      { label: "100g", price: 89, sku: "SPS-PNC-100" },
       { label: "200g", price: 169, sku: "SPS-PNC-200" },
-      { label: "400g", price: 319, sku: "SPS-PNC-400" },
+      { label: "500g", price: 399, sku: "SPS-PNC-500" },
+      { label: "1kg", price: 759, sku: "SPS-PNC-1000" },
     ],
     highlights: [
       "Roasted peanut aroma",
@@ -159,7 +162,9 @@ export const products: Product[] = [
     bestseller: true,
     variants: [
       { label: "100g", price: 129, sku: "SPS-GRM-100" },
-      { label: "250g", price: 289, sku: "SPS-GRM-250" },
+      { label: "200g", price: 239, sku: "SPS-GRM-200" },
+      { label: "500g", price: 559, sku: "SPS-GRM-500" },
+      { label: "1kg", price: 1049, sku: "SPS-GRM-1000" },
     ],
     highlights: [
       "Warm whole-spice blend",
@@ -205,8 +210,9 @@ export const products: Product[] = [
     bestseller: true,
     variants: [
       { label: "100g", price: 79, sku: "SPS-TUR-100" },
-      { label: "250g", price: 169, sku: "SPS-TUR-250" },
+      { label: "200g", price: 149, sku: "SPS-TUR-200" },
       { label: "500g", price: 309, sku: "SPS-TUR-500" },
+      { label: "1kg", price: 589, sku: "SPS-TUR-1000" },
     ],
     highlights: [
       "Bright natural golden tone",
@@ -242,8 +248,10 @@ export const products: Product[] = [
     accent: "green",
     bestseller: false,
     variants: [
-      { label: "250g", price: 139, sku: "SPS-COR-250" },
+      { label: "100g", price: 59, sku: "SPS-COR-100" },
+      { label: "200g", price: 109, sku: "SPS-COR-200" },
       { label: "500g", price: 259, sku: "SPS-COR-500" },
+      { label: "1kg", price: 489, sku: "SPS-COR-1000" },
     ],
     highlights: [
       "Light citrusy aroma",
@@ -279,8 +287,10 @@ export const products: Product[] = [
     accent: "gold",
     bestseller: true,
     variants: [
-      { label: "250g", price: 249, sku: "SPS-HNY-250" },
+      { label: "100g", price: 109, sku: "SPS-HNY-100" },
+      { label: "200g", price: 199, sku: "SPS-HNY-200" },
       { label: "500g", price: 459, sku: "SPS-HNY-500" },
+      { label: "1kg", price: 869, sku: "SPS-HNY-1000" },
     ],
     highlights: [
       "No added sugar",
