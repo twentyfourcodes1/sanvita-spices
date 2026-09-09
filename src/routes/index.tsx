@@ -161,7 +161,7 @@ function HomePage() {
           height={1200}
           className="absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand via-brand/88 to-brand/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand/80 via-brand/55 to-brand/15" />
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
           <div className="max-w-xl">
             <p className="text-eyebrow text-primary">{business.brand}</p>
