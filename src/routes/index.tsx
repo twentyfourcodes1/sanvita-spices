@@ -520,7 +520,7 @@ function HomePage() {
                     {item.quote}
                   </p>
                   <footer className="mt-auto pt-6">
-                  <p className="text-xs uppercase tracking-widest text-foreground">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground">
                     {item.name}
                   </p>
                     <p className="mt-1 text-xs italic text-muted-foreground">
