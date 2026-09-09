@@ -3,7 +3,7 @@ import { Flame, Leaf, Package, UtensilsCrossed } from "lucide-react";
 
 import aboutSpicesIndia from "@/assets/about-spices-india.png.asset.json";
 import brandStory from "@/assets/brand-story-spices.png.asset.json";
-import heroSpices from "@/assets/hero-spices.jpg";
+import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/site/CTASection";
 import {
@@ -43,7 +43,7 @@ function AboutPage() {
     <>
       <section className="relative overflow-hidden">
         <img
-          src={heroSpices}
+          src={heroSpicesAsset.url}
           alt="Bowls of Indian spice powders on ivory linen"
           width={1920}
           height={1200}
