@@ -1,5 +1,5 @@
 import redChilly from "@/assets/product-red-chilly.jpg";
-import peanutChutney from "@/assets/product-peanut-chutney.jpg";
+import peanutChutney from "@/assets/product-peanut-chutney.jpg.asset.json";
 import garamMasala from "@/assets/product-garam-masala.jpg";
 import turmeric from "@/assets/product-turmeric.jpg";
 import coriander from "@/assets/product-coriander.jpg";
@@ -109,7 +109,7 @@ export const products: Product[] = [
       "A traditional roasted peanut chutney powder — nutty, aromatic and ready to serve with idli, dosa or hot rice.",
     category: "Chutney Powders",
     image: packPeanutChutney.url,
-    packImage: peanutChutney,
+    packImage: peanutChutney.url,
     imageAlt: "Sanvita Peanut Chutney retail pouch",
     packImageAlt:
       "Sanvita peanut chutney powder in a wooden bowl with roasted peanuts and dried red chillies",
