@@ -1,5 +1,5 @@
 import redChilly from "@/assets/product-red-chilly.jpg";
-import peanutChutney from "@/assets/product-peanut-chutney.jpg";
+import peanutChutney from "@/assets/product-peanut-chutney.jpg.asset.json";
 import garamMasala from "@/assets/product-garam-masala.jpg";
 import turmeric from "@/assets/product-turmeric.jpg";
 import coriander from "@/assets/product-coriander.jpg";
