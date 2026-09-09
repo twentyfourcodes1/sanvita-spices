@@ -13,7 +13,8 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 
-import heroSpices from "@/assets/hero-spices.jpg";
+import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
+const heroSpices = heroSpicesAsset.url;
 import brandStory from "@/assets/brand-story.jpg";
 import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
 import spiceExperience from "@/assets/spice-experience.jpg";
