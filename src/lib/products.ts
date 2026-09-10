@@ -258,6 +258,7 @@ Every batch is clinically Tested for Purity`,
       { label: "1kg", price: 489, sku: "SPS-COR-1000" },
     ],
     highlights: [
+      "100 % Natural Coriander powder",
       "Rich colour & aroma",
       "Every batch is tested for purity",
       "No added Color | No preservatives",
