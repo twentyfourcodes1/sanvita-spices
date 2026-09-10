@@ -200,7 +200,7 @@ export const products: Product[] = [
     tagline: "Bring the goodness of Pure Turmeric Powder to your kitchen",
     short: `💛 SANVITA PREMIUM TURMERIC POWDER Pure • Natural • Authentic 🌱  100 % Natural Turmeric Powder
 
-Evary batch is clinically Tested for Purity `,
+ Every batch is clinically Tested for Purity `,
     category: "Powdered Spices",
     image: packTurmeric.url,
     packImage: turmeric,
