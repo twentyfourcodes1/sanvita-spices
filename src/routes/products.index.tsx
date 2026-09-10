@@ -153,7 +153,7 @@ function ProductsPage() {
           ) : (
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {visible.map((product, index) => (
-                <Reveal key={product.slug} delay={index * 70}>
+                <Reveal key={product.slug} delay={index * 70} className="reveal-product">
                   <ProductCard product={product} />
                 </Reveal>
               ))}

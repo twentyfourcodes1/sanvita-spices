@@ -219,7 +219,7 @@ function HomePage() {
           </Reveal>
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((product, index) => (
-              <Reveal key={product.slug} delay={index * 80}>
+              <Reveal key={product.slug} delay={index * 80} className="reveal-product">
                 <ProductCard product={product} />
               </Reveal>
             ))}
