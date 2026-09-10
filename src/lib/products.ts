@@ -197,9 +197,9 @@ export const products: Product[] = [
   {
     slug: "turmeric-powder",
     name: "Turmeric Powder",
-    tagline: "Golden colour, gentle earthiness",
+    tagline: "Bring the goodness of Pure Turmeric Powder to your kitchen",
     short:
-      "Bright golden turmeric with a gentle, earthy aroma — the everyday base of Indian cooking.",
+      "Pure, natural and authentic turmeric — rich colour, aroma and high curcumin content for everyday cooking.",
     category: "Powdered Spices",
     image: packTurmeric.url,
     packImage: turmeric,
@@ -215,22 +215,26 @@ export const products: Product[] = [
       { label: "1kg", price: 589, sku: "SPS-TUR-1000" },
     ],
     highlights: [
-      "Bright natural golden tone",
-      "Gentle earthy aroma",
-      "Smooth, fine grind",
-      "An everyday kitchen essential",
+      "Rich colour and aroma",
+      "Every batch is tested for purity",
+      "No added colour, no preservatives",
+      "High percentage of curcumin content",
+      "Perfect for everyday cooking",
+      "Ideal for curries, dals, rice and more",
+      "Premium quality for your family",
     ],
     description: [
-      "Sanvita Turmeric Powder is ground fine and smooth, with the warm golden colour and soft earthy aroma you want at the start of nearly every Indian dish.",
-      "Add it early with your oil and aromatics so the colour settles into the dish, and use it as the quiet base note beneath your chilli and masala.",
+      "Sanvita Premium Turmeric Powder is pure, natural and authentic — the golden base your kitchen deserves.",
+      "Rich in colour, warm in aroma and high in curcumin content, every batch is tested for purity so your family gets only the best.",
+      "Add a touch of golden goodness to curries, dals, rice and everyday meals — no added colour, no preservatives, just premium quality.",
     ],
     ingredients: ["Turmeric"],
     storage:
       "Store in an airtight container away from moisture, heat and direct sunlight.",
     usage: [
-      "Add early to oil, dals and curry bases",
-      "Use in marinades for colour and warmth",
-      "Sprinkle into rice, khichdi and sambar",
+      "Add to curries, dals and rice for colour and warmth",
+      "Use in everyday sabzis, marinades and khichdi",
+      "Sprinkle into soups, sambar and golden milk",
     ],
   },
   {
