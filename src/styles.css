@@ -193,21 +193,25 @@
   }
 }
 
-/* Stronger bottom-to-top entrance on mobile for product grids. */
-@utility reveal-product {
-  opacity: 0;
-  transform: translateY(72px) scale(0.97);
-  will-change: opacity, transform;
-  transition:
-    opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
-  &[data-visible="true"] {
-    opacity: 1;
-    transform: none;
+/* animate.css-style slideInUp entrance for product grids. */
+@keyframes slide-in-up {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
   }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-  @media (min-width: 768px) {
-    transform: translateY(40px) scale(0.98);
+@utility reveal-product {
+  visibility: hidden;
+  will-change: transform;
+
+  &[data-visible="true"] {
+    visibility: visible;
+    animation: slide-in-up 1s both;
+    animation-timing-function: ease;
   }
 }
 
