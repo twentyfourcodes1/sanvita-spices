@@ -1,45 +1,34 @@
-import { ArrowUp, MessageCircle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { MessageCircle, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { business } from "@/lib/products";
 import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
 
 export function FloatingActions() {
-  const [showTop, setShowTop] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setShowTop(window.scrollY > 700);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <div className="pointer-events-none fixed bottom-4 right-4 z-40 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6">
-      {showTop ? (
-        <Button
-          type="button"
-          variant="outline"
-          size="icon"
-          aria-label="Back to top"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="pointer-events-auto bg-card/90 backdrop-blur"
-        >
-          <ArrowUp className="size-4" />
-        </Button>
-      ) : null}
+    <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6">
+      <Button
+        type="button"
+        variant="outline"
+        size="icon"
+        aria-label="Call us"
+        onClick={() => (window.location.href = `tel:${business.phoneDial}`)}
+        className="pointer-events-auto size-12 rounded-full border-gold/60 bg-card/95 text-brand backdrop-blur shadow-lift hover:border-gold hover:text-primary"
+      >
+        <Phone className="size-5" />
+      </Button>
 
       <Button
         type="button"
         variant="whatsapp"
+        size="icon"
+        aria-label="Chat with us on WhatsApp"
         onClick={() => openWhatsApp(generalEnquiryMessage)}
-        className="pointer-events-auto h-11 px-4 shadow-lift"
+        className="pointer-events-auto size-14 rounded-full shadow-lift"
       >
-        <MessageCircle className="size-5" />
-        <span className="hidden text-sm font-semibold sm:inline">
-          Chat with us
-        </span>
+        <MessageCircle className="size-6" />
       </Button>
     </div>
   );
 }
+
