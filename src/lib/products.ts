@@ -83,6 +83,7 @@ export const products: Product[] = [
       { label: "1kg", price: 529, sku: "SPS-RCP-1000" },
     ],
     highlights: [
+      "100 % Natural Chilly powder",
       "Rich colour & aroma",
       "Every batch is tested for purity",
       "No added Color | No preservatives",
