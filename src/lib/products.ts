@@ -198,7 +198,7 @@ export const products: Product[] = [
     slug: "turmeric-powder",
     name: "Turmeric Powder",
     tagline: "Bring the goodness of Pure Turmeric Powder to your kitchen",
-    short: `💛 SANVITA PREMIUM TURMERIC POWDER
+    short: ` SANVITA PREMIUM TURMERIC POWDER
 100 % Natural Turmeric Powder
 Every batch is clinically Tested for Purity`,
     category: "Powdered Spices",
