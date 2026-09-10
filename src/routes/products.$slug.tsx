@@ -206,7 +206,7 @@ function ProductPage() {
               {product.tagline}
             </p>
             <div className="gold-rule mt-5 w-32" />
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            <p className="mt-6 whitespace-pre-line text-base leading-relaxed text-muted-foreground">
               {product.short}
             </p>
 
