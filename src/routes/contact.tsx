@@ -65,7 +65,7 @@ ${form.message}`,
 
   return (
     <>
-      <section className="bg-cream-gradient py-10 sm:py-12">
+      <section className="bg-cream-gradient py-6 sm:py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-eyebrow text-brand">Contact</p>
           <h1 className="mx-auto mt-3 max-w-xl text-4xl leading-tight sm:text-5xl">
@@ -79,7 +79,7 @@ ${form.message}`,
         </div>
       </section>
 
-      <section className="pt-10 pb-16">
+      <section className="pt-6 pb-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:px-8">
           <Reveal>
             <div className="rounded-lg border border-gold/40 bg-card p-8 shadow-soft">
