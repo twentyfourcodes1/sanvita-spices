@@ -458,7 +458,7 @@ function HomePage() {
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section id="featured" className="bg-cream-gradient py-24">
+      <section id="featured" className="bg-cream-gradient pt-16 pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <SectionHeading
