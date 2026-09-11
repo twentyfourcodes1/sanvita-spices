@@ -51,7 +51,7 @@ function ProductsPage() {
   const [sort, setSort] = useState<Sort>("featured");
 
   const visible = useMemo(() => {
-    const q = query.trim().toLowerCase().replace("chilli", "chilli");
+    const q = query.trim().toLowerCase().replace("chilly", "chilli");
     let list = products.filter((product) => {
       const matchesCategory =
         category === "All" || product.category === category;
