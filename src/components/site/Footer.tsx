@@ -8,8 +8,8 @@ import { generalEnquiryMessage, openWhatsApp } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-gold/40 bg-brand text-brand-foreground">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
+    <footer className="mt-12 border-t border-gold/40 bg-brand text-brand-foreground">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <img
             src={logo.url}
