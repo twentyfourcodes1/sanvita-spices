@@ -6,7 +6,7 @@ import { Reveal, SectionHeading } from "@/components/site/primitives";
 import { blogPosts, formatBlogDate } from "@/lib/blog";
 import { business } from "@/lib/products";
 
-const title = "Spice Journal | Indian Spice Guides & Cooking Tips | Sanvita";
+const title = "Spice Journal | Sanvita";
 const description =
   "Practical guides on Indian spices from Sanvita Premium Spices, Vijayapura — how to check purity, store powders, use turmeric and garam masala, and cook everyday dishes.";
 

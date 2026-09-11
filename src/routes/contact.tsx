@@ -14,7 +14,7 @@ import { openWhatsApp } from "@/lib/whatsapp";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Sanvita Premium Spices | Vijayapura, Karnataka" },
+      { title: "Contact | Sanvita" },
       {
         name: "description",
         content:
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/contact")({
       },
       {
         property: "og:title",
-        content: "Contact Sanvita Premium Spices",
+        content: "Contact | Sanvita",
       },
       {
         property: "og:description",

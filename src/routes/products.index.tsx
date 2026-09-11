@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
-      { title: "Buy Indian Spices Online | Sanvita Premium Spices" },
+      { title: "Shop Spices | Sanvita" },
       {
         name: "description",
         content:
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/products/")({
       },
       {
         property: "og:title",
-        content: "Discover the Flavours of Sanvita | Premium Indian Spices",
+        content: "Shop Spices | Sanvita",
       },
       {
         property: "og:description",
