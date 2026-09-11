@@ -94,7 +94,7 @@ function BlogPostPage() {
   return (
     <>
       <article>
-        <header className="bg-brand py-14 text-brand-foreground">
+        <header className="bg-brand py-10 text-brand-foreground">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <nav
               aria-label="Breadcrumb"
@@ -108,12 +108,12 @@ function BlogPostPage() {
                 Spice Journal
               </Link>
             </nav>
-            <p className="text-eyebrow mt-6 text-primary">{post.category}</p>
-            <h1 className="mt-4 font-display text-4xl leading-tight sm:text-5xl">
+            <p className="text-eyebrow mt-4 text-primary">{post.category}</p>
+            <h1 className="mt-3 font-display text-3xl leading-tight sm:text-4xl">
               {post.title}
             </h1>
-            <div className="gold-rule mt-6 w-24" />
-            <div className="mt-6 flex flex-wrap items-center gap-5 text-xs font-semibold uppercase tracking-wide text-brand-foreground/60">
+            <div className="gold-rule mt-4 w-20" />
+            <div className="mt-4 flex flex-wrap items-center gap-5 text-xs font-semibold uppercase tracking-wide text-brand-foreground/60">
               <span className="inline-flex items-center gap-1.5">
                 <CalendarDays className="size-3.5 text-gold" />
                 {formatBlogDate(post.publishedAt)}

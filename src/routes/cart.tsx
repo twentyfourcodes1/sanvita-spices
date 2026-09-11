@@ -35,10 +35,10 @@ function CartPage() {
     useCart();
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <p className="text-eyebrow text-brand">Your Order</p>
-      <h1 className="mt-3 text-4xl sm:text-5xl">Spice Basket</h1>
-      <div className="gold-rule mt-5 w-28" />
+      <h1 className="mt-2 text-3xl sm:text-4xl">Spice Basket</h1>
+      <div className="gold-rule mt-4 w-24" />
 
       {!hydrated ? (
         <div className="mt-12 space-y-4">

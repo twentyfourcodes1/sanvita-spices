@@ -78,17 +78,16 @@ function ProductsPage() {
 
   return (
     <>
-      <section className="bg-cream-gradient py-20">
+      <section className="bg-cream-gradient py-14">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-eyebrow text-brand">Our Products</p>
-          <h1 className="mx-auto mt-4 max-w-3xl text-5xl leading-tight sm:text-6xl">
+          <h1 className="mx-auto mt-3 max-w-2xl text-4xl leading-tight sm:text-5xl">
             Discover the Flavours of Sanvita
           </h1>
-          <div className="gold-rule mx-auto mt-6 w-32" />
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <div className="gold-rule mx-auto mt-4 w-28" />
+          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
             Carefully prepared spices and pure honey for everyday Indian
-            kitchens. Pick
-            your pack size, add to cart and place the order on WhatsApp.
+            kitchens. Pick your pack size, add to cart and order on WhatsApp.
           </p>
         </div>
       </section>

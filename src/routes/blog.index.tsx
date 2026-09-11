@@ -51,14 +51,14 @@ function BlogIndexPage() {
 
   return (
     <>
-      <section className="bg-brand py-16 text-brand-foreground sm:py-20">
+      <section className="bg-brand py-12 text-brand-foreground sm:py-16">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-eyebrow text-primary">Spice Journal</p>
-          <h1 className="mt-4 font-display text-5xl leading-tight sm:text-6xl">
+          <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
             Guides for cooking with real spices
           </h1>
-          <div className="gold-rule mx-auto mt-6 w-28" />
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-brand-foreground/75">
+          <div className="gold-rule mx-auto mt-4 w-24" />
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-brand-foreground/75">
             Straightforward advice from our kitchen in Vijayapura — how to judge
             quality, store powders properly, and get more flavour out of the
             spices you already own.

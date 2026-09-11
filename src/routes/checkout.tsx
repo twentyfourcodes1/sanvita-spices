@@ -114,11 +114,11 @@ function CheckoutPage() {
   }
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <p className="text-eyebrow text-brand">Checkout</p>
-      <h1 className="mt-3 text-4xl sm:text-5xl">Delivery Details</h1>
-      <div className="gold-rule mt-5 w-28" />
-      <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">
+      <h1 className="mt-2 text-3xl sm:text-4xl">Delivery Details</h1>
+      <div className="gold-rule mt-4 w-24" />
+      <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
         There is no online payment. Fill in your details and we will receive
         your full order on WhatsApp, then confirm availability, delivery charges
         and the final amount.
