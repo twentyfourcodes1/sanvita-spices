@@ -716,7 +716,6 @@ function HomePage() {
                     Vijayapura, Karnataka, India
                   </p>
                   <div className="mt-6 inline-flex items-center gap-2 self-start rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-semibold text-gold">
-                    <span className="size-2 rounded-full bg-gold" />
                     FSSAI Lic. No. 21226037001038
                   </div>
                 </div>
