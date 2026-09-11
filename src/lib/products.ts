@@ -4,7 +4,7 @@ import garamMasala from "@/assets/product-garam-masala.jpg";
 import turmeric from "@/assets/product-turmeric.jpg";
 import coriander from "@/assets/product-coriander.jpg";
 import packRedChilly from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
-import packPeanutChutney from "@/assets/pack-peanut-chutney.jpeg.asset.json";
+import packPeanutChutney from "@/assets/peanut-chutney-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/pack-garam-masala.jpeg.asset.json";
 import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
 import packCoriander from "@/assets/pack-coriander.jpeg.asset.json";
