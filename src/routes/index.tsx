@@ -587,7 +587,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CINEMATIC SPICE EXPERIENCE */}
+      {/* PARTNER WITH SANVITA */}
       <section className="relative mt-24 overflow-hidden">
         <img
           src={spiceExperience}
@@ -597,24 +597,38 @@ function HomePage() {
           loading="lazy"
           className="h-[420px] w-full object-cover sm:h-[520px]"
         />
-        <div className="absolute inset-0 bg-brand/65" />
+        <div className="absolute inset-0 bg-brand/75" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="text-eyebrow text-gold">The Spice Experience</p>
-           <h2 className="mt-4 max-w-2xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
-            Colour, aroma and texture — up close
+          <p className="text-eyebrow text-gold">For Retailers / Kirana Stores</p>
+          <h2 className="mt-4 max-w-2xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
+            Partner With Sanvita
           </h2>
-          <ul className="mt-9 flex flex-wrap justify-center gap-3">
-            {["Red Chilly", "Turmeric", "Coriander", "Garam Masala", "Peanut"].map(
-              (label) => (
-                <li
-                  key={label}
-                  className="rounded-md bg-card px-4 py-2 text-xs font-semibold text-brand shadow-soft"
-                >
-                  {label}
-                </li>
-              ),
-            )}
-          </ul>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-brand-foreground/90 sm:text-lg">
+            Are you a Kirana store, supermarket or retailer? Get our product catalogue and wholesale pricing.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <Button
+              size="lg"
+              className="gap-2 bg-gold text-brand hover:bg-gold/90"
+              onClick={() =>
+                openWhatsApp(
+                  `Hello ${business.brand},\n\nI run a retail store and would like to request your product catalogue and wholesale pricing.\n\nBusiness Name:\nCity:\nState:\n\nPlease share the details.`,
+                )
+              }
+            >
+              <Mail className="size-4" />
+              Request Catalogue
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="gap-2 border-brand-foreground/30 bg-brand-foreground/10 text-brand-foreground backdrop-blur-sm hover:bg-brand-foreground/20 hover:text-brand-foreground"
+              onClick={() => openWhatsApp(generalEnquiryMessage)}
+            >
+              <MessageCircle className="size-4" />
+              WhatsApp Us
+            </Button>
+          </div>
         </div>
       </section>
 
