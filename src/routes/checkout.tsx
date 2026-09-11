@@ -18,13 +18,13 @@ import {
 export const Route = createFileRoute("/checkout")({
   head: () => ({
     meta: [
-      { title: "Checkout | Sanvita Premium Spices" },
+      { title: "Checkout | Sanvita" },
       {
         name: "description",
         content:
           "Enter your delivery details and place your spice order on WhatsApp with Sanvita Premium Spices, Vijayapura. No online payment required.",
       },
-      { property: "og:title", content: "Checkout | Sanvita Premium Spices" },
+      { property: "og:title", content: "Checkout | Sanvita" },
       {
         property: "og:description",
         content:

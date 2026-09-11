@@ -23,7 +23,7 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Article not found | Sanvita Premium Spices" },
+          { title: "Article not found | Sanvita" },
           { name: "robots", content: "noindex" },
         ],
       };

@@ -39,13 +39,13 @@ export const Route = createFileRoute("/products/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Product not found | Sanvita Premium Spices" },
+          { title: "Product not found | Sanvita" },
           { name: "robots", content: "noindex" },
         ],
       };
     }
     const { product } = loaderData;
-    const title = `${product.name} | ${business.brand}`;
+    const title = `${product.name} | Sanvita`;
     return {
       meta: [
         { title },

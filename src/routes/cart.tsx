@@ -10,13 +10,13 @@ import { cartOrderMessage, openWhatsApp } from "@/lib/whatsapp";
 export const Route = createFileRoute("/cart")({
   head: () => ({
     meta: [
-      { title: "Your Cart | Sanvita Premium Spices" },
+      { title: "Your Cart | Sanvita" },
       {
         name: "description",
         content:
           "Review the spices in your basket, adjust quantities and continue to WhatsApp checkout with Sanvita Premium Spices.",
       },
-      { property: "og:title", content: "Your Cart | Sanvita Premium Spices" },
+      { property: "og:title", content: "Your Cart | Sanvita" },
       {
         property: "og:description",
         content:
