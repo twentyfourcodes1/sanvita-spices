@@ -7,7 +7,7 @@ import packRedChilly from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
 import packPeanutChutney from "@/assets/peanut-chutney-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/garam-masala-pouch.jpg.asset.json";
 import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
-import packCoriander from "@/assets/pack-coriander.jpeg.asset.json";
+import packCoriander from "@/assets/coriander-powder-pouch.jpg.asset.json";
 import honeyBowl from "@/assets/product-honey.jpg";
 import packHoney from "@/assets/pack-honey.jpeg.asset.json";
 
