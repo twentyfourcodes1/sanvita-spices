@@ -99,28 +99,6 @@ const trust = [
   },
 ];
 
-const process = [
-  {
-    step: "01",
-    title: "Ingredient Selection",
-    text: "Raw spices are chosen for colour, aroma and cleanliness before anything else happens.",
-  },
-  {
-    step: "02",
-    title: "Preparation",
-    text: "Cleaned, roasted where needed and ground to the texture each spice deserves.",
-  },
-  {
-    step: "03",
-    title: "Packing",
-    text: "Packed promptly in sealed packs to protect aroma, colour and freshness.",
-  },
-  {
-    step: "04",
-    title: "Ready for Your Kitchen",
-    text: "Delivered to your home so everyday cooking starts with something better.",
-  },
-];
 
 const testimonials = [
   {
@@ -681,7 +659,7 @@ function HomePage() {
       {/* BECOME A DISTRIBUTOR */}
       <DistributorSection />
 
-      {/* PROCESS */}
+      {/* QUALITY AND COMPLIANCE */}
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-[2.5rem] bg-brand px-6 py-10 shadow-2xl md:px-12 md:py-14">
@@ -693,7 +671,7 @@ function HomePage() {
                 preserveAspectRatio="none"
               >
                 <pattern
-                  id="processMandala"
+                  id="qualityMandala"
                   x="0"
                   y="0"
                   width="100"
@@ -705,39 +683,73 @@ function HomePage() {
                     fill="var(--gold)"
                   />
                 </pattern>
-                <rect width="100%" height="100%" fill="url(#processMandala)" />
+                <rect width="100%" height="100%" fill="url(#qualityMandala)" />
               </svg>
             </div>
 
             <Reveal>
               <div className="relative z-10 mb-10 text-center md:mb-12">
                 <span className="text-eyebrow mb-4 block text-gold">
-                  Our Process
+                  Quality You Can Trust
                 </span>
                 <h2 className="font-display text-4xl italic text-brand-foreground md:text-5xl">
-                  Four careful steps to your kitchen
+                  Quality and Compliance
                 </h2>
                 <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-spice" />
               </div>
             </Reveal>
 
-            <div className="relative z-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {process.map((item, index) => (
-                <Reveal key={item.step} delay={index * 80}>
-                  <div className="group relative flex h-full flex-col items-center border border-gold/20 bg-brand-secondary p-6 text-center transition-all duration-500 hover:border-gold">
-                    <div className="absolute inset-0 bg-spice/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <div className="absolute -top-5 left-1/2 flex size-11 -translate-x-1/2 items-center justify-center rounded-full bg-gold text-base font-bold text-brand shadow-lg transition-transform duration-300 group-hover:scale-110">
-                      {item.step}
-                    </div>
-                    <h3 className="relative z-10 mt-5 font-display text-xl font-bold text-gold">
-                      {item.title}
-                    </h3>
-                    <p className="relative z-10 mt-3 text-sm leading-relaxed text-brand-foreground/80">
-                      {item.text}
-                    </p>
+            <div className="relative z-10 grid gap-8 lg:grid-cols-2">
+              <Reveal>
+                <div className="flex h-full flex-col justify-center rounded-3xl border border-gold/20 bg-brand-secondary/50 p-8 backdrop-blur-sm">
+                  <ShieldCheck className="size-10 text-gold" />
+                  <h3 className="mt-5 font-display text-2xl text-brand-foreground">
+                    Sanvita International Traders
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-foreground/70">
+                    Vijayapura, Karnataka, India
+                  </p>
+                  <div className="mt-6 inline-flex items-center gap-2 self-start rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-semibold text-gold">
+                    <span className="size-2 rounded-full bg-gold" />
+                    FSSAI Lic. No. 21226037001038
                   </div>
-                </Reveal>
-              ))}
+                </div>
+              </Reveal>
+
+              <Reveal delay={80}>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {[
+                    "FSSAI Licensed",
+                    "Hygienically packed",
+                    "Carefully selected ingredients",
+                    "Batch-wise quality control",
+                    "Properly sealed packaging",
+                    "Food-grade packaging",
+                  ].map((point) => (
+                    <div
+                      key={point}
+                      className="flex items-start gap-3 rounded-2xl border border-gold/10 bg-brand-secondary/30 p-4"
+                    >
+                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-gold text-brand">
+                        <svg
+                          className="size-3"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={4}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </span>
+                      <p className="text-sm font-medium leading-snug text-brand-foreground/90">
+                        {point}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
             </div>
 
             {/* Bottom accent */}
