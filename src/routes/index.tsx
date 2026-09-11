@@ -220,6 +220,17 @@ Thank you.`;
               </h2>
               <div className="gold-rule mt-5 w-28" />
             </Reveal>
+            <Reveal className="mt-8 lg:hidden">
+              <div className="overflow-hidden rounded-2xl shadow-xl">
+                <img
+                  src={distributorBg}
+                  alt="Sanvita spice warehouse with shelves of premium spices and distribution boxes"
+                  width={800}
+                  height={600}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+            </Reveal>
             <Reveal delay={120}>
               <ul className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
                 {benefits.map((benefit) => (
