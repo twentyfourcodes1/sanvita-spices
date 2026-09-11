@@ -149,12 +149,7 @@ export const products: Product[] = [
       "Sanvita garam masala powder in a wooden bowl surrounded by cardamom, cloves, cinnamon and star anise",
     accent: "brown",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 129, sku: "SPS-GRM-100" },
-      { label: "200g", price: 239, sku: "SPS-GRM-200" },
-      { label: "500g", price: 559, sku: "SPS-GRM-500" },
-      { label: "1kg", price: 1049, sku: "SPS-GRM-1000" },
-    ],
+    variants: [{ label: "100g", price: 129, sku: "SPS-GRM-100" }],
     highlights: [
       "100 % Natural Garam masala",
       "Rich colour & aroma",
