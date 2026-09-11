@@ -180,10 +180,7 @@ function ProductPage() {
                 { icon: <Package className="size-4" />, label: "Freshly packed" },
                 {
                   icon: <Sparkles className="size-4" />,
-                  label:
-                    product.category === "Honey"
-                      ? "Raw & natural"
-                      : "Aromatic grind",
+                  label: "Aromatic grind",
                 },
               ].map((item) => (
                 <div
