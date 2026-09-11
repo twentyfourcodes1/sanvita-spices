@@ -430,7 +430,7 @@ function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-brand/80 via-brand/55 to-brand/15" />
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-24 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8 lg:pb-24 lg:pt-40">
           <div className="max-w-xl">
-            <p className="text-eyebrow text-primary">{business.brand}</p>
+            <p className="text-eyebrow text-primary font-bold tracking-wide uppercase">{business.brand}</p>
             <h1 className="mt-5 text-4xl leading-[1.05] text-brand-foreground sm:text-5xl lg:text-6xl">
               Pure Taste.
               <span className="block text-primary">Authentic Aroma. Everyday Quality.</span>
