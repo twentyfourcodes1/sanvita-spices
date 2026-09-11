@@ -420,7 +420,7 @@ function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-24 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8 lg:pb-24 lg:pt-40">
           <div className="max-w-xl">
             <p className="text-eyebrow text-primary">{business.brand}</p>
-            <h1 className="mt-5 text-5xl leading-[1.05] text-brand-foreground sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 text-4xl leading-[1.05] text-brand-foreground sm:text-5xl lg:text-6xl">
               Pure Taste.
               <span className="block text-primary">Authentic Aroma. Everyday Quality.</span>
             </h1>
