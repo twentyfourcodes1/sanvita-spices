@@ -8,8 +8,6 @@ import packPeanutChutney from "@/assets/peanut-chutney-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/garam-masala-pouch.jpg.asset.json";
 import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
 import packCoriander from "@/assets/coriander-powder-pouch.jpg.asset.json";
-import honeyBowl from "@/assets/product-honey.jpg";
-import packHoney from "@/assets/pack-honey.jpeg.asset.json";
 
 /* -------------------------------------------------------------------------
  * BUSINESS INFORMATION — edit here, used across the whole website.
@@ -42,7 +40,7 @@ export type Product = {
   name: string;
   tagline: string;
   short: string;
-  category: "Powdered Spices" | "Blends" | "Chutney Powders" | "Honey";
+  category: "Powdered Spices" | "Blends" | "Chutney Powders";
   image: string;
   imageAlt: string;
   /** Retail pack photograph, shown alongside the existing image. */
@@ -76,12 +74,7 @@ export const products: Product[] = [
       "Fine deep red Sanvita chilly powder in a wooden bowl beside whole dried red chillies",
     accent: "red",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 69, sku: "SPS-RCP-100" },
-      { label: "200g", price: 119, sku: "SPS-RCP-200" },
-      { label: "500g", price: 279, sku: "SPS-RCP-500" },
-      { label: "1kg", price: 529, sku: "SPS-RCP-1000" },
-    ],
+    variants: [{ label: "100g", price: 69, sku: "SPS-RCP-100" }],
     highlights: [
       "100 % Natural Chilly powder",
       "Rich colour & aroma",
@@ -116,12 +109,7 @@ export const products: Product[] = [
       "Sanvita peanut chutney powder in a wooden bowl with roasted peanuts and dried red chillies",
     accent: "terracotta",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 89, sku: "SPS-PNC-100" },
-      { label: "200g", price: 169, sku: "SPS-PNC-200" },
-      { label: "500g", price: 399, sku: "SPS-PNC-500" },
-      { label: "1kg", price: 759, sku: "SPS-PNC-1000" },
-    ],
+    variants: [{ label: "200g", price: 169, sku: "SPS-PNC-200" }],
     highlights: [
       "Roasted peanut aroma",
       "Traditional South Indian taste",
@@ -161,12 +149,7 @@ export const products: Product[] = [
       "Sanvita garam masala powder in a wooden bowl surrounded by cardamom, cloves, cinnamon and star anise",
     accent: "brown",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 129, sku: "SPS-GRM-100" },
-      { label: "200g", price: 239, sku: "SPS-GRM-200" },
-      { label: "500g", price: 559, sku: "SPS-GRM-500" },
-      { label: "1kg", price: 1049, sku: "SPS-GRM-1000" },
-    ],
+    variants: [{ label: "100g", price: 129, sku: "SPS-GRM-100" }],
     highlights: [
       "100 % Natural Garam masala",
       "Rich colour & aroma",
@@ -209,12 +192,7 @@ export const products: Product[] = [
       "Golden Sanvita turmeric powder in a wooden bowl with fresh turmeric roots beside it",
     accent: "gold",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 79, sku: "SPS-TUR-100" },
-      { label: "200g", price: 149, sku: "SPS-TUR-200" },
-      { label: "500g", price: 309, sku: "SPS-TUR-500" },
-      { label: "1kg", price: 589, sku: "SPS-TUR-1000" },
-    ],
+    variants: [{ label: "100g", price: 79, sku: "SPS-TUR-100" }],
     highlights: [
       "Rich colour and aroma",
       "Every batch is tested for purity",
@@ -251,12 +229,7 @@ export const products: Product[] = [
       "Sanvita coriander powder in a wooden bowl with coriander seeds and fresh coriander leaves",
     accent: "green",
     bestseller: false,
-    variants: [
-      { label: "100g", price: 59, sku: "SPS-COR-100" },
-      { label: "200g", price: 109, sku: "SPS-COR-200" },
-      { label: "500g", price: 259, sku: "SPS-COR-500" },
-      { label: "1kg", price: 489, sku: "SPS-COR-1000" },
-    ],
+    variants: [{ label: "100g", price: 59, sku: "SPS-COR-100" }],
     highlights: [
       "100 % Natural Coriander powder",
       "Rich colour & aroma",
@@ -277,43 +250,6 @@ export const products: Product[] = [
       "Add to dry roasts, sabzis and rasam",
     ],
   },
-  {
-    slug: "honey",
-    name: "Honey",
-    tagline: "Nature's sweetness in every drop",
-    short:
-      "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
-    category: "Honey",
-    image: packHoney.url,
-    packImage: honeyBowl,
-    imageAlt: "Sanvita Premium Honey 250g glass jar",
-    packImageAlt:
-      "Golden honey in a wooden bowl with a honey dipper, honeycomb pieces and blossoms",
-    accent: "gold",
-    bestseller: true,
-    variants: [
-      { label: "250g", price: 249, sku: "SPS-HNY-250" },
-      { label: "500g", price: 459, sku: "SPS-HNY-500" },
-    ],
-    highlights: [
-      "No added sugar",
-      "No preservatives",
-      "Rich in natural goodness",
-      "Sourced from trusted beekeepers",
-    ],
-    description: [
-      "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
-      "Use it as an everyday sweetener in place of sugar: a spoon in warm water, drizzled over breakfast, or stirred into tea, milk and desserts.",
-    ],
-    ingredients: ["100% pure honey"],
-    storage:
-      "Store in a cool, dry place with the lid closed. Natural crystallisation may occur — place the jar in warm water to return it to a smooth flow.",
-    usage: [
-      "Stir into warm water, milk or tea",
-      "Drizzle over toast, fruit and yogurt",
-      "Use as a natural sweetener in desserts and marinades",
-    ],
-  },
 ];
 
 export const getProduct = (slug: string) =>
@@ -330,5 +266,4 @@ export const categories = [
   "Powdered Spices",
   "Blends",
   "Chutney Powders",
-  "Honey",
 ] as const;

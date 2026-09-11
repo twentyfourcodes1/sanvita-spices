@@ -73,7 +73,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Buy in sizes you will actually finish",
         paragraphs: [
-          "Chilly powder is at its best within a few months of grinding. Buying a 250g or 500g pack you finish quickly protects colour and aroma far better than a large tin that sits open for a year.",
+          "Chilly powder is at its best within a few months of grinding. Buying a small pack you finish quickly protects colour and aroma far better than a large tin that sits open for a year.",
         ],
       },
     ],
