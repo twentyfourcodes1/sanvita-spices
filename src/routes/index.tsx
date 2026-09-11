@@ -573,7 +573,7 @@ function HomePage() {
           width={1920}
           height={912}
           loading="lazy"
-          className="h-[420px] w-full object-cover sm:h-[520px]"
+          className="h-[300px] w-full object-cover sm:h-[360px]"
         />
         <div className="absolute inset-0 bg-brand/75" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
