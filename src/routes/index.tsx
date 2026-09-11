@@ -10,15 +10,27 @@ import {
   Quote,
   ShieldCheck,
   Sparkles,
+  Store,
   UtensilsCrossed,
 } from "lucide-react";
+import { useState } from "react";
 
 import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
 const heroSpices = heroSpicesAsset.url;
 import brandStory from "@/assets/brand-story.jpg";
-import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
 import spiceExperience from "@/assets/spice-experience.jpg";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { CTASection } from "@/components/site/CTASection";
 import { ProductCard } from "@/components/site/ProductCard";
 import {
@@ -128,6 +140,256 @@ const testimonials = [
     place: "Hubballi, Karnataka",
   },
 ];
+
+function DistributorSection() {
+  const [open, setOpen] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    businessName: "",
+    mobile: "",
+    city: "",
+    state: "",
+    existingBusiness: false,
+    interestedProducts: [] as string[],
+  });
+
+  const toggleProduct = (slug: string) => {
+    setForm((prev) => ({
+      ...prev,
+      interestedProducts: prev.interestedProducts.includes(slug)
+        ? prev.interestedProducts.filter((s) => s !== slug)
+        : [...prev.interestedProducts, slug],
+    }));
+  };
+
+  const submit = () => {
+    if (
+      !form.name.trim() ||
+      !form.businessName.trim() ||
+      !form.mobile.trim() ||
+      !form.city.trim() ||
+      !form.state.trim()
+    ) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    const productLines =
+      form.interestedProducts.length > 0
+        ? form.interestedProducts
+            .map(
+              (slug) =>
+                `• ${products.find((p) => p.slug === slug)?.name ?? slug}`,
+            )
+            .join("\n")
+        : "• All products";
+
+    const message = `Hello ${business.brand},
+
+I am interested in becoming a Sanvita distributor.
+
+DISTRIBUTOR ENQUIRY
+
+Name: ${form.name.trim()}
+Business Name: ${form.businessName.trim()}
+Mobile: ${form.mobile.trim()}
+City: ${form.city.trim()}
+State: ${form.state.trim()}
+Existing Business: ${form.existingBusiness ? "Yes" : "No"}
+
+Products Interested In:
+${productLines}
+
+Please share the distributorship details, margins and next steps.
+
+Thank you.`;
+
+    setOpen(false);
+    openWhatsApp(message);
+    toast.success("Opening WhatsApp with your distributor enquiry.");
+  };
+
+  const benefits = [
+    "Attractive margins",
+    "Growing product range",
+    "Premium packaging",
+    "Marketing support",
+    "Reliable supply",
+  ];
+
+  return (
+    <section className="bg-brand py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <Reveal>
+            <p className="text-eyebrow text-gold">Become a Distributor</p>
+            <h2 className="mt-4 text-3xl leading-tight text-brand-foreground sm:text-4xl">
+              Bring Sanvita Premium Spices to your city.
+            </h2>
+            <div className="gold-rule mx-auto mt-5 w-28" />
+          </Reveal>
+          <Reveal delay={120}>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
+              {benefits.map((benefit) => (
+                <li
+                  key={benefit}
+                  className="flex items-center gap-3 rounded-lg border border-gold/20 bg-brand-secondary/50 px-5 py-4 text-left text-sm text-brand-foreground/90"
+                >
+                  <Store className="size-5 shrink-0 text-gold" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <Reveal delay={200}>
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild>
+                <Button
+                  size="lg"
+                  variant="whatsapp"
+                  className="mt-10"
+                >
+                  <MessageCircle /> Become a Distributor
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
+                <DialogHeader>
+                  <DialogTitle>Become a Sanvita Distributor</DialogTitle>
+                  <DialogDescription>
+                    Fill in your details and we will connect with you on
+                    WhatsApp.
+                  </DialogDescription>
+                </DialogHeader>
+                <form
+                  className="mt-4 grid gap-5"
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    submit();
+                  }}
+                >
+                  <div className="grid gap-5 sm:grid-cols-2">
+                    <div>
+                      <Label htmlFor="dist-name" className="text-sm font-semibold">
+                        Name *
+                      </Label>
+                      <Input
+                        id="dist-name"
+                        value={form.name}
+                        onChange={(event) =>
+                          setForm({ ...form, name: event.target.value })
+                        }
+                        className="mt-2 h-11 rounded-md"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="dist-business" className="text-sm font-semibold">
+                        Business Name *
+                      </Label>
+                      <Input
+                        id="dist-business"
+                        value={form.businessName}
+                        onChange={(event) =>
+                          setForm({ ...form, businessName: event.target.value })
+                        }
+                        className="mt-2 h-11 rounded-md"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="dist-mobile" className="text-sm font-semibold">
+                        Mobile *
+                      </Label>
+                      <Input
+                        id="dist-mobile"
+                        inputMode="tel"
+                        value={form.mobile}
+                        onChange={(event) =>
+                          setForm({ ...form, mobile: event.target.value })
+                        }
+                        className="mt-2 h-11 rounded-md"
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="dist-city" className="text-sm font-semibold">
+                        City *
+                      </Label>
+                      <Input
+                        id="dist-city"
+                        value={form.city}
+                        onChange={(event) =>
+                          setForm({ ...form, city: event.target.value })
+                        }
+                        className="mt-2 h-11 rounded-md"
+                      />
+                    </div>
+                    <div className="sm:col-span-2">
+                      <Label htmlFor="dist-state" className="text-sm font-semibold">
+                        State *
+                      </Label>
+                      <Input
+                        id="dist-state"
+                        value={form.state}
+                        onChange={(event) =>
+                          setForm({ ...form, state: event.target.value })
+                        }
+                        className="mt-2 h-11 rounded-md"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 rounded-md border border-gold/20 p-4">
+                    <Checkbox
+                      id="dist-existing"
+                      checked={form.existingBusiness}
+                      onCheckedChange={(checked) =>
+                        setForm({ ...form, existingBusiness: checked === true })
+                      }
+                    />
+                    <Label
+                      htmlFor="dist-existing"
+                      className="cursor-pointer text-sm font-medium leading-tight"
+                    >
+                      I have an existing business (retail store, supermarket,
+                      distribution, etc.)
+                    </Label>
+                  </div>
+                  <div>
+                    <Label className="text-sm font-semibold">
+                      Products Interested In
+                    </Label>
+                    <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                      {products.map((product) => (
+                        <div
+                          key={product.slug}
+                          className="flex items-center gap-2"
+                        >
+                          <Checkbox
+                            id={`dist-product-${product.slug}`}
+                            checked={form.interestedProducts.includes(
+                              product.slug,
+                            )}
+                            onCheckedChange={() => toggleProduct(product.slug)}
+                          />
+                          <Label
+                            htmlFor={`dist-product-${product.slug}`}
+                            className="cursor-pointer text-sm"
+                          >
+                            {product.name}
+                          </Label>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <Button type="submit" size="lg" className="w-full">
+                    Submit Enquiry
+                  </Button>
+                </form>
+              </DialogContent>
+            </Dialog>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function HomePage() {
   const { addItem, openCart } = useCart();
@@ -387,41 +649,8 @@ function HomePage() {
         </div>
       </section>
 
-      {/* FROM OUR KITCHEN TO YOURS */}
-      <section className="bg-secondary/60 py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <Reveal>
-            <SectionHeading
-              align="left"
-              eyebrow="From Our Kitchen to Yours"
-              title="The everyday meals that deserve better spices"
-              description="A weekday dal, a Sunday biryani, a quick chutney with hot rice — the food that fills Indian homes is simple. Good spices are what make it memorable."
-            />
-            <ul className="mt-8 space-y-4">
-              {[
-                "Consistent colour and aroma, batch after batch",
-                "Blends balanced for family cooking, not restaurant heat",
-                "Pack sizes for both small kitchens and big households",
-              ].map((point) => (
-                <li key={point} className="flex gap-3 text-sm">
-                  <Sparkles className="mt-0.5 size-4 shrink-0 text-gold" />
-                  <span className="text-muted-foreground">{point}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={120}>
-            <img
-              src={kitchenLifestyle}
-              alt="Freshly cooked Indian curry in a pan beside a brass spice box"
-              width={1408}
-              height={1008}
-              loading="lazy"
-              className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
-            />
-          </Reveal>
-        </div>
-      </section>
+      {/* BECOME A DISTRIBUTOR */}
+      <DistributorSection />
 
       {/* PROCESS */}
       <section className="py-16 md:py-20">
