@@ -399,41 +399,8 @@ function HomePage() {
         </div>
       </section>
 
-      {/* FROM OUR KITCHEN TO YOURS */}
-      <section className="bg-secondary/60 py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <Reveal>
-            <SectionHeading
-              align="left"
-              eyebrow="From Our Kitchen to Yours"
-              title="The everyday meals that deserve better spices"
-              description="A weekday dal, a Sunday biryani, a quick chutney with hot rice — the food that fills Indian homes is simple. Good spices are what make it memorable."
-            />
-            <ul className="mt-8 space-y-4">
-              {[
-                "Consistent colour and aroma, batch after batch",
-                "Blends balanced for family cooking, not restaurant heat",
-                "Pack sizes for both small kitchens and big households",
-              ].map((point) => (
-                <li key={point} className="flex gap-3 text-sm">
-                  <Sparkles className="mt-0.5 size-4 shrink-0 text-gold" />
-                  <span className="text-muted-foreground">{point}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={120}>
-            <img
-              src={kitchenLifestyle}
-              alt="Freshly cooked Indian curry in a pan beside a brass spice box"
-              width={1408}
-              height={1008}
-              loading="lazy"
-              className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
-            />
-          </Reveal>
-        </div>
-      </section>
+      {/* BECOME A DISTRIBUTOR */}
+      <DistributorSection />
 
       {/* PROCESS */}
       <section className="py-16 md:py-20">
