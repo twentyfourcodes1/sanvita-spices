@@ -220,179 +220,187 @@ Thank you.`;
   ];
 
   return (
-    <section className="relative overflow-hidden py-16 sm:py-20">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${distributorBg})` }}
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-brand/88" aria-hidden="true" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <Reveal>
-            <p className="text-eyebrow text-gold">Become a Distributor</p>
-            <h2 className="mt-4 text-3xl leading-tight text-brand-foreground sm:text-4xl">
-              Bring Sanvita Premium Spices to your city.
-            </h2>
-            <div className="gold-rule mx-auto mt-5 w-28" />
+    <section className="overflow-hidden bg-cream py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <Reveal className="order-2 lg:order-1">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <img
+                src={distributorBg}
+                alt="Sanvita spice warehouse with shelves of premium spices and distribution boxes"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand/40 to-transparent" />
+            </div>
           </Reveal>
-          <Reveal delay={120}>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
-              {benefits.map((benefit) => (
-                <li
-                  key={benefit}
-                  className="flex items-center gap-3 rounded-lg border border-gold/20 bg-brand-secondary/50 px-5 py-4 text-left text-sm text-brand-foreground/90"
-                >
-                  <Store className="size-5 shrink-0 text-gold" />
-                  <span>{benefit}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={200}>
-            <Dialog open={open} onOpenChange={setOpen}>
-              <DialogTrigger asChild>
-                <Button
-                  size="lg"
-                  variant="whatsapp"
-                  className="mt-10"
-                >
-                  <MessageCircle /> Become a Distributor
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
-                <DialogHeader>
-                  <DialogTitle>Become a Sanvita Distributor</DialogTitle>
-                  <DialogDescription>
-                    Fill in your details and we will connect with you on
-                    WhatsApp.
-                  </DialogDescription>
-                </DialogHeader>
-                <form
-                  className="mt-4 grid gap-5"
-                  onSubmit={(event) => {
-                    event.preventDefault();
-                    submit();
-                  }}
-                >
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div>
-                      <Label htmlFor="dist-name" className="text-sm font-semibold">
-                        Name *
-                      </Label>
-                      <Input
-                        id="dist-name"
-                        value={form.name}
-                        onChange={(event) =>
-                          setForm({ ...form, name: event.target.value })
-                        }
-                        className="mt-2 h-11 rounded-md"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="dist-business" className="text-sm font-semibold">
-                        Business Name *
-                      </Label>
-                      <Input
-                        id="dist-business"
-                        value={form.businessName}
-                        onChange={(event) =>
-                          setForm({ ...form, businessName: event.target.value })
-                        }
-                        className="mt-2 h-11 rounded-md"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="dist-mobile" className="text-sm font-semibold">
-                        Mobile *
-                      </Label>
-                      <Input
-                        id="dist-mobile"
-                        inputMode="tel"
-                        value={form.mobile}
-                        onChange={(event) =>
-                          setForm({ ...form, mobile: event.target.value })
-                        }
-                        className="mt-2 h-11 rounded-md"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="dist-city" className="text-sm font-semibold">
-                        City *
-                      </Label>
-                      <Input
-                        id="dist-city"
-                        value={form.city}
-                        onChange={(event) =>
-                          setForm({ ...form, city: event.target.value })
-                        }
-                        className="mt-2 h-11 rounded-md"
-                      />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <Label htmlFor="dist-state" className="text-sm font-semibold">
-                        State *
-                      </Label>
-                      <Input
-                        id="dist-state"
-                        value={form.state}
-                        onChange={(event) =>
-                          setForm({ ...form, state: event.target.value })
-                        }
-                        className="mt-2 h-11 rounded-md"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3 rounded-md border border-gold/20 p-4">
-                    <Checkbox
-                      id="dist-existing"
-                      checked={form.existingBusiness}
-                      onCheckedChange={(checked) =>
-                        setForm({ ...form, existingBusiness: checked === true })
-                      }
-                    />
-                    <Label
-                      htmlFor="dist-existing"
-                      className="cursor-pointer text-sm font-medium leading-tight"
-                    >
-                      I have an existing business (retail store, supermarket,
-                      distribution, etc.)
-                    </Label>
-                  </div>
-                  <div>
-                    <Label className="text-sm font-semibold">
-                      Products Interested In
-                    </Label>
-                    <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                      {products.map((product) => (
-                        <div
-                          key={product.slug}
-                          className="flex items-center gap-2"
-                        >
-                          <Checkbox
-                            id={`dist-product-${product.slug}`}
-                            checked={form.interestedProducts.includes(
-                              product.slug,
-                            )}
-                            onCheckedChange={() => toggleProduct(product.slug)}
-                          />
-                          <Label
-                            htmlFor={`dist-product-${product.slug}`}
-                            className="cursor-pointer text-sm"
-                          >
-                            {product.name}
-                          </Label>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <Button type="submit" size="lg" className="w-full">
-                    Submit Enquiry
+          <div className="order-1 lg:order-2">
+            <Reveal>
+              <p className="text-eyebrow text-gold">Become a Distributor</p>
+              <h2 className="mt-4 text-3xl leading-tight text-charcoal sm:text-4xl">
+                Bring Sanvita Premium Spices to your city.
+              </h2>
+              <div className="gold-rule mt-5 w-28" />
+            </Reveal>
+            <Reveal delay={120}>
+              <ul className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
+                {benefits.map((benefit) => (
+                  <li
+                    key={benefit}
+                    className="flex items-center gap-3 rounded-lg border border-gold/20 bg-white/70 px-5 py-4 text-left text-sm text-charcoal/90"
+                  >
+                    <Store className="size-5 shrink-0 text-gold" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+            <Reveal delay={200}>
+              <Dialog open={open} onOpenChange={setOpen}>
+                <DialogTrigger asChild>
+                  <Button
+                    size="lg"
+                    variant="whatsapp"
+                    className="mt-10"
+                  >
+                    <MessageCircle /> Become a Distributor
                   </Button>
-                </form>
-              </DialogContent>
-            </Dialog>
-          </Reveal>
+                </DialogTrigger>
+                <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
+                  <DialogHeader>
+                    <DialogTitle>Become a Sanvita Distributor</DialogTitle>
+                    <DialogDescription>
+                      Fill in your details and we will connect with you on
+                      WhatsApp.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <form
+                    className="mt-4 grid gap-5"
+                    onSubmit={(event) => {
+                      event.preventDefault();
+                      submit();
+                    }}
+                  >
+                    <div className="grid gap-5 sm:grid-cols-2">
+                      <div>
+                        <Label htmlFor="dist-name" className="text-sm font-semibold">
+                          Name *
+                        </Label>
+                        <Input
+                          id="dist-name"
+                          value={form.name}
+                          onChange={(event) =>
+                            setForm({ ...form, name: event.target.value })
+                          }
+                          className="mt-2 h-11 rounded-md"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="dist-business" className="text-sm font-semibold">
+                          Business Name *
+                        </Label>
+                        <Input
+                          id="dist-business"
+                          value={form.businessName}
+                          onChange={(event) =>
+                            setForm({ ...form, businessName: event.target.value })
+                          }
+                          className="mt-2 h-11 rounded-md"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="dist-mobile" className="text-sm font-semibold">
+                          Mobile *
+                        </Label>
+                        <Input
+                          id="dist-mobile"
+                          inputMode="tel"
+                          value={form.mobile}
+                          onChange={(event) =>
+                            setForm({ ...form, mobile: event.target.value })
+                          }
+                          className="mt-2 h-11 rounded-md"
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="dist-city" className="text-sm font-semibold">
+                          City *
+                        </Label>
+                        <Input
+                          id="dist-city"
+                          value={form.city}
+                          onChange={(event) =>
+                            setForm({ ...form, city: event.target.value })
+                          }
+                          className="mt-2 h-11 rounded-md"
+                        />
+                      </div>
+                      <div className="sm:col-span-2">
+                        <Label htmlFor="dist-state" className="text-sm font-semibold">
+                          State *
+                        </Label>
+                        <Input
+                          id="dist-state"
+                          value={form.state}
+                          onChange={(event) =>
+                            setForm({ ...form, state: event.target.value })
+                          }
+                          className="mt-2 h-11 rounded-md"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 rounded-md border border-gold/20 p-4">
+                      <Checkbox
+                        id="dist-existing"
+                        checked={form.existingBusiness}
+                        onCheckedChange={(checked) =>
+                          setForm({ ...form, existingBusiness: checked === true })
+                        }
+                      />
+                      <Label
+                        htmlFor="dist-existing"
+                        className="cursor-pointer text-sm font-medium leading-tight"
+                      >
+                        I have an existing business (retail store, supermarket,
+                        distribution, etc.)
+                      </Label>
+                    </div>
+                    <div>
+                      <Label className="text-sm font-semibold">
+                        Products Interested In
+                      </Label>
+                      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                        {products.map((product) => (
+                          <div
+                            key={product.slug}
+                            className="flex items-center gap-2"
+                          >
+                            <Checkbox
+                              id={`dist-product-${product.slug}`}
+                              checked={form.interestedProducts.includes(
+                                product.slug,
+                              )}
+                              onCheckedChange={() => toggleProduct(product.slug)}
+                            />
+                            <Label
+                              htmlFor={`dist-product-${product.slug}`}
+                              className="cursor-pointer text-sm"
+                            >
+                              {product.name}
+                            </Label>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <Button type="submit" size="lg" className="w-full">
+                      Submit Enquiry
+                    </Button>
+                  </form>
+                </DialogContent>
+              </Dialog>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>
