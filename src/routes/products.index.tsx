@@ -80,7 +80,7 @@ function ProductsPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden py-20 sm:py-24">
+      <section className="relative overflow-hidden py-14 sm:py-16">
         <img
           src={productsHero}
           alt="Colorful Indian spices in bowls and spoons"
