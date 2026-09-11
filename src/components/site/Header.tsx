@@ -57,7 +57,7 @@ export function Header() {
       [product.name, product.category, product.short, product.tagline]
         .join(" ")
         .toLowerCase()
-        .includes(q.replace("chilli", "chilly")),
+        .includes(q.replace("chilli", "chilli")),
     );
   }, [query]);
 

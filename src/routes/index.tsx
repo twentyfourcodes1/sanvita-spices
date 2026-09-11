@@ -54,7 +54,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Buy premium Indian spices online from Sanvita Premium Spices, Vijayapura — red chilly powder, turmeric powder, coriander powder, garam masala and peanut chutney. Order easily on WhatsApp.",
+          "Buy premium Indian spices online from Sanvita Premium Spices, Vijayapura — red chilli powder, turmeric powder, coriander powder, garam masala and peanut chutney. Order easily on WhatsApp.",
       },
       {
         property: "og:title",

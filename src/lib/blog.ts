@@ -1,7 +1,7 @@
 import brandStory from "@/assets/brand-story-spices.png.asset.json";
 import aboutSpicesIndia from "@/assets/about-spices-india.png.asset.json";
 import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
-import packRedChilly from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
+import packRedChilli from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/garam-masala-pouch.jpg.asset.json";
 import packPeanutChutney from "@/assets/peanut-chutney-pouch.jpg.asset.json";
 
@@ -31,21 +31,21 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "how-to-identify-pure-red-chilly-powder",
-    title: "How to Identify Pure Red Chilly Powder at Home",
-    metaTitle: "How to Identify Pure Red Chilly Powder",
+    slug: "how-to-identify-pure-red-chilli-powder",
+    title: "How to Identify Pure Red Chilli Powder at Home",
+    metaTitle: "How to Identify Pure Red Chilli Powder",
     metaDescription:
-      "Simple kitchen checks to spot pure red chilly powder — colour, aroma, water and texture tests — from Sanvita Premium Spices, Vijayapura.",
+      "Simple kitchen checks to spot pure red chilli powder — colour, aroma, water and texture tests — from Sanvita Premium Spices, Vijayapura.",
     excerpt:
-      "Colour, aroma, texture and two easy water tests that tell you whether the chilly powder in your kitchen is honest or heavily coloured.",
-    keyword: "pure red chilly powder",
+      "Colour, aroma, texture and two easy water tests that tell you whether the chilli powder in your kitchen is honest or heavily coloured.",
+    keyword: "pure red chilli powder",
     category: "Spice Guides",
     readMinutes: 5,
     publishedAt: "2026-08-12",
-    image: packRedChilly.url,
-    imageAlt: "Sanvita Red Chilly Powder retail pouch",
+    image: packRedChilli.url,
+    imageAlt: "Sanvita Red Chilli Powder retail pouch",
     intro:
-      "Red chilly powder does more than add heat — it sets the colour and character of a dish. Heavily coloured or bulked-out powder shows up quickly once you know what to look for, and every check below can be done at your own kitchen counter in a few minutes.",
+      "Red chilli powder does more than add heat — it sets the colour and character of a dish. Heavily coloured or bulked-out powder shows up quickly once you know what to look for, and every check below can be done at your own kitchen counter in a few minutes.",
     sections: [
       {
         heading: "Start with colour, not brightness",
@@ -67,29 +67,29 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Rub, smell and taste",
         paragraphs: [
-          "Rub a pinch between your palms. Real chilly powder feels slightly oily and leaves a clean chilli aroma on your skin. In hot oil it should bloom into fragrance within seconds; a flat, dusty smell is a warning sign.",
+          "Rub a pinch between your palms. Real chilli powder feels slightly oily and leaves a clean chilli aroma on your skin. In hot oil it should bloom into fragrance within seconds; a flat, dusty smell is a warning sign.",
         ],
       },
       {
         heading: "Buy in sizes you will actually finish",
         paragraphs: [
-          "Chilly powder is at its best within a few months of grinding. Buying a small pack you finish quickly protects colour and aroma far better than a large tin that sits open for a year.",
+          "Chilli powder is at its best within a few months of grinding. Buying a small pack you finish quickly protects colour and aroma far better than a large tin that sits open for a year.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Does darker red chilly powder mean lower quality?",
+        question: "Does darker red chilli powder mean lower quality?",
         answer:
           "No. Colour depends on the chilli variety and how recently it was ground. A natural deep red is normal; a very bright, uniform red is more often a sign of added colour.",
       },
       {
-        question: "How long does red chilly powder stay fresh?",
+        question: "How long does red chilli powder stay fresh?",
         answer:
           "Kept airtight, away from heat and moisture, it holds good colour and heat for about six months and remains usable for longer with gradually reduced aroma.",
       },
     ],
-    relatedProductSlugs: ["red-chilly-powder", "turmeric-powder"],
+    relatedProductSlugs: ["red-chilli-powder", "turmeric-powder"],
   },
   {
     slug: "turmeric-powder-benefits-and-cooking-guide",
@@ -140,9 +140,9 @@ export const blogPosts: BlogPost[] = [
           "Usually too much powder, or turmeric added to a dry hot pan and scorched. Add it with oil, in small amounts, and stir immediately.",
       },
       {
-        question: "Can turmeric replace red chilly powder for colour?",
+        question: "Can turmeric replace red chilli powder for colour?",
         answer:
-          "No. Turmeric gives a golden tone and mild earthiness, while chilly powder gives red colour and heat. Most Indian dishes use both together.",
+          "No. Turmeric gives a golden tone and mild earthiness, while chilli powder gives red colour and heat. Most Indian dishes use both together.",
       },
     ],
     relatedProductSlugs: ["turmeric-powder", "coriander-powder"],
@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [],
         bullets: [
           "Turmeric and coriander powder: six to nine months of good aroma.",
-          "Red chilly powder: about six months of bright colour.",
+          "Red chilli powder: about six months of bright colour.",
           "Garam masala and other blends: three to six months, since aroma is the whole point.",
           "Peanut chutney powder: two to three months, as roasted nuts carry oil.",
         ],
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
           "They are usually still safe if stored dry and airtight, but they lose aroma and colour, so dishes taste flat.",
       },
     ],
-    relatedProductSlugs: ["garam-masala", "red-chilly-powder"],
+    relatedProductSlugs: ["garam-masala", "red-chilli-powder"],
   },
   {
     slug: "garam-masala-vs-curry-powder",
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
         heading: "When to use which",
         paragraphs: [],
         bullets: [
-          "Building a curry base: turmeric, coriander and chilly powder early in the oil.",
+          "Building a curry base: turmeric, coriander and chilli powder early in the oil.",
           "Rounding off a gravy, biryani or pulao: a small spoon of garam masala at the end.",
           "Never substitute one for the other in equal amounts — garam masala is far more aromatic and easily overpowers a dish.",
         ],
@@ -253,7 +253,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "A simple everyday order of spices",
         paragraphs: [
-          "Temper whole spices, add turmeric with the aromatics, then coriander and red chilly powder with the tomatoes, cook the masala through, and finish with a pinch of garam masala and fresh coriander leaves off the heat.",
+          "Temper whole spices, add turmeric with the aromatics, then coriander and red chilli powder with the tomatoes, cook the masala through, and finish with a pinch of garam masala and fresh coriander leaves off the heat.",
         ],
       },
     ],
@@ -326,7 +326,7 @@ export const blogPosts: BlogPost[] = [
           "Yes. A spoonful thickens vegetable gravies nicely and adds a nutty depth, similar to a peanut masala.",
       },
     ],
-    relatedProductSlugs: ["peanut-chutney", "red-chilly-powder"],
+    relatedProductSlugs: ["peanut-chutney", "red-chilli-powder"],
   },
 ];
 

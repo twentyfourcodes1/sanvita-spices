@@ -94,7 +94,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Premium Indian spices from Sanvita International Traders, Vijayapura — red chilly powder, turmeric, coriander, garam masala and peanut chutney.",
+          "Premium Indian spices from Sanvita International Traders, Vijayapura — red chilli powder, turmeric, coriander, garam masala and peanut chutney.",
       },
       { name: "author", content: business.company },
       { property: "og:type", content: "website" },
