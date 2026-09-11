@@ -291,5 +291,4 @@ export const categories = [
   "Powdered Spices",
   "Blends",
   "Chutney Powders",
-  "Honey",
 ] as const;
