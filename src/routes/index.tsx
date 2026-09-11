@@ -220,7 +220,7 @@ Thank you.`;
   ];
 
   return (
-    <section className="overflow-hidden bg-cream py-16 sm:py-20">
+    <section id="distributor" className="overflow-hidden bg-cream py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <Reveal className="order-2 lg:order-1">
@@ -461,7 +461,7 @@ function HomePage() {
                 variant="outline"
                 className="text-brand-foreground hover:bg-gold hover:text-charcoal"
               >
-                <a href="/contact">Become A Distributor</a>
+                <a href="#distributor">Become A Distributor</a>
               </Button>
             </div>
             <dl className="mt-12 grid max-w-md grid-cols-3 gap-6">
