@@ -166,8 +166,8 @@ function HomePage() {
           <div className="max-w-xl">
             <p className="text-eyebrow text-primary">{business.brand}</p>
             <h1 className="mt-5 text-5xl leading-[1.05] text-brand-foreground sm:text-6xl lg:text-7xl">
-              Authentic Spices.
-              <span className="block text-primary">Richer Flavours.</span>
+              Pure Taste.
+              <span className="block text-primary">Authentic Aroma. Everyday Quality.</span>
             </h1>
             <div className="gold-rule mt-6 w-40" />
             <p className="mt-6 max-w-lg text-base leading-relaxed text-brand-foreground/78 sm:text-lg">
