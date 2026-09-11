@@ -17,6 +17,8 @@ import { useState } from "react";
 
 import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
 const heroSpices = heroSpicesAsset.url;
+import distributorBgAsset from "@/assets/distributor-section-bg.png.asset.json";
+const distributorBg = distributorBgAsset.url;
 import brandStory from "@/assets/brand-story.jpg";
 import spiceExperience from "@/assets/spice-experience.jpg";
 import { Button } from "@/components/ui/button";
@@ -218,8 +220,14 @@ Thank you.`;
   ];
 
   return (
-    <section className="bg-brand py-16 sm:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden py-16 sm:py-20">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${distributorBg})` }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-brand/88" aria-hidden="true" />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
             <p className="text-eyebrow text-gold">Become a Distributor</p>
