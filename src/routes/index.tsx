@@ -430,10 +430,10 @@ function HomePage() {
               carefully prepared spices from {business.brand}.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Button asChild size="lg">
+              <Button asChild size="default">
                 <Link to="/products">Shop Our Spices</Link>
               </Button>
-              <Button asChild size="lg">
+              <Button asChild size="default">
                 <a href="#distributor">Become A Distributor</a>
               </Button>
             </div>
