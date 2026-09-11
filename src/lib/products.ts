@@ -74,12 +74,7 @@ export const products: Product[] = [
       "Fine deep red Sanvita chilly powder in a wooden bowl beside whole dried red chillies",
     accent: "red",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 69, sku: "SPS-RCP-100" },
-      { label: "200g", price: 119, sku: "SPS-RCP-200" },
-      { label: "500g", price: 279, sku: "SPS-RCP-500" },
-      { label: "1kg", price: 529, sku: "SPS-RCP-1000" },
-    ],
+    variants: [{ label: "100g", price: 69, sku: "SPS-RCP-100" }],
     highlights: [
       "100 % Natural Chilly powder",
       "Rich colour & aroma",
