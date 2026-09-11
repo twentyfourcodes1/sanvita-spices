@@ -201,7 +201,7 @@ Thank you.`;
     <section id="distributor" className="overflow-hidden bg-cream py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <Reveal className="order-2 lg:order-1">
+          <Reveal className="hidden lg:block lg:order-1">
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <img
                 src={distributorBg}
@@ -219,6 +219,17 @@ Thank you.`;
                 Bring Sanvita Premium Spices to your city.
               </h2>
               <div className="gold-rule mt-5 w-28" />
+            </Reveal>
+            <Reveal className="mt-8 lg:hidden">
+              <div className="overflow-hidden rounded-2xl shadow-xl">
+                <img
+                  src={distributorBg}
+                  alt="Sanvita spice warehouse with shelves of premium spices and distribution boxes"
+                  width={800}
+                  height={600}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
             </Reveal>
             <Reveal delay={120}>
               <ul className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
