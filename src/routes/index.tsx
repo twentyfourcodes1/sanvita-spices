@@ -10,15 +10,27 @@ import {
   Quote,
   ShieldCheck,
   Sparkles,
+  Store,
   UtensilsCrossed,
 } from "lucide-react";
+import { useState } from "react";
 
 import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
 const heroSpices = heroSpicesAsset.url;
 import brandStory from "@/assets/brand-story.jpg";
-import kitchenLifestyle from "@/assets/kitchen-lifestyle.jpg";
 import spiceExperience from "@/assets/spice-experience.jpg";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { CTASection } from "@/components/site/CTASection";
 import { ProductCard } from "@/components/site/ProductCard";
 import {
