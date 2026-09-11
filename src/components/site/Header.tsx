@@ -87,7 +87,7 @@ export function Header() {
             alt={`${business.brand} logo`}
             width={236}
             height={100}
-            className="h-11 w-auto sm:h-12"
+            className="h-12 w-auto sm:h-12"
           />
         </Link>
 
