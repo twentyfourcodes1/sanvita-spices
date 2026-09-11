@@ -99,28 +99,6 @@ const trust = [
   },
 ];
 
-const process = [
-  {
-    step: "01",
-    title: "Ingredient Selection",
-    text: "Raw spices are chosen for colour, aroma and cleanliness before anything else happens.",
-  },
-  {
-    step: "02",
-    title: "Preparation",
-    text: "Cleaned, roasted where needed and ground to the texture each spice deserves.",
-  },
-  {
-    step: "03",
-    title: "Packing",
-    text: "Packed promptly in sealed packs to protect aroma, colour and freshness.",
-  },
-  {
-    step: "04",
-    title: "Ready for Your Kitchen",
-    text: "Delivered to your home so everyday cooking starts with something better.",
-  },
-];
 
 const testimonials = [
   {
