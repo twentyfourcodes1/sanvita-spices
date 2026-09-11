@@ -29,7 +29,7 @@ export function Footer() {
             <h4 className="text-eyebrow text-primary">Follow Us</h4>
             <div className="mt-3 flex gap-3">
               {[
-                { icon: Instagram, label: "Instagram", href: "#" },
+                { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/sanvita_foods?stkn=MWI4aXB3ajNxcDRnOQ%3D%3D" },
                 { icon: Facebook, label: "Facebook", href: "#" },
                 { icon: Youtube, label: "YouTube", href: "#" },
               ].map(({ icon: Icon, label, href }) => (
