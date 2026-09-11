@@ -96,8 +96,8 @@ function ProductsPage() {
           </h1>
           <div className="gold-rule mx-auto mt-4 w-28" />
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-brand-foreground/80">
-            Carefully prepared spices for everyday Indian kitchens. Pick your
-            pack size, add to cart and order on WhatsApp.
+            Carefully prepared spices and pure honey for everyday Indian
+            kitchens. Pick your pack size, add to cart and order on WhatsApp.
           </p>
         </div>
       </section>
