@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone, Youtube } from "lucide-react";
 
 import logo from "@/assets/sanvita-logo-gold.png.asset.json";
 import { Button } from "@/components/ui/button";
@@ -24,6 +24,26 @@ export function Footer() {
             everyday Indian cooking — carefully prepared and freshly packed in
             Vijayapura, Karnataka.
           </p>
+
+          <div className="mt-6">
+            <h4 className="text-eyebrow text-primary">Follow Us</h4>
+            <div className="mt-3 flex gap-3">
+              {[
+                { icon: Instagram, label: "Instagram", href: "#" },
+                { icon: Facebook, label: "Facebook", href: "#" },
+                { icon: Youtube, label: "YouTube", href: "#" },
+              ].map(({ icon: Icon, label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="inline-flex size-10 items-center justify-center rounded-full border border-gold/40 bg-brand-foreground/5 text-brand-foreground/80 transition-colors hover:border-primary hover:bg-primary hover:text-brand"
+                >
+                  <Icon className="size-5" />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div>
