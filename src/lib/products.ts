@@ -40,7 +40,7 @@ export type Product = {
   name: string;
   tagline: string;
   short: string;
-  category: "Powdered Spices" | "Blends" | "Chutney Powders" | "Honey";
+  category: "Powdered Spices" | "Blends" | "Chutney Powders";
   image: string;
   imageAlt: string;
   /** Retail pack photograph, shown alongside the existing image. */
