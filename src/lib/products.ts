@@ -229,12 +229,7 @@ export const products: Product[] = [
       "Sanvita coriander powder in a wooden bowl with coriander seeds and fresh coriander leaves",
     accent: "green",
     bestseller: false,
-    variants: [
-      { label: "100g", price: 59, sku: "SPS-COR-100" },
-      { label: "200g", price: 109, sku: "SPS-COR-200" },
-      { label: "500g", price: 259, sku: "SPS-COR-500" },
-      { label: "1kg", price: 489, sku: "SPS-COR-1000" },
-    ],
+    variants: [{ label: "100g", price: 59, sku: "SPS-COR-100" }],
     highlights: [
       "100 % Natural Coriander powder",
       "Rich colour & aroma",
