@@ -80,7 +80,7 @@ export const products: Product[] = [
     highlights: [
       "100 % Natural Chilli powder",
       "Rich colour & aroma",
-      "Every batch is tested for purity",
+      "Quality Tested & Carefully Packed",
       "No added Color | No preservatives",
       "Perfect for everyday cooking",
     ],
@@ -155,7 +155,7 @@ export const products: Product[] = [
     highlights: [
       "100 % Natural Garam masala",
       "Rich colour & aroma",
-      "Every batch is tested for purity",
+      "Quality Tested & Carefully Packed",
       "No added Color | No preservatives",
       "Perfect for everyday cooking",
     ],
@@ -197,7 +197,7 @@ export const products: Product[] = [
     variants: [{ label: "100g", price: 79, sku: "SPS-TUR-100" }],
     highlights: [
       "Rich colour and aroma",
-      "Every batch is tested for purity",
+      "Quality Tested & Carefully Packed",
       "No added colour, no preservatives",
       "High percentage of curcumin content",
       "Ideal for curries, dals, rice and more",
@@ -205,7 +205,7 @@ export const products: Product[] = [
     ],
     description: [
       "Sanvita Premium Turmeric Powder is pure, natural and authentic — the golden base your kitchen deserves.",
-      "Rich in colour, warm in aroma and high in curcumin content, every batch is tested for purity so your family gets only the best.",
+      "Rich in colour, warm in aroma and high in curcumin content. Quality Tested & Carefully Packed, so your family gets only the best.",
       "Add a touch of golden goodness to curries, dals, rice and everyday meals — no added colour, no preservatives, just premium quality.",
     ],
     ingredients: ["Turmeric"],
@@ -235,7 +235,7 @@ export const products: Product[] = [
     highlights: [
       "100 % Natural Coriander powder",
       "Rich colour & aroma",
-      "Every batch is tested for purity",
+      "Quality Tested & Carefully Packed",
       "No added Color | No preservatives",
       "Perfect for everyday cooking",
     ],
