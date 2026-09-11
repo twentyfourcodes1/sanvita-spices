@@ -752,14 +752,6 @@ function HomePage() {
               </Reveal>
             </div>
 
-            {/* Bottom accent */}
-            <div className="relative z-10 mt-10 flex justify-center opacity-20 md:mt-12">
-              <div className="flex space-x-4">
-                <div className="size-3 rounded-full bg-gold" />
-                <div className="size-3 rounded-full bg-spice" />
-                <div className="size-3 rounded-full bg-gold" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
