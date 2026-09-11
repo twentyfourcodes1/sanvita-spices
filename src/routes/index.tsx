@@ -347,7 +347,7 @@ function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="Most Loved"
-              title="Bestselling Spices"
+              title="Best Selling Spices"
               description="Quick-add the essentials, or send a direct WhatsApp enquiry if you need a different pack size."
             />
           </Reveal>
