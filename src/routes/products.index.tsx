@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 
+import productsHeroAsset from "@/assets/products-hero.png.asset.json";
+const productsHero = productsHeroAsset.url;
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -78,14 +80,22 @@ function ProductsPage() {
 
   return (
     <>
-      <section className="bg-cream-gradient py-14">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-eyebrow text-brand">Our Products</p>
-          <h1 className="mx-auto mt-3 max-w-2xl text-4xl leading-tight sm:text-5xl">
+      <section className="relative overflow-hidden py-20 sm:py-24">
+        <img
+          src={productsHero}
+          alt="Colorful Indian spices in bowls and spoons"
+          width={1920}
+          height={1080}
+          className="absolute inset-0 size-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand/85 via-brand/70 to-brand/40" />
+        <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="text-eyebrow text-primary">Our Products</p>
+          <h1 className="mx-auto mt-3 max-w-2xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
             Discover the Flavours of Sanvita
           </h1>
           <div className="gold-rule mx-auto mt-4 w-28" />
-          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-brand-foreground/80">
             Carefully prepared spices and pure honey for everyday Indian
             kitchens. Pick your pack size, add to cart and order on WhatsApp.
           </p>
