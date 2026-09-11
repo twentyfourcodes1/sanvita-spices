@@ -461,7 +461,7 @@ function HomePage() {
                 variant="outline"
                 className="text-brand-foreground hover:bg-gold hover:text-charcoal"
               >
-                <a href="/contact">Become A Distributor</a>
+                <a href="#distributor">Become A Distributor</a>
               </Button>
             </div>
             <dl className="mt-12 grid max-w-md grid-cols-3 gap-6">
