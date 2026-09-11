@@ -109,12 +109,7 @@ export const products: Product[] = [
       "Sanvita peanut chutney powder in a wooden bowl with roasted peanuts and dried red chillies",
     accent: "terracotta",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 89, sku: "SPS-PNC-100" },
-      { label: "200g", price: 169, sku: "SPS-PNC-200" },
-      { label: "500g", price: 399, sku: "SPS-PNC-500" },
-      { label: "1kg", price: 759, sku: "SPS-PNC-1000" },
-    ],
+    variants: [{ label: "200g", price: 169, sku: "SPS-PNC-200" }],
     highlights: [
       "Roasted peanut aroma",
       "Traditional South Indian taste",
