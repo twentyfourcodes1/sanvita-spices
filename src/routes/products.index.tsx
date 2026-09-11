@@ -80,7 +80,7 @@ function ProductsPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden py-14 sm:py-16">
+      <section className="relative overflow-hidden py-10 sm:py-12">
         <img
           src={productsHero}
           alt="Colorful Indian spices in bowls and spoons"
@@ -102,7 +102,7 @@ function ProductsPage() {
         </div>
       </section>
 
-      <section className="py-14">
+      <section className="pt-10 pb-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="surface-glass flex flex-col gap-4 rounded-lg p-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative w-full lg:max-w-sm">
