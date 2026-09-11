@@ -192,12 +192,7 @@ export const products: Product[] = [
       "Golden Sanvita turmeric powder in a wooden bowl with fresh turmeric roots beside it",
     accent: "gold",
     bestseller: true,
-    variants: [
-      { label: "100g", price: 79, sku: "SPS-TUR-100" },
-      { label: "200g", price: 149, sku: "SPS-TUR-200" },
-      { label: "500g", price: 309, sku: "SPS-TUR-500" },
-      { label: "1kg", price: 589, sku: "SPS-TUR-1000" },
-    ],
+    variants: [{ label: "100g", price: 79, sku: "SPS-TUR-100" }],
     highlights: [
       "Rich colour and aroma",
       "Every batch is tested for purity",
