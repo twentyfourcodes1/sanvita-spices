@@ -224,7 +224,7 @@ Thank you.`;
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <Reveal className="order-2 lg:order-1">
-            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+            <div className="overflow-hidden rounded-2xl shadow-xl">
               <img
                 src={distributorBg}
                 alt="Sanvita spice warehouse with shelves of premium spices and distribution boxes"
@@ -232,7 +232,6 @@ Thank you.`;
                 height={600}
                 className="aspect-[4/3] w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand/40 to-transparent" />
             </div>
           </Reveal>
           <div className="order-1 lg:order-2">
