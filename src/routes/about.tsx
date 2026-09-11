@@ -47,12 +47,12 @@ function AboutPage() {
           alt="Bowls of Indian spice powders on ivory linen"
           width={1920}
           height={1200}
-          className="h-[380px] w-full object-cover sm:h-[460px]"
+          className="h-[300px] w-full object-cover sm:h-[360px]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand via-brand/75 to-brand/20" />
-        <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-14 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-10 text-center">
           <p className="text-eyebrow text-primary">Our Story</p>
-          <h1 className="mt-4 max-w-3xl text-5xl leading-tight text-brand-foreground sm:text-6xl">
+          <h1 className="mt-3 max-w-2xl text-4xl leading-tight text-brand-foreground sm:text-5xl">
             Built around flavour, made for everyday kitchens
           </h1>
         </div>
