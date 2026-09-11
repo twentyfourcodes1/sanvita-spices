@@ -1,6 +1,6 @@
 import brandStory from "@/assets/brand-story-spices.png.asset.json";
 import aboutSpicesIndia from "@/assets/about-spices-india.png.asset.json";
-import packTurmeric from "@/assets/pack-turmeric.jpeg.asset.json";
+import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
 import packRedChilly from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/pack-garam-masala.jpeg.asset.json";
 import packPeanutChutney from "@/assets/pack-peanut-chutney.jpeg.asset.json";
