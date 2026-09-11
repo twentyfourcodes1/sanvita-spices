@@ -766,10 +766,10 @@ function HomePage() {
       <CTASection />
 
       {/* TESTIMONIALS */}
-      <section className="bg-[#FDFBF6] py-24">
+      <section className="bg-[#FDFBF6] pt-24 pb-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="mb-20 text-center">
+            <div className="mb-14 text-center">
               <div className="inline-block border-b border-gold/40 pb-2">
                 <span className="text-eyebrow text-gold">Kind Words</span>
               </div>
@@ -778,7 +778,7 @@ function HomePage() {
               </h2>
             </div>
           </Reveal>
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
             {testimonials.map((item, index) => (
               <Reveal key={index} delay={index * 90}>
                 <blockquote className="group relative flex h-full flex-col items-center rounded-lg border border-gold/20 bg-card p-8 pt-10 text-center shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold/50 hover:shadow-lift">
@@ -801,7 +801,7 @@ function HomePage() {
             ))}
           </div>
           {/* Heritage divider */}
-          <div className="mt-16 flex items-center justify-center gap-4 md:mt-20">
+          <div className="mt-12 flex items-center justify-center gap-4 md:mt-14">
             <div className="h-px w-20 bg-gold/20" />
             <div className="size-2 rounded-full border border-gold/60" />
             <div className="h-px w-20 bg-gold/20" />
@@ -810,7 +810,7 @@ function HomePage() {
       </section>
 
       {/* CONTACT / LOCATION */}
-      <section className="bg-secondary py-24">
+      <section className="bg-secondary py-14">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <SectionHeading
