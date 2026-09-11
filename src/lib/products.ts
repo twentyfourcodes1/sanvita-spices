@@ -1,9 +1,9 @@
-import redChilly from "@/assets/product-red-chilly.jpg";
+import redChilli from "@/assets/product-red-chilli.jpg";
 import peanutChutney from "@/assets/product-peanut-chutney.jpg.asset.json";
 import garamMasala from "@/assets/product-garam-masala.jpg";
 import turmeric from "@/assets/product-turmeric.jpg";
 import coriander from "@/assets/product-coriander.jpg";
-import packRedChilly from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
+import packRedChilli from "@/assets/red-chilli-powder-pouch.jpg.asset.json";
 import packPeanutChutney from "@/assets/peanut-chutney-pouch.jpg.asset.json";
 import packGaramMasala from "@/assets/garam-masala-pouch.jpg.asset.json";
 import packTurmeric from "@/assets/turmeric-powder-pouch.jpg.asset.json";
@@ -63,29 +63,29 @@ export type Product = {
  * ---------------------------------------------------------------------- */
 export const products: Product[] = [
   {
-    slug: "red-chilly-powder",
-    name: "Red Chilly Powder",
+    slug: "red-chilli-powder",
+    name: "Red Chilli Powder",
     tagline: "Deep colour, clean heat",
     short:
       "Carefully selected dried red chillies, finely ground for rich colour and a clean, balanced heat.",
     category: "Powdered Spices",
-    image: packRedChilly.url,
-    packImage: redChilly,
-    imageAlt: "Sanvita Red Chilly Powder retail pouch",
+    image: packRedChilli.url,
+    packImage: redChilli,
+    imageAlt: "Sanvita Red Chilli Powder retail pouch",
     packImageAlt:
-      "Fine deep red Sanvita chilly powder in a wooden bowl beside whole dried red chillies",
+      "Fine deep red Sanvita chilli powder in a wooden bowl beside whole dried red chillies",
     accent: "red",
     bestseller: true,
     variants: [{ label: "100g", price: 69, sku: "SPS-RCP-100" }],
     highlights: [
-      "100 % Natural Chilly powder",
+      "100 % Natural Chilli powder",
       "Rich colour & aroma",
       "Every batch is tested for purity",
       "No added Color | No preservatives",
       "Perfect for everyday cooking",
     ],
     description: [
-      "Sanvita Red Chilly Powder is prepared from carefully selected dried red chillies, ground fine so the colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan.",
+      "Sanvita Red Chilli Powder is prepared from carefully selected dried red chillies, ground fine so the colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan.",
       "The heat is steady and clean rather than sharp, which makes it easy to cook with every day — from a simple dal tadka to a slow-simmered masala.",
     ],
     ingredients: ["Dried red chillies"],

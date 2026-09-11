@@ -25,7 +25,7 @@ export const Route = createFileRoute("/products/")({
       {
         name: "description",
         content:
-          "Shop premium spices from Sanvita — red chilly powder, turmeric powder, coriander powder, garam masala and peanut chutney. Choose pack sizes and order on WhatsApp.",
+          "Shop premium spices from Sanvita — red chilli powder, turmeric powder, coriander powder, garam masala and peanut chutney. Choose pack sizes and order on WhatsApp.",
       },
       {
         property: "og:title",
@@ -51,7 +51,7 @@ function ProductsPage() {
   const [sort, setSort] = useState<Sort>("featured");
 
   const visible = useMemo(() => {
-    const q = query.trim().toLowerCase().replace("chilli", "chilly");
+    const q = query.trim().toLowerCase().replace("chilly", "chilli");
     let list = products.filter((product) => {
       const matchesCategory =
         category === "All" || product.category === category;
