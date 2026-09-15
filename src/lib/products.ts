@@ -265,7 +265,7 @@ export const products: Product[] = [
     packImageAlt:
       "Golden honey in a wooden bowl with a honey dipper, honeycomb pieces and blossoms",
     accent: "gold",
-    bestseller: true,
+    bestseller: false,
     variants: [
       { label: "250g", price: 249, sku: "SPS-HNY-250" },
       { label: "500g", price: 459, sku: "SPS-HNY-500" },
