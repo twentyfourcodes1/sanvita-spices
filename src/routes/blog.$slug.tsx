@@ -205,7 +205,7 @@ function BlogPostPage() {
                       width={96}
                       height={96}
                       loading="lazy"
-                      className="size-20 rounded-md object-cover"
+                      className={`size-20 rounded-md bg-card ${product.slug === "honey" ? "object-contain p-1" : "object-cover"}`}
                     />
                     <span>
                       <span className="block font-display text-xl">

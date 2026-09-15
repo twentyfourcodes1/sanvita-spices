@@ -108,8 +108,8 @@ function ProductPage() {
   const related = relatedProducts(product.slug);
 
   const gallery = [
-    { src: product.image, alt: product.imageAlt },
-    { src: product.packImage, alt: product.packImageAlt },
+    { src: product.image, alt: product.imageAlt, contain: product.slug === "honey" },
+    { src: product.packImage, alt: product.packImageAlt, contain: false },
   ];
   const [activeImage, setActiveImage] = useState(0);
 
@@ -147,7 +147,7 @@ function ProductPage() {
                 alt={gallery[activeImage]!.alt}
                 width={1024}
                 height={1024}
-                className="aspect-square w-full bg-card object-cover transition-transform duration-700 group-hover:scale-105"
+                className={`aspect-square w-full bg-card transition-transform duration-700 group-hover:scale-105 ${gallery[activeImage]?.contain ? "object-contain p-4 sm:p-6" : "object-cover"}`}
               />
             </div>
             <div className="mt-4 flex gap-3">
@@ -169,7 +169,7 @@ function ProductPage() {
                     alt={shot.alt}
                     width={160}
                     height={160}
-                    className="size-20 bg-card object-cover"
+                    className={`size-20 bg-card ${shot.contain ? "object-contain p-1" : "object-cover"}`}
                   />
                 </button>
               ))}

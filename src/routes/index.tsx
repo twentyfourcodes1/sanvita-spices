@@ -636,7 +636,7 @@ function HomePage() {
                     width={1024}
                     height={1024}
                     loading="lazy"
-                    className="aspect-4/3 w-full object-cover"
+                    className={`aspect-4/3 w-full bg-card ${product.slug === "honey" ? "object-contain p-3" : "object-cover"}`}
                   />
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="text-xl">{product.name}</h3>

@@ -249,7 +249,7 @@ function CheckoutPage() {
                   width={64}
                   height={64}
                   loading="lazy"
-                  className="size-14 rounded-xl object-cover"
+                  className={`size-14 rounded-xl bg-card ${item.slug === "honey" ? "object-contain p-1" : "object-cover"}`}
                 />
                 <div className="min-w-0 flex-1 text-sm">
                   <p className="font-semibold leading-tight">{item.name}</p>

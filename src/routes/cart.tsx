@@ -73,7 +73,7 @@ function CartPage() {
                   width={128}
                   height={128}
                   loading="lazy"
-                  className="size-24 shrink-0 rounded-2xl object-cover sm:size-28"
+                  className={`size-24 shrink-0 rounded-2xl bg-card sm:size-28 ${item.slug === "honey" ? "object-contain p-1" : "object-cover"}`}
                 />
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-3">

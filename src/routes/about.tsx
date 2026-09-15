@@ -199,7 +199,7 @@ function AboutPage() {
                     width={1024}
                     height={1024}
                     loading="lazy"
-                    className="aspect-square w-full object-cover"
+                    className={`aspect-square w-full bg-card ${product.slug === "honey" ? "object-contain p-3" : "object-cover"}`}
                   />
                   <span className="block p-4 text-center font-display text-lg">
                     {product.name}
