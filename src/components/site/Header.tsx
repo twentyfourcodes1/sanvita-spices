@@ -205,7 +205,7 @@ export function Header() {
                       width={56}
                       height={56}
                       loading="lazy"
-                      className="size-12 rounded-md object-cover"
+                      className={`size-12 rounded-md bg-card ${product.slug === "honey" ? "object-contain p-1" : "object-cover"}`}
                     />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate font-semibold">

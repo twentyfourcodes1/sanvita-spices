@@ -58,7 +58,7 @@ export function CartDrawer() {
                     width={96}
                     height={96}
                     loading="lazy"
-                    className="size-20 shrink-0 rounded-2xl object-cover"
+                    className={`size-20 shrink-0 rounded-2xl bg-card ${item.slug === "honey" ? "object-contain p-1" : "object-cover"}`}
                   />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-start justify-between gap-2">

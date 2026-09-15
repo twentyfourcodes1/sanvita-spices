@@ -46,7 +46,7 @@ export function ProductCard({ product }: { product: Product }) {
           width={1024}
           height={1024}
           loading="lazy"
-          className="aspect-square w-full object-cover"
+          className={`aspect-square w-full bg-card ${product.slug === "honey" ? "object-contain p-3" : "object-cover"}`}
         />
         <img
           src={product.packImage}
