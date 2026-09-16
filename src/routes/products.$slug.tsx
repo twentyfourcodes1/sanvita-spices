@@ -344,7 +344,7 @@ function ProductPage() {
           <Reveal>
             <SectionHeading
               eyebrow="You may also like"
-              title="Related spices"
+              title="Related Spices"
             />
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

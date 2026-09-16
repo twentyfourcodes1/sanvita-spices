@@ -159,7 +159,7 @@ ${form.message}`,
                 submit();
               }}
             >
-              <h2 className="text-2xl">Send us a message</h2>
+              <h2 className="text-2xl">Send Us a Message</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Your message opens in WhatsApp so we can reply straight away.
               </p>

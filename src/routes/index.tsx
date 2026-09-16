@@ -216,7 +216,7 @@ Thank you.`;
             <Reveal>
               <p className="text-eyebrow text-brand font-bold">Become a Distributor</p>
               <h2 className="mt-4 text-3xl leading-tight text-charcoal sm:text-4xl">
-                Bring Sanvita Premium Spices to your city.
+                Bring Sanvita Premium Spices To Your City.
               </h2>
               <div className="gold-rule mt-5 w-28" />
             </Reveal>
