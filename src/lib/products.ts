@@ -257,13 +257,13 @@ export const products: Product[] = [
     name: "Honey",
     tagline: "Nature's Sweetness In Every Drop",
     short:
-      "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
+      "Raw, Pure And Natural Honey Sourced From Trusted Beekeepers — No Added Sugar, No Preservatives.",
     category: "Honey",
     image: packHoney.url,
     packImage: honeyBowl,
     imageAlt: "Sanvita Premium Honey 250g glass jar",
     packImageAlt:
-      "Golden honey in a wooden bowl with a honey dipper, honeycomb pieces and blossoms",
+      "Golden Honey In A Wooden Bowl With A Honey Dipper, Honeycomb Pieces And Blossoms",
     accent: "gold",
     bestseller: false,
     variants: [
@@ -277,12 +277,12 @@ export const products: Product[] = [
       "Sourced From Trusted Beekeepers",
     ],
     description: [
-      "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
-      "Use it as an everyday sweetener in place of sugar: a spoon in warm water, drizzled over breakfast, or stirred into tea, milk and desserts.",
+      "Sanvita Premium Honey Is Raw, Pure And Natural — Thick, Golden And Full Of The Gentle Floral Aroma That Only Untampered Honey Carries. It Is Collected From Trusted Beekeepers And Packed With Nothing Added And Nothing Taken Away.",
+      "Use It As An Everyday Sweetener In Place Of Sugar: A Spoon In Warm Water, Drizzled Over Breakfast, Or Stirred Into Tea, Milk And Desserts.",
     ],
     ingredients: ["100% pure honey"],
     storage:
-      "Store in a cool, dry place with the lid closed. Natural crystallisation may occur — place the jar in warm water to return it to a smooth flow.",
+      "Store In A Cool, Dry Place With The Lid Closed. Natural Crystallisation May Occur — Place The Jar In Warm Water To Return It To A Smooth Flow.",
     usage: [
       "Stir Into Warm Water, Milk Or Tea",
       "Drizzle Over Toast, Fruit And Yogurt",
