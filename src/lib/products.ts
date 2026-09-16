@@ -100,7 +100,7 @@ export const products: Product[] = [
   {
     slug: "peanut-chutney",
     name: "Peanut Chutney",
-    tagline: "Roasted, nutty, everyday favourite",
+    tagline: "Roasted, Nutty, Everyday Favourite",
     short:
       "A traditional roasted peanut chutney powder — nutty, aromatic and ready to serve with idli, dosa or hot rice.",
     category: "Chutney Powders",
@@ -140,7 +140,7 @@ export const products: Product[] = [
   {
     slug: "garam-masala",
     name: "Garam Masala",
-    tagline: "Warm, aromatic, well balanced",
+    tagline: "Warm, Aromatic, Well Balanced",
     short:
       "A fragrant blend of warm whole spices, ground to lift everyday curries with depth and aroma.",
     category: "Blends",
@@ -184,8 +184,8 @@ export const products: Product[] = [
   {
     slug: "turmeric-powder",
     name: "Turmeric Powder",
-    tagline: "Bring the goodness of Pure Turmeric Powder to your kitchen",
-    short: "Bring the goodness of Pure Turmeric Powder to your kitchen.100% Natural Turmeric Powder.",
+    tagline: "Bring The Goodness Of Pure Turmeric Powder To Your Kitchen",
+    short: "Bring The Goodness Of Pure Turmeric Powder To Your Kitchen.100% Natural Turmeric Powder.",
     category: "Powdered Spices",
     image: packTurmeric.url,
     packImage: turmeric,
@@ -220,7 +220,7 @@ export const products: Product[] = [
   {
     slug: "coriander-powder",
     name: "Coriander Powder",
-    tagline: "Fresh, citrusy, body-building spice",
+    tagline: "Fresh, Citrusy, Body-Building Spice",
     short:
       "Freshly ground coriander seeds with a light citrusy aroma that gives gravies natural body.",
     category: "Powdered Spices",
@@ -255,7 +255,7 @@ export const products: Product[] = [
   {
     slug: "honey",
     name: "Honey",
-    tagline: "Nature's sweetness in every drop",
+    tagline: "Nature's Sweetness In Every Drop",
     short:
       "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
     category: "Honey",
