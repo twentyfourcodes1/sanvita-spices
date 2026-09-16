@@ -216,7 +216,7 @@ Thank you.`;
             <Reveal>
               <p className="text-eyebrow text-brand font-bold">Become a Distributor</p>
               <h2 className="mt-4 text-3xl leading-tight text-charcoal sm:text-4xl">
-                Bring Sanvita Premium Spices to your city.
+                Bring Sanvita Premium Spices To Your City.
               </h2>
               <div className="gold-rule mt-5 w-28" />
             </Reveal>
@@ -507,7 +507,7 @@ function HomePage() {
             <SectionHeading
               align="left"
               eyebrow="Our Story"
-              title="Spice Up Every Moment with Sanvita Spices."
+              title="Spice Up Every Moment With Sanvita Spices."
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
@@ -525,7 +525,7 @@ function HomePage() {
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild>
-                <Link to="/about">Read our story</Link>
+                <Link to="/about">Read Our Story</Link>
               </Button>
               <Button
                 variant="outline"
@@ -815,7 +815,7 @@ function HomePage() {
             <SectionHeading
               align="left"
               eyebrow="Visit or Reach Us"
-              title="We are happy to help with your order"
+              title="We Are Happy To Help With Your Order"
             />
             <address className="mt-7 space-y-3 text-base not-italic leading-relaxed text-muted-foreground">
               <p className="font-semibold text-foreground">

@@ -148,7 +148,7 @@ function AboutPage() {
             <SectionHeading
               align="left"
               eyebrow="Why Choose Sanvita"
-              title="Small batches, steady standards"
+              title="Small Batches, Steady Standards"
             />
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
               {[
@@ -183,7 +183,7 @@ function AboutPage() {
       <section className="bg-secondary/60 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <SectionHeading eyebrow="Our Products" title="What we make" />
+            <SectionHeading eyebrow="Our Products" title="What We Make" />
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {products.map((product, index) => (

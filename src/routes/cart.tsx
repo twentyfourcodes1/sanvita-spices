@@ -54,7 +54,7 @@ function CartPage() {
           <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
             <ShoppingBasket className="size-7" />
           </div>
-          <h2 className="mt-6 text-3xl">Your spice basket is empty.</h2>
+          <h2 className="mt-6 text-3xl">Your Spice Basket Is Empty.</h2>
           <p className="mt-3 text-sm text-muted-foreground">
             Add a few everyday essentials and place your order on WhatsApp.
           </p>

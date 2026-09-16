@@ -173,7 +173,7 @@ function BlogPostPage() {
           ))}
 
           <section className="mt-14 rounded-lg border border-gold/40 bg-secondary/60 p-8">
-            <h2 className="text-3xl">Frequently asked</h2>
+            <h2 className="text-3xl">Frequently Asked</h2>
             <div className="gold-rule mt-4 w-16" />
             <dl className="mt-6 space-y-6">
               {post.faqs.map((faq) => (
@@ -223,7 +223,7 @@ function BlogPostPage() {
 
           {related.length > 0 ? (
             <section className="mt-14">
-              <h2 className="text-3xl">Keep reading</h2>
+              <h2 className="text-3xl">Keep Reading</h2>
               <div className="gold-rule mt-4 w-16" />
               <div className="mt-6 grid gap-5 sm:grid-cols-2">
                 {related.map((item) => (

@@ -39,7 +39,7 @@ export function CartDrawer() {
             <div className="grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
               <ShoppingBasket className="size-7" />
             </div>
-            <p className="font-display text-2xl">Your spice basket is empty.</p>
+            <p className="font-display text-2xl">Your Spice Basket Is Empty.</p>
             <p className="text-sm text-muted-foreground">
               Add a few everyday essentials and place your order on WhatsApp.
             </p>
