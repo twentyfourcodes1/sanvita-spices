@@ -32,7 +32,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-identify-pure-red-chilli-powder",
-    title: "How to Identify Pure Red Chilli Powder at Home",
+    title: "How To Identify Pure Red Chilli Powder At Home",
     metaTitle: "How to Identify Pure Red Chilli Powder",
     metaDescription:
       "Simple kitchen checks to spot pure red chilli powder — colour, aroma, water and texture tests — from Sanvita Premium Spices, Vijayapura.",
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "turmeric-powder-benefits-and-cooking-guide",
-    title: "Turmeric Powder: Everyday Uses and How Much to Add",
+    title: "Turmeric Powder: Everyday Uses And How Much To Add",
     metaTitle: "Turmeric Powder Uses & Cooking Guide",
     metaDescription:
       "How to use turmeric powder in everyday Indian cooking — when to add it, how much per dish, and how to keep its golden colour and aroma.",
@@ -149,7 +149,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-store-spices-and-keep-them-fresh",
-    title: "How to Store Spice Powders So They Stay Fresh",
+    title: "How To Store Spice Powders So They Stay Fresh",
     metaTitle: "How to Store Spice Powders Fresh",
     metaDescription:
       "Practical storage rules for Indian spice powders — jars, humidity, heat, dry spoons and pack sizes — so colour and aroma last for months.",
@@ -214,7 +214,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "garam-masala-vs-curry-powder",
-    title: "Garam Masala vs Curry Powder: What's the Difference?",
+    title: "Garam Masala Vs Curry Powder: What's The Difference?",
     metaTitle: "Garam Masala vs Curry Powder",
     metaDescription:
       "Garam masala is an aromatic finishing blend; curry powder is a turmeric-led base mix. Learn the difference and when to use each.",
@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "peanut-chutney-powder-serving-ideas",
-    title: "Peanut Chutney Powder: 7 Easy Ways to Serve It",
+    title: "Peanut Chutney Powder: 7 Easy Ways To Serve It",
     metaTitle: "Peanut Chutney Powder Serving Ideas",
     metaDescription:
       "Seven quick ways to use peanut chutney powder — with idli, dosa, chapati rolls, hot rice, curd rice, sandwiches and vegetable stir-fries.",

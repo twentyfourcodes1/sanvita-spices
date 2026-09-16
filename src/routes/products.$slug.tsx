@@ -218,7 +218,7 @@ function ProductPage() {
             </p>
 
             <div className="mt-7">
-              <p className="text-eyebrow text-muted-foreground">Select pack</p>
+              <p className="text-eyebrow text-muted-foreground">Select Pack</p>
               <div className="mt-3">
                 <VariantSelector
                   variants={product.variants}
@@ -343,7 +343,7 @@ function ProductPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <SectionHeading
-              eyebrow="You may also like"
+              eyebrow="You May Also Like"
               title="Related Spices"
             />
           </Reveal>

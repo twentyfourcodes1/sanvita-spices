@@ -814,7 +814,7 @@ function HomePage() {
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="Visit or Reach Us"
+              eyebrow="Visit Or Reach Us"
               title="We Are Happy To Help With Your Order"
             />
             <address className="mt-7 space-y-3 text-base not-italic leading-relaxed text-muted-foreground">
