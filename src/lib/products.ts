@@ -113,10 +113,10 @@ export const products: Product[] = [
     bestseller: true,
     variants: [{ label: "200g", price: 169, sku: "SPS-PNC-200" }],
     highlights: [
-      "Roasted peanut aroma",
-      "Traditional South Indian taste",
-      "Ready to serve in minutes",
-      "Freshly prepared batches",
+      "Roasted Peanut Aroma",
+      "Traditional South Indian Taste",
+      "Ready to Serve in Minutes",
+      "Freshly Prepared Batches",
     ],
     description: [
       "Roasted peanuts, dried red chillies and everyday aromatics come together in this comforting chutney powder. Stir a spoonful with a little oil or ghee and it becomes an instant side for idli, dosa, chapati or a bowl of hot rice.",
