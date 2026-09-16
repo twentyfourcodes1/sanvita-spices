@@ -153,11 +153,11 @@ export const products: Product[] = [
     bestseller: true,
     variants: [{ label: "100g", price: 129, sku: "SPS-GRM-100" }],
     highlights: [
-      "100 % Natural Garam masala",
-      "Rich colour & aroma",
+      "100 % Natural Garam Masala",
+      "Rich Colour And Aroma",
       "Quality Tested & Carefully Packed",
-      "No added Color | No preservatives",
-      "Perfect for everyday cooking",
+      "No Added Colour | No Preservatives",
+      "Perfect For Everyday Cooking",
     ],
     description: [
       "Cardamom, cloves, cinnamon, black pepper and other warm spices are blended for aroma first. Sanvita Garam Masala is meant as a finishing spice — a small spoon stirred in near the end of cooking rounds off a curry beautifully.",
@@ -176,9 +176,9 @@ export const products: Product[] = [
     storage:
       "Keep tightly closed in a cool, dry place. Close the lid promptly to hold the aroma.",
     usage: [
-      "Stir in during the last minutes of cooking",
-      "Finish biryani, pulao and rich gravies",
-      "Add a pinch to marinades and kebab mixes",
+      "Stir In During The Last Minutes Of Cooking",
+      "Finish Biryani, Pulao And Rich Gravies",
+      "Add A Pinch To Marinades And Kebab Mixes",
     ],
   },
   {
