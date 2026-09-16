@@ -725,11 +725,11 @@ function HomePage() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   {[
                     "FSSAI Licensed",
-                    "Hygienically packed",
-                    "Carefully selected ingredients",
-                    "Batch-wise quality control",
-                    "Properly sealed packaging",
-                    "Food-grade packaging",
+                    "Hygienically Packed",
+                    "Carefully Selected Ingredients",
+                    "Batch-wise Quality Control",
+                    "Properly Sealed Packaging",
+                    "Food-grade Packaging",
                   ].map((point) => (
                     <div
                       key={point}
