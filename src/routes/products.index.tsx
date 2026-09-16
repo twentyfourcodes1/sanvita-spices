@@ -154,7 +154,7 @@ function ProductsPage() {
 
           {visible.length === 0 ? (
             <div className="mt-16 rounded-lg border border-gold/40 bg-card p-14 text-center shadow-soft">
-              <h2 className="text-2xl">No spices match that search</h2>
+              <h2 className="text-2xl">No Spices Match That Search</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Try a different word — for example turmeric, chilli or masala.
               </p>

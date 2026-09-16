@@ -525,7 +525,7 @@ function HomePage() {
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild>
-                <Link to="/about">Read our story</Link>
+                <Link to="/about">Read Our Story</Link>
               </Button>
               <Button
                 variant="outline"

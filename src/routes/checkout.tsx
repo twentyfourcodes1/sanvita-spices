@@ -102,7 +102,7 @@ function CheckoutPage() {
         <div className="mx-auto grid size-16 place-items-center rounded-md bg-gold-gradient text-charcoal">
           <ShoppingBasket className="size-7" />
         </div>
-        <h1 className="mt-6 text-4xl">Your spice basket is empty.</h1>
+        <h1 className="mt-6 text-4xl">Your Spice Basket Is Empty.</h1>
         <p className="mt-3 text-sm text-muted-foreground">
           Add a few spices before heading to checkout.
         </p>

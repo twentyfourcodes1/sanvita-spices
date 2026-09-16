@@ -318,7 +318,7 @@ function ProductPage() {
               </p>
             </div>
              <div className="rounded-lg bg-brand p-7 text-brand-foreground shadow-lift">
-              <h3 className="text-xl">Need help choosing?</h3>
+              <h3 className="text-xl">Need Help Choosing?</h3>
               <p className="mt-2 text-sm opacity-90">
                 Message us on WhatsApp and we will help with pack sizes and bulk
                 orders.
