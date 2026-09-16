@@ -233,11 +233,11 @@ export const products: Product[] = [
     bestseller: false,
     variants: [{ label: "100g", price: 59, sku: "SPS-COR-100" }],
     highlights: [
-      "100 % Natural Coriander powder",
-      "Rich colour & aroma",
+      "100 % Natural Coriander Powder",
+      "Rich Colour And Aroma",
       "Quality Tested & Carefully Packed",
-      "No added Color | No preservatives",
-      "Perfect for everyday cooking",
+      "No Added Colour | No Preservatives",
+      "Perfect For Everyday Cooking",
     ],
     description: [
       "Coriander is the spice that holds a dish together. Ground from carefully selected seeds, Sanvita Coriander Powder brings a fresh, faintly citrusy aroma and thickens gravies naturally without dulling other flavours.",
@@ -247,9 +247,9 @@ export const products: Product[] = [
     storage:
       "Keep in an airtight container in a cool, dry place. Avoid damp spoons and humid shelves.",
     usage: [
-      "Build the base of curries and korma gravies",
-      "Combine with chilli and turmeric for masala pastes",
-      "Add to dry roasts, sabzis and rasam",
+      "Build The Base Of Curries And Korma Gravies",
+      "Combine With Chilli And Turmeric For Masala Pastes",
+      "Add To Dry Roasts, Sabzis And Rasam",
     ],
   },
   {
@@ -271,10 +271,10 @@ export const products: Product[] = [
       { label: "500g", price: 459, sku: "SPS-HNY-500" },
     ],
     highlights: [
-      "No added sugar",
-      "No preservatives",
-      "Rich in natural goodness",
-      "Sourced from trusted beekeepers",
+      "No Added Sugar",
+      "No Preservatives",
+      "Rich In Natural Goodness",
+      "Sourced From Trusted Beekeepers",
     ],
     description: [
       "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
@@ -284,9 +284,9 @@ export const products: Product[] = [
     storage:
       "Store in a cool, dry place with the lid closed. Natural crystallisation may occur — place the jar in warm water to return it to a smooth flow.",
     usage: [
-      "Stir into warm water, milk or tea",
-      "Drizzle over toast, fruit and yogurt",
-      "Use as a natural sweetener in desserts and marinades",
+      "Stir Into Warm Water, Milk Or Tea",
+      "Drizzle Over Toast, Fruit And Yogurt",
+      "Use As A Natural Sweetener In Desserts And Marinades",
     ],
   },
 ];
