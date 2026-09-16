@@ -65,9 +65,9 @@ export const products: Product[] = [
   {
     slug: "red-chilli-powder",
     name: "Red Chilli Powder",
-    tagline: "Deep colour, clean heat",
+    tagline: "Deep Colour, Clean Heat",
     short:
-      "Carefully selected dried red chillies, finely ground for rich colour and a clean, balanced heat.",
+      "Carefully selected dried red chillies, finely ground for Rich Colour and a clean, balanced heat.",
     category: "Powdered Spices",
     image: packRedChilli.url,
     packImage: redChilli,
@@ -78,15 +78,15 @@ export const products: Product[] = [
     bestseller: true,
     variants: [{ label: "100g", price: 69, sku: "SPS-RCP-100" }],
     highlights: [
-      "100 % Natural Chilli powder",
-      "Rich colour & aroma",
+      "100% Natural Chilli Powder",
+      "Rich Colour and Aroma",
       "Quality Tested & Carefully Packed",
-      "No added Color | No preservatives",
-      "Perfect for everyday cooking",
+      "No Added Colour | No Preservatives",
+      "Perfect for Everyday Cooking",
     ],
     description: [
-      "Sanvita Red Chilli Powder is prepared from carefully selected dried red chillies, ground fine so the colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan.",
-      "The heat is steady and clean rather than sharp, which makes it easy to cook with every day — from a simple dal tadka to a slow-simmered masala.",
+      "Sanvita Red Chilli Powder is prepared from carefully selected dried red chillies, ground fine so the Colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan. No Added Colour | No Preservatives — just Rich Colour and Aroma in every pack.",
+      "The heat is steady and clean rather than sharp, which makes it Perfect for Everyday Cooking — from a simple dal tadka to a slow-simmered masala.",
     ],
     ingredients: ["Dried red chillies"],
     storage:
