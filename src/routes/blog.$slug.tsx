@@ -189,7 +189,7 @@ function BlogPostPage() {
 
           {linkedProducts.length > 0 ? (
             <section className="mt-14">
-              <h2 className="text-3xl">Spices from this article</h2>
+              <h2 className="text-3xl">Spices From This Article</h2>
               <div className="gold-rule mt-4 w-16" />
               <div className="mt-6 grid gap-5 sm:grid-cols-2">
                 {linkedProducts.map((product) => (

@@ -106,7 +106,7 @@ function BlogIndexPage() {
           <Reveal>
             <SectionHeading
               eyebrow="All Articles"
-              title="Read the Journal"
+              title="Read The Journal"
               description="Short, practical reads on Indian spices and everyday cooking."
             />
           </Reveal>
