@@ -284,7 +284,7 @@ function ProductPage() {
               ))}
             </div>
 
-            <h3 className="mt-8 text-xl">Usage &amp; cooking ideas</h3>
+            <h3 className="mt-8 text-xl">Usage &amp; Cooking Ideas</h3>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               {product.usage.map((idea) => (
                 <li key={idea} className="flex gap-2">
