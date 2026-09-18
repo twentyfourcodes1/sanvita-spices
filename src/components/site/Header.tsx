@@ -35,6 +35,7 @@ export function Header() {
   const { count, openCart } = useCart();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -194,17 +195,62 @@ export function Header() {
       {menuOpen ? (
         <div className="border-t border-gold/30 bg-brand px-4 pb-5 pt-3 text-brand-foreground md:hidden">
           <nav className="flex flex-col" aria-label="Mobile">
-            {nav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                activeOptions={{ exact: item.to === "/" }}
-                className="border-b border-gold/20 py-3 font-display text-2xl text-brand-foreground"
-                activeProps={{ className: "text-primary" }}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {nav.map((item) =>
+              item.label === "Products" ? (
+                <div key={item.to} className="border-b border-gold/20">
+                  <button
+                    type="button"
+                    aria-expanded={productsOpen}
+                    onClick={() => setProductsOpen((open) => !open)}
+                    className="flex w-full items-center justify-between py-3 font-display text-2xl text-brand-foreground"
+                  >
+                    {item.label}
+                    <ChevronDown
+                      aria-hidden="true"
+                      className={cn(
+                        "size-5 shrink-0 transition-transform duration-200",
+                        productsOpen && "rotate-180",
+                      )}
+                    />
+                  </button>
+                  {productsOpen ? (
+                    <ul className="pb-3">
+                      <li>
+                        <Link
+                          to="/products"
+                          onClick={() => setProductsOpen(false)}
+                          className="block py-2 pl-4 text-base font-semibold text-primary"
+                        >
+                          All Products
+                        </Link>
+                      </li>
+                      {products.map((product) => (
+                        <li key={product.slug}>
+                          <Link
+                            to="/products/$slug"
+                            params={{ slug: product.slug }}
+                            onClick={() => setProductsOpen(false)}
+                            className="block py-2 pl-4 text-base text-brand-foreground/80"
+                          >
+                            {product.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </div>
+              ) : (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  activeOptions={{ exact: item.to === "/" }}
+                  className="border-b border-gold/20 py-3 font-display text-2xl text-brand-foreground"
+                  activeProps={{ className: "text-primary" }}
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
           </nav>
           <Button
             variant="whatsapp"
