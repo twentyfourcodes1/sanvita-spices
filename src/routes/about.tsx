@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flame, Leaf, Package, UtensilsCrossed } from "lucide-react";
 
-import aboutSpicesIndia from "@/assets/about-spices-india.png.asset.json";
+import indianSpicesChart from "@/assets/indian-spices-chart.png.asset.json";
 import brandStory from "@/assets/brand-story-spices.png.asset.json";
 import heroSpicesAsset from "@/assets/hero-spices.png.asset.json";
 import { Button } from "@/components/ui/button";
@@ -136,10 +136,10 @@ function AboutPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <img
-              src={aboutSpicesIndia.url}
-              alt="Indian spices arranged around a glowing golden world map with ingredient photography and product descriptions"
-              width={1920}
-              height={1080}
+              src={indianSpicesChart.url}
+              alt="Indian Spices chart showing Red Chilli, Coriander, Turmeric, Garam Masala and Peanut Chutney with descriptions"
+              width={1252}
+              height={1252}
               loading="lazy"
               className="w-full rounded-lg border border-gold/50 object-cover shadow-lift"
             />
