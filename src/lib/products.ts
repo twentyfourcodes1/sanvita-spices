@@ -196,7 +196,7 @@ export const products: Product[] = [
     bestseller: true,
     variants: [{ label: "100g", price: 79, sku: "SPS-TUR-100" }],
     highlights: [
-      "Rich Colour And Aroma",
+      "Rich Colour and Aroma",
       "Quality Tested & Carefully Packed",
       "No Added Colour, No Preservatives",
       "High Percentage Of Curcumin Content",
