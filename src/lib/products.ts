@@ -255,7 +255,7 @@ export const products: Product[] = [
   {
     slug: "honey",
     name: "Honey",
-    tagline: "Nature's Sweetness In Every Drop",
+    tagline: "Nature’s Sweetness in Every Drop",
     short:
       "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
     category: "Honey",
