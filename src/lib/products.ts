@@ -277,7 +277,7 @@ export const products: Product[] = [
       "Sourced from Trusted Beekeepers",
     ],
     description: [
-      "Sanvita Premium Honey Is Raw, Pure And Natural — Thick, Golden And Full Of The Gentle Floral Aroma That Only Untampered Honey Carries. It Is Collected From Trusted Beekeepers And Packed With Nothing Added And Nothing Taken Away.",
+      "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
       "Use It As An Everyday Sweetener In Place Of Sugar: A Spoon In Warm Water, Drizzled Over Breakfast, Or Stirred Into Tea, Milk And Desserts.",
     ],
     ingredients: ["100% pure honey"],
