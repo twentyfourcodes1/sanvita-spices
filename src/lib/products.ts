@@ -286,7 +286,7 @@ export const products: Product[] = [
     usage: [
       "Stir into warm water, milk or tea ",
       "Drizzle over toast, fruit and yogurt ",
-      "Use As A Natural Sweetener In Desserts And Marinades",
+      "Use as a natural sweetener in desserts and marinades",
     ],
   },
 ];
