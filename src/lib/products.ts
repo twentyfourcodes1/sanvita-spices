@@ -273,7 +273,7 @@ export const products: Product[] = [
     highlights: [
       "No Added Sugar",
       "No Preservatives",
-      "Rich In Natural Goodness",
+      "Rich in Natural Goodness",
       "Sourced From Trusted Beekeepers",
     ],
     description: [
