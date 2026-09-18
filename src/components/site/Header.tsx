@@ -126,19 +126,9 @@ export function Header() {
                         <Link
                           to="/products/$slug"
                           params={{ slug: product.slug }}
-                          className="flex items-center gap-3 px-4 py-2 transition-colors last:rounded-b-lg hover:bg-secondary hover:text-primary"
+                          className="block px-4 py-2 text-sm font-medium text-foreground transition-colors last:rounded-b-lg hover:bg-secondary hover:text-primary"
                         >
-                          <img
-                            src={product.image}
-                            alt=""
-                            width={36}
-                            height={36}
-                            loading="lazy"
-                            className={`size-9 rounded-md border border-gold/20 bg-card object-cover ${product.slug === "honey" ? "object-contain p-0.5" : ""}`}
-                          />
-                          <span className="text-sm font-medium text-foreground">
-                            {product.name}
-                          </span>
+                          {product.name}
                         </Link>
                       </li>
                     ))}
