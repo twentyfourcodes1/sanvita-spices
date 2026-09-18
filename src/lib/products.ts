@@ -67,7 +67,7 @@ export const products: Product[] = [
     name: "Red Chilli Powder",
     tagline: "Deep Colour, Clean Heat",
     short:
-      "Carefully selected dried red chillies, finely ground for Rich Colour and a clean, balanced heat.",
+      "Carefully selected dried red chillies, finely ground for rich Colour and a clean, balanced heat.",
     category: "Powdered Spices",
     image: packRedChilli.url,
     packImage: redChilli,
