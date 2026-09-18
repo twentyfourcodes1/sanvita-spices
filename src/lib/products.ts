@@ -85,7 +85,7 @@ export const products: Product[] = [
       "Perfect for Everyday Cooking",
     ],
     description: [
-      "Sanvita Red Chilli Powder is prepared from carefully selected dried red chillies, ground fine so the Colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan. No Added Colour | No Preservatives — just Rich Colour and Aroma in every pack.",
+      "Sanvita Red Chilli Powder is prepared from carefully selected dried red chillies, ground fine so the colour blooms the moment it meets hot oil. It gives curries, gravies and dry sabzis a warm, appetising red tone without overwhelming the other spices in your pan. No Added Colour | No Preservatives — just Rich Colour and Aroma in every pack.",
       "The heat is steady and clean rather than sharp, which makes it Perfect for Everyday Cooking — from a simple dal tadka to a slow-simmered masala.",
     ],
     ingredients: ["Dried red chillies"],
