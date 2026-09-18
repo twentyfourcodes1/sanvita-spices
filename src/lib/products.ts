@@ -178,7 +178,7 @@ export const products: Product[] = [
     usage: [
       "Stir In during the last minutes of cooking",
       "Finish biryani, pulao and rich gravies",
-      "Add A Pinch To Marinades And Kebab Mixes",
+      "Add a pinch to marinades and kebab mixes",
     ],
   },
   {
