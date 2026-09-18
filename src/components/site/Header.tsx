@@ -1,5 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import {
+  ChevronDown,
   Menu,
   MessageCircle,
   Search,
@@ -92,17 +93,70 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
-          {nav.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
-              className="rounded-md px-4 py-2 text-sm font-semibold text-brand-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary"
-              activeProps={{ className: "bg-primary/12 text-primary" }}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {nav.map((item) =>
+            item.label === "Products" ? (
+              <div key={item.to} className="group relative">
+                <Link
+                  to={item.to}
+                  className="flex items-center gap-1 rounded-md px-4 py-2 text-sm font-semibold text-brand-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary"
+                  activeProps={{ className: "bg-primary/12 text-primary" }}
+                >
+                  {item.label}
+                  <ChevronDown
+                    aria-hidden="true"
+                    className="size-4 transition-transform duration-200 group-hover:rotate-180"
+                  />
+                </Link>
+                <div
+                  className={cn(
+                    "invisible absolute left-0 top-full z-50 w-64 translate-y-1 rounded-lg border border-gold/30 bg-card opacity-0 shadow-lift transition-all duration-200",
+                    "group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100",
+                    "group-hover:visible group-hover:translate-y-0 group-hover:opacity-100",
+                  )}
+                >
+                  <Link
+                    to="/products"
+                    className="block rounded-t-lg border-b border-gold/20 px-4 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                  >
+                    All Products
+                  </Link>
+                  <ul>
+                    {products.map((product) => (
+                      <li key={product.slug}>
+                        <Link
+                          to="/products/$slug"
+                          params={{ slug: product.slug }}
+                          className="flex items-center gap-3 px-4 py-2 transition-colors last:rounded-b-lg hover:bg-secondary hover:text-primary"
+                        >
+                          <img
+                            src={product.image}
+                            alt=""
+                            width={36}
+                            height={36}
+                            loading="lazy"
+                            className={`size-9 rounded-md border border-gold/20 bg-card object-cover ${product.slug === "honey" ? "object-contain p-0.5" : ""}`}
+                          />
+                          <span className="text-sm font-medium text-foreground">
+                            {product.name}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.to}
+                to={item.to}
+                activeOptions={{ exact: item.to === "/" }}
+                className="rounded-md px-4 py-2 text-sm font-semibold text-brand-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary"
+                activeProps={{ className: "bg-primary/12 text-primary" }}
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-1">
