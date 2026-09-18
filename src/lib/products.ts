@@ -278,7 +278,7 @@ export const products: Product[] = [
     ],
     description: [
       "Sanvita Premium Honey is raw, pure and natural — thick, golden and full of the gentle floral aroma that only untampered honey carries. It is collected from trusted beekeepers and packed with nothing added and nothing taken away.",
-      "Use It As An Everyday Sweetener In Place Of Sugar: A Spoon In Warm Water, Drizzled Over Breakfast, Or Stirred Into Tea, Milk And Desserts.",
+      "Use it as an everyday sweetener in place of sugar: add a spoonful to warm water, drizzle over breakfast, or stir into tea, milk and desserts.",
     ],
     ingredients: ["100% pure honey"],
     storage:
