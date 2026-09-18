@@ -49,6 +49,7 @@ export function Header() {
 
   useEffect(() => {
     setMenuOpen(false);
+    setProductsOpen(false);
     setSearchOpen(false);
   }, [pathname]);
 
