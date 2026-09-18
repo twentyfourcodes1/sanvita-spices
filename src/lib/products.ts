@@ -257,7 +257,7 @@ export const products: Product[] = [
     name: "Honey",
     tagline: "Nature's Sweetness In Every Drop",
     short:
-      "Raw, Pure And Natural Honey Sourced From Trusted Beekeepers — No Added Sugar, No Preservatives.",
+      "Raw, pure and natural honey sourced from trusted beekeepers — no added sugar, no preservatives.",
     category: "Honey",
     image: packHoney.url,
     packImage: honeyBowl,
