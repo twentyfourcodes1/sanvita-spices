@@ -249,7 +249,7 @@ export const products: Product[] = [
     usage: [
       "Build the base of curries and korma gravies",
       "Combine with chilli and turmeric for masala pastes",
-      "Add To Dry Roasts, Sabzis And Rasam",
+      "Add to dry roasts, sabzis and rasam",
     ],
   },
   {
