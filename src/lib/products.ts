@@ -220,7 +220,7 @@ export const products: Product[] = [
   {
     slug: "coriander-powder",
     name: "Coriander Powder",
-    tagline: "Fresh, Citrusy, Body-Building Spice",
+    tagline: "Fresh, Citrusy and Aromatic Spice",
     short:
       "Freshly ground coriander seeds with a light citrusy aroma that gives gravies natural body.",
     category: "Powdered Spices",
