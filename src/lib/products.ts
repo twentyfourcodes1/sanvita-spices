@@ -274,7 +274,7 @@ export const products: Product[] = [
       "No Added Sugar",
       "No Preservatives",
       "Rich in Natural Goodness",
-      "Sourced From Trusted Beekeepers",
+      "Sourced from Trusted Beekeepers",
     ],
     description: [
       "Sanvita Premium Honey Is Raw, Pure And Natural — Thick, Golden And Full Of The Gentle Floral Aroma That Only Untampered Honey Carries. It Is Collected From Trusted Beekeepers And Packed With Nothing Added And Nothing Taken Away.",
