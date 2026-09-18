@@ -183,7 +183,7 @@ function ProductPage() {
                   label:
                     product.category === "Honey"
                       ? "Raw & natural"
-                      : "Aromatic grind",
+                      : "Aromatic Grind",
                 },
               ].map((item) => (
                 <div
