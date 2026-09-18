@@ -176,7 +176,7 @@ function ProductPage() {
             </div>
             <div className="mt-4 grid grid-cols-3 gap-3">
               {[
-                { icon: <Flame className="size-4" />, label: "Authentic taste" },
+                { icon: <Flame className="size-4" />, label: "Authentic Taste" },
                 { icon: <Package className="size-4" />, label: "Freshly packed" },
                 {
                   icon: <Sparkles className="size-4" />,
