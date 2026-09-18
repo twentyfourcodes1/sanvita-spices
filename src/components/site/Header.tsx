@@ -98,7 +98,6 @@ export function Header() {
               <div key={item.to} className="group relative">
                 <Link
                   to={item.to}
-                  activeOptions={{ exact: item.to === "/" }}
                   className="flex items-center gap-1 rounded-md px-4 py-2 text-sm font-semibold text-brand-foreground/70 transition-colors hover:bg-primary/10 hover:text-primary"
                   activeProps={{ className: "bg-primary/12 text-primary" }}
                 >
