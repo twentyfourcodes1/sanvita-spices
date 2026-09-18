@@ -282,7 +282,7 @@ export const products: Product[] = [
     ],
     ingredients: ["100% pure honey"],
     storage:
-      "Store In A Cool, Dry Place With The Lid Closed. Natural Crystallisation May Occur — Place The Jar In Warm Water To Return It To A Smooth Flow.",
+      "Store in a cool, dry place with the lid closed. Natural crystallisation may occur — place the jar in warm water to return it to a smooth flow",
     usage: [
       "Stir into warm water, milk or tea ",
       "Drizzle over toast, fruit and yogurt ",
