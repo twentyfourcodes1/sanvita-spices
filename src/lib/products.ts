@@ -284,7 +284,7 @@ export const products: Product[] = [
     storage:
       "Store In A Cool, Dry Place With The Lid Closed. Natural Crystallisation May Occur — Place The Jar In Warm Water To Return It To A Smooth Flow.",
     usage: [
-      "Stir Into Warm Water, Milk Or Tea",
+      "Stir into warm water, milk or tea ",
       "Drizzle Over Toast, Fruit And Yogurt",
       "Use As A Natural Sweetener In Desserts And Marinades",
     ],
