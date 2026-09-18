@@ -237,7 +237,7 @@ export const products: Product[] = [
       "Rich Colour and Aroma",
       "Quality Tested & Carefully Packed",
       "No Added Colour | No Preservatives",
-      "Perfect For Everyday Cooking",
+      "Perfect for Everyday Cooking",
     ],
     description: [
       "Coriander is the spice that holds a dish together. Ground from carefully selected seeds, Sanvita Coriander Powder brings a fresh, faintly citrusy aroma and thickens gravies naturally without dulling other flavours.",
