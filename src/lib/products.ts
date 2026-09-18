@@ -240,7 +240,7 @@ export const products: Product[] = [
       "Perfect for Everyday Cooking",
     ],
     description: [
-      "Coriander is the spice that holds a dish together. Ground from carefully selected seeds, Sanvita Coriander Powder brings a fresh, faintly citrusy aroma and thickens gravies naturally without dulling other flavours.",
+      "Coriander is the spice that holds a dish together. ground from carefully selected seeds, Sanvita Coriander Powder brings a fresh, faintly citrusy aroma and thickens gravies naturally without dulling other flavours. ",
       "Use it generously — it is the most forgiving spice in the cupboard and the backbone of countless everyday recipes.",
     ],
     ingredients: ["Coriander seeds"],
