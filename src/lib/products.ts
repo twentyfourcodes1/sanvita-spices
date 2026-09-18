@@ -176,7 +176,7 @@ export const products: Product[] = [
     storage:
       "Keep tightly closed in a cool, dry place. Close the lid promptly to hold the aroma.",
     usage: [
-      "Stir In During The Last Minutes Of Cooking",
+      "Stir In during the last minutes of cooking",
       "Finish Biryani, Pulao And Rich Gravies",
       "Add A Pinch To Marinades And Kebab Mixes",
     ],
