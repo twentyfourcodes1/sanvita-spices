@@ -507,7 +507,7 @@ function HomePage() {
             <SectionHeading
               align="left"
               eyebrow="Our Story"
-              title="Spice Up Every Moment With Sanvita Spices."
+              title="Spice Up Every Moment with Sanvita Spices."
             />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
