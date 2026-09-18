@@ -234,7 +234,7 @@ export const products: Product[] = [
     variants: [{ label: "100g", price: 59, sku: "SPS-COR-100" }],
     highlights: [
       "100% Natural Coriander Powder",
-      "Rich Colour And Aroma",
+      "Rich Colour and Aroma",
       "Quality Tested & Carefully Packed",
       "No Added Colour | No Preservatives",
       "Perfect For Everyday Cooking",
