@@ -153,7 +153,7 @@ export const products: Product[] = [
     bestseller: true,
     variants: [{ label: "100g", price: 129, sku: "SPS-GRM-100" }],
     highlights: [
-      "100 % Natural Garam Masala",
+      "100% Natural Garam Masala",
       "Rich Colour And Aroma",
       "Quality Tested & Carefully Packed",
       "No Added Colour | No Preservatives",
