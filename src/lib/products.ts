@@ -157,7 +157,7 @@ export const products: Product[] = [
       "Rich Colour and Aroma",
       "Quality Tested & Carefully Packed",
       "No Added Colour | No Preservatives",
-      "Perfect For Everyday Cooking",
+      "Perfect for Everyday Cooking",
     ],
     description: [
       "Cardamom, cloves, cinnamon, black pepper and other warm spices are blended for aroma first. Sanvita Garam Masala is meant as a finishing spice — a small spoon stirred in near the end of cooking rounds off a curry beautifully.",
