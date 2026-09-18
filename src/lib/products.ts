@@ -248,7 +248,7 @@ export const products: Product[] = [
       "Keep in an airtight container in a cool, dry place. Avoid damp spoons and humid shelves.",
     usage: [
       "Build the base of curries and korma gravies",
-      "Combine With Chilli And Turmeric For Masala Pastes",
+      "Combine with chilli and turmeric for masala pastes",
       "Add To Dry Roasts, Sabzis And Rasam",
     ],
   },
