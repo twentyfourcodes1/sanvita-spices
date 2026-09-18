@@ -213,7 +213,7 @@ export const products: Product[] = [
       "Store in an airtight container away from moisture, heat and direct sunlight.",
     usage: [
       "Add to curries, dals and rice for colour and warmth",
-      "Use In Everyday Sabzis, Marinades And Khichdi",
+      "Use in everyday sabzis, marinades and khichdi",
       "Sprinkle Into Soups, Sambar And Golden Milk",
     ],
   },
