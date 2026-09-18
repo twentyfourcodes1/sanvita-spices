@@ -182,7 +182,7 @@ function ProductPage() {
                   icon: <Sparkles className="size-4" />,
                   label:
                     product.category === "Honey"
-                      ? "Raw & natural"
+                      ? "Raw & Natural"
                       : "Aromatic Grind",
                 },
               ].map((item) => (
