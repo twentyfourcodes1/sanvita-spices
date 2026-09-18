@@ -214,7 +214,7 @@ export const products: Product[] = [
     usage: [
       "Add to curries, dals and rice for colour and warmth",
       "Use in everyday sabzis, marinades and khichdi",
-      "Sprinkle Into Soups, Sambar And Golden Milk",
+      "Sprinkle into soups, sambar and golden milk",
     ],
   },
   {
