@@ -184,7 +184,7 @@ export const products: Product[] = [
   {
     slug: "turmeric-powder",
     name: "Turmeric Powder",
-    tagline: "Bring The Goodness Of Pure Turmeric Powder To Your Kitchen",
+    tagline: "Bring the Goodness of Pure Turmeric Powder to Your Kitchen",
     short: "Carefully Selected Turmeric, Finely Ground to bring rich colour and Natural aroma to your everyday cooking.",
     category: "Powdered Spices",
     image: packTurmeric.url,
