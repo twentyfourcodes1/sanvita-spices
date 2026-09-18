@@ -200,7 +200,7 @@ export const products: Product[] = [
       "Quality Tested & Carefully Packed",
       "No Added Colour | No Preservatives",
       "High Percentage of Curcumin Content",
-      "Ideal For Curries, Dals, Rice And More",
+      "Ideal for Curries, Dals, Rice and More",
       "Premium Quality For Your Family",
     ],
     description: [
