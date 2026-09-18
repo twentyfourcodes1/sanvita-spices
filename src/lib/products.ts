@@ -205,7 +205,7 @@ export const products: Product[] = [
     ],
     description: [
       "Sanvita Premium Turmeric Powder is pure, natural and authentic — the golden base your kitchen deserves.",
-      "Rich In Colour, Warm In Aroma And High In Curcumin Content. Quality Tested & Carefully Packed, So Your Family Gets Only The Best.",
+      " Rich in colour and warm in aroma. Quality tested & carefully packed, so your family gets a product made with care.",
       "Add A Touch Of Golden Goodness To Curries, Dals, Rice And Everyday Meals — No Added Colour, No Preservatives, Just Premium Quality.",
     ],
     ingredients: ["Turmeric"],
